@@ -5,7 +5,7 @@ EAW-MP-Balance Mod Changelog
 
 Changelings:
 -added 50k Manpower to pressure Olenia focus
--added 200 PP to conquer olenia focus
+-added give war economy to conquer olenia focus
 
 Griffon Liberation Army:
 -Moved “remove famine” to agricultural rise
