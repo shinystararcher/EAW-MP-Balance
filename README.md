@@ -20,7 +20,5 @@ Lukas - most of the code
 Tom - some code and writeups.
 
 * Acknowledgments  
-
-The Equestria at War Mod team
-
+The Equestria at War Mod team  
 The Weekly Multiplayer game players
