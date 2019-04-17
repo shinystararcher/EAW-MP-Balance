@@ -13,13 +13,15 @@ Install Equestria at war from https://steamcommunity.com/sharedfiles/filedetails
 
 Read the wiki at https://equestria-at-war.fandom.com/wiki/Equestria_at_War_Wiki
 
-Contributing
 Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
 
-Authors
-Lukas - most of the code
+* Authors  
+Lukas - most of the code  
+
 Tom - some code and writeups.
 
-Acknowledgments
+* Acknowledgments  
+
 The Equestria at War Mod team
+
 The Weekly Multiplayer game players
