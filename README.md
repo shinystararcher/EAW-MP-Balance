@@ -1,13 +1,23 @@
 # EAW-MP-Balance
+
 Balance changes for Equestria At War Multiplayer
 
-EAW-MP-Balance Mod Changelog
+This Project seeks to make the Multiplayer experience for Equestria At War more fun by adjusting countries to better compete in multiplayer without being overwhemed by bad events or a vastly superior opponent
 
-Changelings:
--added 50k Manpower to pressure Olenia focus
--added give war economy to conquer olenia focus
+It requires the Equestria at war mod and the base game of Hearts of Iron 4. 
 
-Griffon Liberation Army:
--Moved “remove famine” to agricultural rise
--reduced Focus-time for Post-war-stress across the board
--changed infrastructure gain to different state
+
+Install the mod from the steam workshop page located at https://steamcommunity.com/sharedfiles/filedetails/?id=1713746266&searchtext=z-EAW
+Install Equestria at war from https://steamcommunity.com/sharedfiles/filedetails/?id=1096009291
+Read the wiki at https://equestria-at-war.fandom.com/wiki/Equestria_at_War_Wiki
+
+Contributing
+Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
+
+Authors
+Lukas - most of the code
+Tom - some code and writeups.
+
+Acknowledgments
+The Equestria at War Mod team
+The Weekly Multiplayer game players
