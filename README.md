@@ -8,7 +8,9 @@ It requires the Equestria at war mod and the base game of Hearts of Iron 4.
 
 
 Install the mod from the steam workshop page located at https://steamcommunity.com/sharedfiles/filedetails/?id=1713746266&searchtext=z-EAW
+
 Install Equestria at war from https://steamcommunity.com/sharedfiles/filedetails/?id=1096009291
+
 Read the wiki at https://equestria-at-war.fandom.com/wiki/Equestria_at_War_Wiki
 
 Contributing
