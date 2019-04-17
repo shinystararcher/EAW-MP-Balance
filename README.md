@@ -17,7 +17,6 @@ Please read CONTRIBUTING.md for details on our code of conduct, and the process 
 
 * Authors  
 Lukas - most of the code  
-
 Tom - some code and writeups.
 
 * Acknowledgments  
