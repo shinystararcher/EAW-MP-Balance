@@ -194,7 +194,7 @@ focus_tree = {
 	focus = {
 		id = industrial_research
 		icon = GFX_goal_chn_money
-		cost = 10.00
+		cost = 7.00
 		prerequisite = {
 			focus = hive_funding
 		}
@@ -390,7 +390,7 @@ focus_tree = {
 	focus = {
 		id = CHN_develop_vesalipolis
 		icon = GFX_goal_chn_vesalipolis
-		cost = 10.00
+		cost = 9.00
 		prerequisite = {
 			focus = industrial_research
 		}
@@ -433,7 +433,7 @@ focus_tree = {
 	focus = {
 		id = CHN_develop_ditrysium
 		icon = GFX_goal_chn_hive_dockyards
-		cost = 10.00
+		cost = 9.00
 		prerequisite = {
 			focus = CHN_develop_vesalipolis
 		}
@@ -475,7 +475,7 @@ focus_tree = {
 	focus = {
 		id = CHN_develop_vraks
 		icon = GFX_goal_chn_industry_of_hives
-		cost = 10.00
+		cost = 9.00
 		prerequisite = {
 			focus = CHN_develop_vesalipolis
 		}
@@ -523,7 +523,7 @@ focus_tree = {
 	focus = {
 		id = Expansion_of_newhives
 		icon = GFX_goal_chn_city_hives
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = CHN_develop_vraks
 			focus = CHN_develop_ditrysium
@@ -579,7 +579,7 @@ focus_tree = {
 	focus = {
 		id = technology_centre
 		icon = GFX_goal_chn_research
-		cost = 10
+		cost = 9
 		prerequisite = {
 			focus = Expansion_of_newhives
 		}
@@ -1617,7 +1617,7 @@ focus_tree = {
 	focus = {
 		id = war_academy
 		icon = GFX_focus_changeling_army
-		cost = 10.00
+		cost = 5.00
 		x = 27
 		y = 0
 		ai_will_do = { factor = 95 }
@@ -2090,7 +2090,7 @@ focus_tree = {
 	focus = {
 		id = CHN_Army
 		icon = GFX_goal_generic_axis_build_infantry
-		cost = 9
+		cost = 8
 		prerequisite = { focus = war_academy }
 
 		x = 17
@@ -2117,7 +2117,7 @@ focus_tree = {
 		relative_position_id = CHN_Army
 		x = 2
 		y = 1
-		cost = 10
+		cost = 9
 		ai_will_do = { factor = 90 }
 
 
@@ -2321,6 +2321,7 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = cat_medium_armor
+				ahead_reduction = 2
 			}
 		}
 	}
@@ -2344,13 +2345,13 @@ focus_tree = {
 				bonus = 1.0
 				uses = 2
 				category = cat_light_armor
-				ahead_reduction = 2
 			}
 			add_tech_bonus = {
 				name = tank_research
 				bonus = 1.0
 				uses = 1
 				category = cat_medium_armor
+				ahead_reduction = 2
 			}
 			add_tech_bonus = {
 				name = tank_research
@@ -2367,7 +2368,7 @@ focus_tree = {
 		relative_position_id = CHN_Army
 		x = -2
 		y = 1
-		cost = 10
+		cost = 9
 		ai_will_do = { factor = 40 }
 
 
@@ -2402,7 +2403,7 @@ focus_tree = {
 		relative_position_id = CHN_Army
 		x = 0
 		y = 1
-		cost = 10
+		cost = 8
 		ai_will_do = { factor = 100 }
 
 
