@@ -481,7 +481,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus VED_Proclamation"
-		add_political_power = 200
+		add_political_power = 300
 	}
 }
 

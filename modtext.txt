@@ -1,0 +1,8 @@
+﻿name="EaW Mp Balance T"
+path="mod/eawmpbalancet/"
+dependencies = { "Equestria at War" }
+tags={
+	"Alternative History"
+	"Balance"
+}picture="perfectlybalanced.png" 
+supported_version="1.6.2"
