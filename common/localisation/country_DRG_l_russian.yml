@@ -1,0 +1,69 @@
+﻿l_russian:
+
+### National Focuses ####
+
+
+### Events ###
+
+
+### National Spirits ###
+tribal_society2:0 "Племенное общество"
+tribal_society3:0 "Племенное общество"
+tribal_society4:0 "Племенное общество"
+
+### Country Flags ###
+DRG_call_of_the_homeland:0 "Драконья родина"
+DRG_pony_harmony:0 "Эквестрийская гармония"
+DRG_dragon_harmony:0 "Драконья гармония"
+DRG_forge_our_path:0 "Собственный путь"
+
+### Parties ###
+DRG_neutrality_party:0 "Династия Торчей"
+DRG_neutrality_party_long:0 "Династия Торчей"
+DRG_communism_party:0 "СКПД"
+DRG_communism_party_long:0 "Свободная коллективистская партия драконов"
+DRG_democratic_party:0 "Династия Торчей"
+DRG_democratic_party_long:0 "Династия Торчей"
+DRG_fascism_party:0 "Имперская власть"
+DRG_fascism_party_long:0 "Имперская лига Драконов"
+
+### Custom Tooltips ###
+DRG_draconic_harmony:0 "Гармоничный путь, подходящий для драконов"
+DRG_equestrian_harmonies:0 "Путь Гармонии, созданный ранее принцессами"
+DRG_neutral_path:0 "Путь Традиции и Парии"
+DRG_tribal_reform:0 "Взятие этого фокуса удалит национальный дух §YПлеменное общество§!"
+
+## Advisors
+DRG_smolder:0 "Смолдер"
+DRG_gark:0 "Гарк"
+DRG_zazalzar:0 "Зазалзар"
+DRG_cynder:0 "Синдер"
+DRG_firekin:0 "Файркин"
+DRG_tiagin:0 "Тиагин"
+DRG_nascale:0 "Наскейл"
+DRG_kasitor:0 "Каситор"
+DRG_grima_n:0 "Грима"
+DRG_kuzz:0 "Казз"
+DRG_kahamit:0 "Кахамит"
+DRG_grima:0 "Грима"
+DRG_kalagar:0 "Калагар"
+DRG_naga:0 "Нага"
+DRG_nightburn:0 "Найтберн"
+DRG_ludmilla:0 "Людмила"
+DRG_kukulkan:0 "Кукулькан"
+DRG_tamm:0 "Тамм"
+
+### countryname ###
+
+DRG_neutrality:0 "Драконьи племена"
+DRG_fascism:0 "Драконья империя"
+DRG_communism:0 "Союз драконских коммун"
+DRG_democratic:0 "Соединенные драконские острова"
+DRG_neutrality_DEF:0 "Драконьи племена"
+DRG_fascism_DEF:0 "Драконья империя"
+DRG_communism_DEF:0 "Союз драконских коммун"
+DRG_democratic_DEF:0 "Соединенные драконьи острова"
+DRG_fascism_ADJ:0 "Имперск."
+DRG_democratic_ADJ:0 "Драконск."
+DRG_neutrality_ADJ:0 "Племенн."
+DRG_communism_ADJ:0 "Союзн."
