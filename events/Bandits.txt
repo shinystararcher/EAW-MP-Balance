@@ -46,9 +46,9 @@ country_event = { #Blackrock wants your lunch money
 	option = { ### YES MASTER
 		name = bandit.2.a
 		ai_chance = {
-			base = 80
+			base = 100
 			modifier = {
-				factor = 100
+				factor = 0
 				
 			}
 		}
@@ -60,7 +60,21 @@ country_event = { #Blackrock wants your lunch money
 		add_timed_idea = { idea = BAN_tribute_loss  days = 120 }
 	}
 
-
+	option = { ### Fuck off ye CUNT
+		name = bandit.2.b
+		custom_effect_tooltip = bandit.2.c
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 0
+				strength_ratio = { tag = FROM ratio < 0.75 }
+			}
+		}
+		clr_country_flag = bandit_tributary
+		add_political_power = 25
+		BAN = { country_event = { id = bandit.26 days = 3 } }
+	}
+}
 country_event = { #Empire informed that Blackhollow joined them
 	id = bandit.3
 	immediate = {log = "[Root.GetName]: event bandit.3"}#Auto-logging
@@ -182,9 +196,9 @@ country_event = { ## Blackrock Demands you to become TRIBUTE
 		name = bandit.6.a
 		custom_effect_tooltip = bandit.6.c
 		ai_chance = {
-			base = 80
+			base = 100
 			modifier = {
-				factor = 100
+				factor = 0
 				strength_ratio = { tag = FROM ratio > 0.75 }
 			}
 		}
@@ -192,7 +206,20 @@ country_event = { ## Blackrock Demands you to become TRIBUTE
 		set_country_flag = bandit_tributary
 	}
 
+	option = { ### Fuck off ye CUNT
+		name = bandit.6.b
+		custom_effect_tooltip = bandit.6.e
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 0
+				strength_ratio = { tag = FROM ratio < 0.75 }
+			}
+		}
 
+		BAN = { country_event = { id = bandit.7 } }
+	}
+}
 
 country_event = { ## The fuckers aren't giving us their shit
 	id = bandit.7
@@ -222,7 +249,7 @@ country_event = { ## Plundering Griffonstone
 		custom_effect_tooltip = BAN_TT_6_loot
 		add_to_variable = {
 			var = loot
-			value = 12
+			value = 10
 			}
 
 		BOI = {
@@ -594,7 +621,7 @@ country_event = { ## Some loot
 		custom_effect_tooltip = BAN_TT_2_loot
 		add_to_variable = {
 			var = loot
-			value = 12
+			value = 6
 		}
 
 		hidden_effect  = {
@@ -640,7 +667,7 @@ country_event = { ## Some more loot
 		custom_effect_tooltip = BAN_TT_4_loot
 		add_to_variable = {
 			var = loot
-			value = 8
+			value = 6
 		}
 
 		hidden_effect  = {
@@ -728,7 +755,7 @@ country_event = { ## Tribute from Tributaries
 		custom_effect_tooltip = BAN_TT_2_loot
 		add_to_variable = {
 			var = loot
-			value = 10
+			value = 8
 		}
 		add_political_power = 25
 	}
