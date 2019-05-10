@@ -18,6 +18,8 @@ Please read CONTRIBUTING.md for details on our code of conduct, and the process 
 * Authors  
 Lukas - most of the code  
 Tom - some code and writeups.
+Feveros - Wingbardy Decisions
+Ser Pounce - Blackrock Changes
 
 * Acknowledgments  
 The Equestria at War Mod team  
