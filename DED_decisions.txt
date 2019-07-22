@@ -494,6 +494,8 @@ DED_black_crusade_decisions = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision DED_shinespark"
 			FROM = { country_event = deadempire.56 }
+			set_rule = { can_create_factions = yes }
+            create_faction = "DED_faction"
 		}
 	}
 
