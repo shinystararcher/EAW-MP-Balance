@@ -771,14 +771,14 @@ DED_exponential_necromancy = {
 
 	DED_Stage_1 = {
 		icon = generic_magic
-		cost = 100
+		cost = 50
 		ai_will_do = {
 			factor = 20
 
 		}
 		available = {
 			has_completed_focus = DED_Spooky_Factory
-			has_army_manpower = { size > 250000 }
+			has_army_manpower = { size > 100000 }
 		}
 		visible = {
 			has_completed_focus = DED_Spooky_Factory
@@ -795,14 +795,14 @@ DED_exponential_necromancy = {
 	
 	DED_Stage_2 = {
 		icon = generic_magic
-		cost = 100
+		cost = 50
 		ai_will_do = {
 			factor = 20
 
 		}
 		available = {
 			has_completed_focus = DED_Spooky_Factory
-			has_army_manpower = { size > 500000 }
+			has_army_manpower = { size > 250000 }
 		}
 		visible = {
 			has_completed_focus = DED_Spooky_Factory
@@ -819,14 +819,14 @@ DED_exponential_necromancy = {
 	
 	DED_Stage_3 = {
 		icon = generic_magic
-		cost = 100
+		cost = 50
 		ai_will_do = {
 			factor = 20
 
 		}
 		available = {
 			has_completed_focus = DED_Spooky_Factory
-			has_army_manpower = { size > 750000 }
+			has_army_manpower = { size > 500000 }
 		}
 		visible = {
 			has_completed_focus = DED_Spooky_Factory
@@ -843,7 +843,7 @@ DED_exponential_necromancy = {
 	
 	DED_Stage_4 = {
 		icon = generic_magic
-		cost = 100
+		cost = 50
 		ai_will_do = {
 			factor = 20
 
@@ -867,7 +867,7 @@ DED_exponential_necromancy = {
 	
 	DED_Stage_5 = {
 		icon = generic_magic
-		cost = 100
+		cost = 50
 		ai_will_do = {
 			factor = 20
 
@@ -892,9 +892,9 @@ DED_exponential_necromancy = {
 }
 
 DED_Ghoul_Necromancy {
-	DED_Revive_Ghouls = {
+	DED_Ghoul_Scientists = {
 		icon = generic_magic
-		cost = 20
+		cost = 100
 		ai_will_do = {
 			factor = 20
 
@@ -909,12 +909,22 @@ DED_Ghoul_Necromancy {
 		}
 		
 		days_remove = 30
-		days_re_enable = 60
+		days_re_enable = 365
 		fire_only_once = no
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision DED_Stage_5"
 			
-			415 = { add_manpower = 50000}
+			add_tech_bonus = {
+				bonus = 0.2
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				bonus = 0.2
+				uses = 1
+				category = industry
+			}
+			
 			}
 		}
 }

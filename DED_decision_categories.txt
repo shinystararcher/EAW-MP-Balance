@@ -67,3 +67,17 @@ DED_exponential_necromancy = {
 	}
 
 }
+
+DED_Ghoul_Necromancy = {
+
+	icon = generic_magic
+	
+	allowed = {
+	tag = DED
+	}
+
+	priority = {
+		base = 10
+	}
+
+}
