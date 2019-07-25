@@ -120,7 +120,7 @@ shared_focus = {
 	}
 	x = 9
 	y = 3
-	cost = 10
+	cost = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FIR_harmony_isolation"
 		add_country_leader_trait = FIR_great_king
@@ -141,7 +141,7 @@ shared_focus = {
 	}
 	x = 13
 	y = 3
-	cost = 10
+	cost = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FIR_fascist_isolation"
 		add_tech_bonus = {
@@ -167,7 +167,7 @@ shared_focus = {
 	}
 	x = 19
 	y = 3
-	cost = 10
+	cost = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FIR_harmony_outwards"
 		add_country_leader_trait = dealbroker
@@ -195,7 +195,7 @@ shared_focus = {
 	}
 	x = 25
 	y = 3
-	cost = 10
+	cost = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FIR_fascist_outwards"
 		add_ideas = FIR_slave_raids
@@ -233,7 +233,7 @@ shared_focus = {
 	}
 	x = 16
 	y = 4
-	cost = 10
+	cost = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FIR_farbrook_friends"
 		FBK = {
@@ -273,7 +273,7 @@ shared_focus = {
 	}
 	x = 18
 	y = 4
-	cost = 10
+	cost = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FIR_crush_farbrook"
 		create_wargoal = {
@@ -315,7 +315,7 @@ shared_focus = {
 	}
 	x = 20
 	y = 4
-	cost = 10
+	cost = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FIR_watertown_friends"
 		WAT = {
@@ -357,7 +357,7 @@ shared_focus = {
 	}
 	x = 22
 	y = 4
-	cost = 10
+	cost = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FIR_crush_watertown"
 		create_wargoal = {
@@ -388,7 +388,7 @@ shared_focus = {
 	}
 	x = 17
 	y = 6
-	cost = 10
+	cost = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FIR_farbrook_metal"
 		add_resource = {
@@ -421,7 +421,7 @@ shared_focus = {
 	}
 	x = 21
 	y = 6
-	cost = 10
+	cost = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FIR_watertown_springwater"
 		add_ideas = FIR_sacred_spring_spirit
@@ -457,7 +457,7 @@ shared_focus = {
 	bypass = { is_river_fed_member = yes }
 	x = 19
 	y = 7
-	cost = 10
+	cost = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FIR_riv_relations"
 		if = {
@@ -490,7 +490,7 @@ shared_focus = {
 	}
 	x = 8
 	y = 4
-	cost = 10
+	cost = 5
 	available = {
 		has_government = democratic
 	}
@@ -521,7 +521,7 @@ shared_focus = {
 	}
 	x = 8
 	y = 6
-	cost = 10
+	cost = 5
 	available = {
 		has_government = democratic
 	}
@@ -555,7 +555,7 @@ shared_focus = {
 	}
 	x = 10
 	y = 4
-	cost = 10
+	cost = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FIR_guardians_of_peace"
 		add_manpower = 30000
@@ -582,7 +582,7 @@ shared_focus = {
 	available = {
 		has_government = democratic
 	}
-	cost = 10
+	cost = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FIR_inherent_magic"
 		add_tech_bonus = {
@@ -607,7 +607,7 @@ shared_focus = {
 	}
 	x = 9
 	y = 7
-	cost = 10
+	cost = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FIR_inward_perfection"
 		custom_effect_tooltip = FIR_perfect
@@ -628,7 +628,7 @@ shared_focus = {
 	}
 	x = 12
 	y = 4
-	cost = 10
+	cost = 5
 	available = {
 		has_government = fascism
 	}
@@ -649,7 +649,7 @@ shared_focus = {
 	}
 	x = 14
 	y = 4
-	cost = 10
+	cost = 5
 	available = {
 		has_government = fascism
 	}
@@ -673,7 +673,7 @@ shared_focus = {
 	}
 	x = 12
 	y = 6
-	cost = 10
+	cost = 5
 	available = {
 		has_government = fascism
 	}
@@ -709,7 +709,7 @@ shared_focus = {
 	}
 	x = 14
 	y = 6
-	cost = 10
+	cost = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FIR_magic_of_industry"
 		add_tech_bonus = {
@@ -740,7 +740,7 @@ shared_focus = {
 	}
 	x = 13
 	y = 7
-	cost = 10
+	cost = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FIR_pilgrimage_magehold"
 		custom_effect_tooltip = FIR_pilgrim
@@ -755,7 +755,7 @@ shared_focus = {
 	}
 	x = 24
 	y = 4
-	cost = 10
+	cost = 5
 	available = {
 		has_government = fascism
 	}
@@ -785,7 +785,7 @@ shared_focus = {
 	}
 	x = 26
 	y = 4
-	cost = 10
+	cost = 5
 	available = {
 		has_government = fascism
 	}
@@ -804,7 +804,7 @@ shared_focus = {
 	}
 	x = 24
 	y = 6
-	cost = 10
+	cost = 5
 	available = {
 		has_government = fascism
 	}
@@ -826,7 +826,7 @@ shared_focus = {
 	}
 	x = 26
 	y = 6
-	cost = 10
+	cost = 5
 	available = {
 		has_government = fascism
 	}
@@ -856,7 +856,7 @@ shared_focus = {
 	}
 	x = 25
 	y = 7
-	cost = 10
+	cost = 5
 	available = {
 		has_government = fascism
 	}
