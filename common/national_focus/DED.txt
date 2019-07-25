@@ -15,7 +15,7 @@ focus_tree = {
 	focus = {
 		id = DED_Council
 		icon = GFX_councils_decision_icon
-		cost = 15.00
+		cost = 14.00
 		ai_will_do = {
 			factor = 100
 		}
@@ -54,11 +54,12 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DED_Army_Dead"
 			army_experience = 20
+			add_ideas = DED_leader_cost_factor
 
 			create_field_marshal = {
 				name = "Hell Van Moltke"
 				portrait_path = "gfx/leaders/DED/Nezhit.tga"
-				traits = { defensive_doctrine }
+				traits = { defensive_doctrine skilled_staffer expert_delegator}
 				skill = 2
 				attack_skill = 2
 				defense_skill = 3
@@ -66,10 +67,22 @@ focus_tree = {
 				logistics_skill = 1
 
 			}
+			create_field_marshal = {
+				name = "Vincent van Gogh"
+				portrait_path = "gfx/leaders/DED/Comrade_Sketal.tga"
+				traits = { skilled_staffer expert_delegator }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+
+			}
+			
 			create_corps_commander = {
 				name = "Shrieking Banshee"
 				portrait_path = "gfx/leaders/DED/Nezhit.tga"
-				traits = { trickster }
+				traits = { trickster skilled_staffer }
 				skill = 1
 				attack_skill = 2
 				defense_skill = 1
@@ -79,10 +92,110 @@ focus_tree = {
 			create_corps_commander = {
 				name = "Otto Von Bridlemark"
 				portrait_path = "gfx/leaders/DED/Nezhit.tga"
-				traits = { fortress_buster }
+				traits = { fortress_buster skilled_staffer }
 				skill = 2
 				attack_skill = 2
 				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Erika von Feveros"
+				portrait_path = "gfx/leaders/DED/skellinore.tga"
+				traits = { skilled_staffer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Pablo Picasso"
+				portrait_path = "gfx/leaders/DED/skellinore.tga"
+				traits = { skilled_staffer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Leonardo da Vinci"
+				portrait_path = "gfx/leaders/DED/Fractured_Note.tga"
+				traits = { skilled_staffer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Tony Stark"
+				portrait_path = "gfx/leaders/DED/Fractured_Note.tga"
+				traits = { skilled_staffer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Artorias of the Abyss"
+				portrait_path = "gfx/leaders/DED/Diablo.tga"
+				traits = { skilled_staffer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Leon Trotsky"
+				portrait_path = "gfx/leaders/DED/Diablo.tga"
+				traits = { skilled_staffer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Friedrich Engels"
+				portrait_path = "gfx/leaders/DED/Another_necromancer.tga"
+				traits = { skilled_staffer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Karl Marx"
+				portrait_path = "gfx/leaders/DED/Another_necromancer.tga"
+				traits = {  skilled_staffer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Julius Caesar"
+				portrait_path = "gfx/leaders/DED/Tanzor.tga"
+				traits = { skilled_staffer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Giuseppe Garibaldi"
+				portrait_path = "gfx/leaders/DED/Tanzor.tga"
+				traits = { skilled_staffer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
 				planning_skill = 2
 				logistics_skill = 2
 			}
@@ -110,11 +223,7 @@ focus_tree = {
 			add_political_power = 100
 			add_war_support = 0.4
 			add_research_slot = 1
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
-				amount = 1000000
-				producer = CHN
-			}
+
 			hidden_effect = {
 
 				HLR = {
@@ -374,7 +483,7 @@ focus_tree = {
 	focus = {
 		id = DED_Black_Crusade
 		icon = GFX_omnium_vitarum_icon
-		cost = 20.00
+		cost = 15.00
 
 		relative_position_id = DED_War_Plan_Blood
 
@@ -519,6 +628,11 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DED_Black_Crusade"
 			custom_effect_tooltip = DED_Black_Crusade_tp
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1000000
+				producer = CHN
+			}
 			hidden_effect = {
 				every_other_country = {
 					ROOT = {
@@ -563,6 +677,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DED_Guild_Blood"
 			add_ideas = DED_Blood_Guild_Idea11
+			add_political_power = 300
 			set_country_flag = DED_Went_Blood
 
 
@@ -1116,7 +1231,8 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DED_Soc_Bone"
-
+			
+			add_political_power = 300
 			add_ideas = DED_Soc_Bone_Idea11
 			set_country_flag = DED_Went_Bone
 
@@ -1198,7 +1314,7 @@ focus_tree = {
 
 				limit = {
 					free_building_slots = {
-						building = arms_factory
+						building = industrial_complex
 						size > 0
 						include_locked = yes
 					}
@@ -1208,7 +1324,7 @@ focus_tree = {
 							owner = {
 								any_owned_state = {
 									free_building_slots = {
-										building = arms_factory
+										building = industrial_complex
 										size > 0
 										include_locked = yes
 									}
@@ -1218,10 +1334,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
-					type = arms_factory
-					level = 2
+					type = industrial_complex
+					level = 5
 					instant_build = yes
 				}
 
@@ -1434,17 +1550,29 @@ focus_tree = {
 			else = {
 				set_technology = {
 					early_fighter = 1
+					add_tech_bonus = { bonus = 1.00 uses = 2 category = light_air }
 				}
+				add_tech_bonus = { bonus = 1.00 uses = 2 category = light_air }
 			}
-			415 = {
-				add_extra_state_shared_building_slots = 1
+			random_owned_state = {
+
+				add_extra_state_shared_building_slots = 2
+
 				add_building_construction = {
-					type = air_base
-					level = 1
+					type = arms_factory
+					level = 2
 					instant_build = yes
 				}
 			}
-			add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 20 producer = DED }
+			415 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 200 producer = DED }
 			hidden_effect = {
 				set_rule = {
 					can_use_kamikaze_pilots = yes
@@ -1479,7 +1607,9 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DED_Spooky_Factory"
+			unlock_decision_category_tooltip = DED_exponential_necromancy
 			swap_ideas = { remove_idea = DED_Soc_Bone_Idea15 add_idea = DED_Soc_Bone_Idea16 }
+			
 		}
 
 	}
