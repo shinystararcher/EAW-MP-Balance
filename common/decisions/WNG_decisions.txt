@@ -30,7 +30,7 @@ form_WNG_workers_empire_category = {
 				controls_state = 370
 				controls_state = 375
 				controls_state = 534
-			}
+			}#BALANCE_MOD, Does not need to control Countries
 		}
 
 		complete_effect = {
