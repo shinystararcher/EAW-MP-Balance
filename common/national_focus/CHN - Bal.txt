@@ -176,9 +176,9 @@ focus_tree = {
 			focus = thoraxian_betrayal
 			focus = destroy_thoraxian_opposition
 		}
-		available = {
-			has_war = no
-		}
+		#available = {
+		#	has_war = no
+		#}
 		x = 8
 		y = 4
 
@@ -198,9 +198,9 @@ focus_tree = {
 		prerequisite = {
 			focus = hive_funding
 		}
-		available = {
-			has_war = no
-		}
+		#available = {
+		#	has_war = no
+		#}
 		ai_will_do = { factor = 300 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus industrial_research"
@@ -254,10 +254,10 @@ focus_tree = {
 		prerequisite = {
 			focus = hive_funding
 		}
-		available = {
-			has_war = no
-			309 = { is_owned_and_controlled_by = ROOT }
-		}
+		#available = {
+		#	has_war = no
+		#	309 = { is_owned_and_controlled_by = ROOT }
+		#}
 		x = 6
 		y = 6
 		ai_will_do = { factor = 250 }
@@ -390,7 +390,7 @@ focus_tree = {
 	focus = {
 		id = CHN_develop_vesalipolis
 		icon = GFX_goal_chn_vesalipolis
-		cost = 9.00
+		cost = 5.00
 		prerequisite = {
 			focus = industrial_research
 		}
@@ -433,7 +433,7 @@ focus_tree = {
 	focus = {
 		id = CHN_develop_ditrysium
 		icon = GFX_goal_chn_hive_dockyards
-		cost = 9.00
+		cost = 5.00
 		prerequisite = {
 			focus = CHN_develop_vesalipolis
 		}
@@ -475,7 +475,7 @@ focus_tree = {
 	focus = {
 		id = CHN_develop_vraks
 		icon = GFX_goal_chn_industry_of_hives
-		cost = 9.00
+		cost = 5.00
 		prerequisite = {
 			focus = CHN_develop_vesalipolis
 		}
@@ -523,7 +523,7 @@ focus_tree = {
 	focus = {
 		id = Expansion_of_newhives
 		icon = GFX_goal_chn_city_hives
-		cost = 8.00
+		cost = 5.00
 		prerequisite = {
 			focus = CHN_develop_vraks
 			focus = CHN_develop_ditrysium
@@ -579,7 +579,7 @@ focus_tree = {
 	focus = {
 		id = technology_centre
 		icon = GFX_goal_chn_research
-		cost = 9
+		cost = 5
 		prerequisite = {
 			focus = Expansion_of_newhives
 		}
@@ -2320,7 +2320,7 @@ focus_tree = {
 				name = tank_research
 				bonus = 1.0
 				uses = 1
-				category = cat_medium_armor
+				technology = basic_medium_tank
 				ahead_reduction = 2
 			}
 		}
@@ -2350,7 +2350,7 @@ focus_tree = {
 				name = tank_research
 				bonus = 1.0
 				uses = 1
-				category = cat_medium_armor
+				technology = improved_medium_tank
 				ahead_reduction = 2
 			}
 			add_tech_bonus = {
