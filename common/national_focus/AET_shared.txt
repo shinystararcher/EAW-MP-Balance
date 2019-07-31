@@ -1,14 +1,14 @@
 shared_focus = {
 	id = AET_anarchy
 	icon = GFX_goal_generic_demand_territory
-	cost = 10.00
+	cost = 7.00
 	#prerequisite = { focus = AET_start_focus }
 	mutually_exclusive = { focus = AET_realpolitik }
 	mutually_exclusive = { focus = AET_archonate_help }
 	x = 8
 	y = 0
 	ai_will_do = {
-		factor = 100
+		factor = 10
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_anarchy"
@@ -20,7 +20,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_attack_falcon
 	icon = GFX_goal_generic_fortify_city
-	cost = 5.00
+	cost = 7.00
 	prerequisite = { focus = AET_anarchy }
 	x = 7
 	y = 1
@@ -74,7 +74,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_camps_in_the_woods
 	icon = GFX_goal_generic_war_with_comintern
-	cost = 5.00
+	cost = 7.00
 	prerequisite = { focus = AET_anarchy }
 	x = 9
 	y = 1
@@ -140,7 +140,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_free_territory_established
 	icon = GFX_focus_generic_support_the_left_right_claw
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_partisans_expanded }
 	prerequisite = { focus = AET_purge }
 	x = 8
@@ -170,7 +170,7 @@ shared_focus = {
 	icon = GFX_goal_syndicalist_industry
 	x = 6
 	y = 4
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_free_territory_established }
 	ai_will_do = {
 		factor = 100
@@ -249,7 +249,7 @@ shared_focus = {
 	prerequisite = { focus = AET_black_army_formation }
 	x = 7
 	y = 5
-	cost = 10.00
+	cost = 7.00
 	ai_will_do = { factor = 100 }
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_anarch_infta"
@@ -326,7 +326,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_peasant_land
 	icon = GFX_goal_HOL_council_communism
-	cost = 10.00
+	cost = 7.00
 	prerequisite = {
 		focus = AET_free_territory_established
 	}
@@ -351,7 +351,7 @@ shared_focus = {
 	icon = GFX_goal_commune_politics
 	x = 9
 	y = 5
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_peasant_land }
 	prerequisite = { focus = AET_black_army_formation }
 	ai_will_do = {
@@ -422,7 +422,7 @@ shared_focus = {
 	id = AET_expand_AVI
 	icon = GFX_goal_anschluss
 	prerequisite = { focus = AET_liberate_AVI }
-	cost = 5.00
+	cost = 7.00
 	available = {
 		AVI = {
 			OR = {
@@ -466,7 +466,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_spread_anarchy
 	icon = GFX_focus_generic_strike_at_democracy2
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_redistribute_wealth }
 	x = 8
 	y = 11
@@ -485,7 +485,7 @@ shared_focus = {
 	icon = GFX_goal_generic_soviet_construction
 	x = 7
 	y = 10
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_redistribute_wealth }
 	ai_will_do = {
 		factor = 100
@@ -562,7 +562,7 @@ shared_focus = {
 	prerequisite = { focus = AET_redistribute_wealth }
 	x = 9
 	y = 10
-	cost = 10.00
+	cost = 7.00
 	ai_will_do = { factor = 100 }
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_expand_school_system"
@@ -600,7 +600,7 @@ shared_focus = {
 	id = AET_expand_POM
 	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = AET_liberate_POM }
-	cost = 5.00
+	cost = 7.00
 	available = {
 		POM = {
 			OR = {
@@ -651,7 +651,7 @@ shared_focus = {
 	id = AET_expand_FLO
 	icon = GFX_goal_generic_political_pressure
 	prerequisite = { focus = AET_liberate_FLO }
-	cost = 5.00
+	cost = 7.00
 	available = {
 		FLO = {
 			OR = {
@@ -676,7 +676,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_black_army_formation
 	icon = GFX_goal_HOL_military_union
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_free_territory_established }
 	x = 8
 	y = 4
@@ -686,7 +686,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_black_army_formation"
 		add_ideas = AET_black_army
-		add_manpower = 10000
+		add_manpower = 25000
 	}
 }
 
@@ -702,7 +702,7 @@ shared_focus = {
 	x = 17
 	y = 0
 	ai_will_do = {
-		factor = 100
+		factor = 40
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_realpolitik"
@@ -717,11 +717,11 @@ shared_focus = {
 	prerequisite = { focus = AET_realpolitik }
 	mutually_exclusive = { focus = AET_align_imperial }
 	mutually_exclusive = { focus = AET_align_aquileia }
-	cost = 5.00
+	cost = 7.00
 	x = 17
 	y = 1
 	ai_will_do = {
-		factor = 100
+		factor = 50
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_complete_neutrality"
@@ -734,7 +734,7 @@ shared_focus = {
 	id = AET_appease_both
 	icon = GFX_goal_generic_dangerous_deal
 	prerequisite = { focus = AET_complete_neutrality }
-	cost = 10.00
+	cost = 7.00
 	x = 17
 	y = 2
 	ai_will_do = {
@@ -763,7 +763,7 @@ shared_focus = {
 	icon = GFX_focus_generic_self_management
 	prerequisite = { focus = AET_appease_both }
 	prerequisite = { focus = AET_aquileian_industry focus = AET_imperial_industry }
-	cost = 10.00
+	cost = 7.00
 	x = 17
 	y = 4
 	ai_will_do = {
@@ -807,7 +807,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_imperial_politics
 	icon = GFX_goal_government_icon
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_align_imperial }
 	bypass = { event_target:griffonian_empire = { exists = no } }
 	x = 19
@@ -840,7 +840,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_imperial_arms
 	icon = GFX_goal_generic_military_sphere
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_align_imperial }
 	bypass = { event_target:griffonian_empire = { exists = no } }
 	x = 21
@@ -875,7 +875,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_imperial_adivosrs
 	icon = GFX_goal_generic_cavalry
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_imperial_arms }
 	available = { NOT = { has_idea = AET_military_advisors_JER } }
 	bypass = { event_target:griffonian_empire = { exists = no } }
@@ -909,7 +909,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_imperial_industry
 	icon = GFX_goal_generic_production2
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_imperial_politics focus = AET_appease_both }
 	bypass = { event_target:griffonian_empire = { exists = no } }
 	x = 19
@@ -933,7 +933,7 @@ shared_focus = {
 	icon = GFX_goal_generic_construct_civilian
 	prerequisite = { focus = AET_imperial_industry }
 	available = { OR = { NOT = { has_completed_focus = AET_complete_neutrality has_completed_focus = AET_aquileian_economic_help } } }
-	cost = 10.00
+	cost = 7.00
 	x = 20
 	y = 4
 	ai_will_do = {
@@ -952,7 +952,7 @@ shared_focus = {
 	icon = GFX_goal_generic_construct_civ_factory
 	x = 21
 	y = 5
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_imperial_economic_help }
 	ai_will_do = {
 		factor = 100
@@ -1023,7 +1023,7 @@ shared_focus = {
 	icon = GFX_goal_generic_fortify_city
 	x = 20
 	y = 6
-	cost = 10
+	cost = 7
 	ai_will_do = {
 		factor = 80
 	}
@@ -1151,7 +1151,7 @@ shared_focus = {
 	x = 14
 	y = 1
 	ai_will_do = {
-		factor = 100
+		factor = 90
 		modifier = {
 			factor = 0
 			is_historical_focus_on = yes
@@ -1171,7 +1171,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_aquileian_arms
 	icon = GFX_goal_generic_military_sphere
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_align_aquileia }
 	bypass = { JER = { exists = no } }
 	x = 13
@@ -1206,7 +1206,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_aquileian_adivosrs
 	icon = GFX_goal_generic_army_doctrines
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_aquileian_arms }
 	available = { NOT = { has_idea = AET_military_advisors_GRI } }
 	bypass = { JER = { exists = no } }
@@ -1240,7 +1240,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_aquileian_politics
 	icon = GFX_goal_government_icon
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_align_aquileia }
 	bypass = { JER = { exists = no } }
 	x = 15
@@ -1273,7 +1273,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_aquileian_industry
 	icon = GFX_goal_generic_production2
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_aquileian_politics focus = AET_appease_both }
 	bypass = { JER = { exists = no } }
 	x = 15
@@ -1297,11 +1297,11 @@ shared_focus = {
 	icon = GFX_goal_generic_intelligence_exchange
 	prerequisite = { focus = AET_aquileian_industry }
 	available = { OR = { NOT = { has_completed_focus = AET_complete_neutrality has_completed_focus = AET_imperial_economic_help } } }
-	cost = 10.00
+	cost = 7.00
 	x = 14
 	y = 4
 	ai_will_do = {
-		factor = 100
+		factor = 70
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_aquileian_economic_help"
@@ -1316,7 +1316,7 @@ shared_focus = {
 	icon = GFX_goal_generic_construct_mil_factory
 	x = 13
 	y = 5
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_aquileian_economic_help }
 	ai_will_do = {
 		factor = 100
@@ -1386,7 +1386,7 @@ shared_focus = {
 	icon = GFX_goal_generic_fortify_city
 	x = 14
 	y = 6
-	cost = 10
+	cost = 7
 	ai_will_do = {
 		factor = 80
 	}
@@ -1524,7 +1524,7 @@ shared_focus = {
 	id = AET_coqnuer_HEL
 	icon = GFX_goal_generic_more_territorial_claims
 	prerequisite = { focus = AET_aquileian_guarantee focus = AET_imperial_guarantee }
-	cost = 5.00
+	cost = 7.00
 	bypass = {
 		HEL = {
 			OR = {
@@ -1551,7 +1551,7 @@ shared_focus = {
 	icon = GFX_goal_generic_attack_allies
 	x = 18
 	y = 7
-	cost = 8.00
+	cost = 7.00
 	available = {
 		HEL = {
 			OR = {
@@ -1575,7 +1575,7 @@ shared_focus = {
 	icon = GFX_goal_generic_construct_civ_factory
 	x = 16
 	y = 7
-	cost = 10.00
+	cost = 7.00
 	available = {
 		HEL = {
 			OR = {
@@ -1659,7 +1659,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_new_country
 	icon = GFX_goal_griffon_harmony_char
-	cost = 10.00
+	cost = 7.00
 	prerequisite = {
 		focus = AET_develop_country
 	}
@@ -1681,7 +1681,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_new_army
 	icon = GFX_goal_generic_small_arms
-	cost = 10.00
+	cost = 7.00
 	prerequisite = {
 		focus = AET_new_country
 	}
@@ -1703,7 +1703,7 @@ shared_focus = {
 	prerequisite = { focus = AET_new_army }
 	x = 15
 	y = 10
-	cost = 10.00
+	cost = 7.00
 	ai_will_do = { factor = 100 }
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_expand_armouries"
@@ -1747,7 +1747,7 @@ shared_focus = {
 	prerequisite = { focus = AET_new_country }
 	x = 18
 	y = 9
-	cost = 10.00
+	cost = 7.00
 	ai_will_do = { factor = 100 }
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_new_science"
@@ -1761,7 +1761,7 @@ shared_focus = {
 	prerequisite = { focus = AET_new_science }
 	x = 19
 	y = 10
-	cost = 10.00
+	cost = 7.00
 	ai_will_do = { factor = 100 }
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_invite_scientists"
@@ -1775,7 +1775,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_land_reform
 	icon = GFX_goal_generic_position_armies
-	cost = 8.00
+	cost = 7.00
 	prerequisite = {
 		focus = AET_new_country
 	}
@@ -1802,7 +1802,7 @@ shared_focus = {
 	icon = GFX_goal_generic_construct_civ_factory
 	x = 18
 	y = 11
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_land_reform }
 	ai_will_do = {
 		factor = 100
@@ -1875,7 +1875,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_immigration_act
 	icon = GFX_goal_GRF_immigration
-	cost = 10.00
+	cost = 7.00
 	ai_will_do = { factor = 100 }
 	prerequisite = { focus = AET_land_reform }
 	x = 16
@@ -1892,7 +1892,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_archonate_help
 	icon = GFX_focus_generic_diplomatic_treaty
-	cost = 10.00
+	cost = 7.00
 	#prerequisite = { focus = AET_start_focus }
 	mutually_exclusive = { focus = AET_realpolitik }
 	mutually_exclusive = { focus = AET_anarchy }
@@ -1912,14 +1912,14 @@ shared_focus = {
 shared_focus = {
 	id = AET_knighly_order
 	icon = GFX_goal_griffon_knights
-	cost = 10.00
+	cost = 7.00
 	ai_will_do = { factor = 100 }
 	prerequisite = { focus = AET_archonate_help }
 	x = 25
 	y = 1
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_knighly_order"
-		add_manpower = 5000
+		add_manpower = 10000
 		add_tech_bonus = {
 			name = knights_tech
 			bonus = 1.0
@@ -1937,7 +1937,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_paramilitaries
 	icon = GFX_focus_generic_strike_at_democracy1
-	cost = 10.00
+	cost = 7.00
 	ai_will_do = { factor = 100 }
 	prerequisite = { focus = AET_knighly_order }
 	x = 25
@@ -1947,6 +1947,9 @@ shared_focus = {
 		add_popularity = { ideology = fascism popularity = 0.05 }
 		add_manpower = 10000
 		add_ideas = AET_militias
+		hidden_effect = {
+			load_oob = "AET_greifwaldian_knights"
+		}
 	}
 }
 
@@ -1954,7 +1957,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_church_help
 	icon = GFX_focus_generic_concessions
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_archonate_help }
 	x = 27
 	y = 1
@@ -2007,7 +2010,7 @@ shared_focus = {
 	icon = GFX_focus_generic_self_management
 	x = 27
 	y = 2
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_church_help }
 	ai_will_do = {
 		factor = 100
@@ -2053,7 +2056,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_church_coup
 	icon = GFX_goal_national_populism
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_church_jobs }
 	prerequisite = { focus = AET_paramilitaries }
 	x = 26
@@ -2080,7 +2083,7 @@ shared_focus = {
 	icon = GFX_goal_generic_construct_civ_factory
 	x = 24
 	y = 4
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_church_coup }
 	ai_will_do = {
 		factor = 100
@@ -2155,7 +2158,7 @@ shared_focus = {
 	icon = GFX_goal_generic_construct_mil_factory
 	x = 25
 	y = 5
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_church_industry }
 	prerequisite = { focus = AET_paramilitaries_2 }
 	ai_will_do = {
@@ -2230,7 +2233,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_language
 	icon = GFX_goal_griffon_books
-	cost = 10.00
+	cost = 7.00
 	ai_will_do = { factor = 100 }
 	prerequisite = { focus = AET_church_coup }
 	x = 28
@@ -2249,7 +2252,7 @@ shared_focus = {
 	prerequisite = { focus = AET_paramilitaries_2 }
 	x = 27
 	y = 5
-	cost = 10.00
+	cost = 7.00
 	ai_will_do = { factor = 100 }
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_church_research"
@@ -2260,7 +2263,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_paramilitaries_2
 	icon = GFX_focus_generic_little_entente
-	cost = 10.00
+	cost = 7.00
 	ai_will_do = { factor = 100 }
 	prerequisite = { focus = AET_church_coup }
 	x = 26
@@ -2269,6 +2272,9 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_paramilitaries_2"
 		add_popularity = { ideology = fascism popularity = 0.05 }
 		swap_ideas = { remove_idea = AET_militias add_idea = AET_militias_2 }
+		hidden_effect = {
+			load_oob = "AET_greifwaldian_knights"
+		}	
 	}
 }
 
@@ -2302,7 +2308,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_fatherland_calls
 	icon = GFX_goal_generic_forceful_treaty
-	cost = 5.00
+	cost = 7.00
 	prerequisite = { focus = AET_destroy_HEL }
 	mutually_exclusive = { focus = AET_madness_calls }
 	available = {
@@ -2343,7 +2349,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_madness_calls
 	icon = GFX_goal_generic_secret_weapon
-	cost = 5.00
+	cost = 7.00
 	prerequisite = { focus = AET_destroy_HEL }
 	mutually_exclusive = { focus = AET_fatherland_calls }
 	available = {
@@ -2353,17 +2359,19 @@ shared_focus = {
 				is_subject_of = ROOT
 			}
 		}
-		event_target:griffonian_empire = { exists = yes }
 		if = {
 			limit = { has_completed_focus = AET_destroy_HEL }
 			has_country_leader = { ruling_only = yes name = "Prelate Ludwig Ebonwing" }
+		}
+		else = {
+			event_target:griffonian_empire = { exists = yes }
 		}
 	}
 	x = 27
 	y = 7
 	dynamic = yes
 	ai_will_do = {
-		factor = 30
+		factor = 3
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_madness_calls"
@@ -2681,7 +2689,7 @@ shared_focus = {
 	icon = GFX_goal_generic_construct_civ_factory
 	x = 26
 	y = 13
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_imperium_of_maar }
 	ai_will_do = {
 		factor = 100
@@ -2756,7 +2764,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_possessed_tanks
 	icon = GFX_goal_generic_army_tanks
-	cost = 8.00
+	cost = 7.00
 	prerequisite = { focus = AET_enslave }
 	x = 25
 	y = 14
@@ -2803,7 +2811,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_dark_mechanicus
 	icon = GFX_goal_generic_production2
-	cost = 8.00
+	cost = 7.00
 	prerequisite = { focus = AET_possessed_tanks }
 	x = 25
 	y = 15
@@ -2830,7 +2838,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_will_of_maar
 	icon = GFX_goal_demand_sudetenland
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_imperium_of_maar }
 	x = 28
 	y = 13
@@ -2847,7 +2855,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_visions_of_madness
 	icon = GFX_goal_generic_secret_weapon
-	cost = 8.00
+	cost = 7.00
 	prerequisite = { focus = AET_will_of_maar }
 	x = 29
 	y = 14
@@ -2866,7 +2874,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_corrupt_the_weak
 	icon = GFX_goal_supremacy_of_will
-	cost = 8.00
+	cost = 7.00
 	prerequisite = { focus = AET_visions_of_madness }
 	x = 29
 	y = 15
@@ -2883,7 +2891,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_warriors_of_maar
 	icon = GFX_goal_maars_favor
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_imperium_of_maar }
 	x = 27
 	y = 14
@@ -2921,7 +2929,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_daemons_of_maar
 	icon = GFX_goal_maar_blood
-	cost = 8.00
+	cost = 7.00
 	prerequisite = { focus = AET_warriors_of_maar }
 	x = 27
 	y = 15
@@ -2960,7 +2968,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_aether_travel
 	icon = GFX_goal_ideology_national_populist
-	cost = 8.00
+	cost = 7.00
 	prerequisite = { focus = AET_warriors_of_maar }
 	x = 26
 	y = 16
@@ -2982,7 +2990,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_hellfire_forge
 	icon = GFX_goal_forced_inf
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_dark_mechanicus }
 	prerequisite = { focus = AET_aether_travel }
 	x = 25
@@ -3005,7 +3013,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_raise_dead
 	icon = GFX_goal_skull_treaty
-	cost = 8.00
+	cost = 7.00
 	prerequisite = { focus = AET_warriors_of_maar }
 	x = 28
 	y = 16
@@ -3021,7 +3029,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_pave_the_path
 	icon = GFX_goal_graveyard
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_raise_dead }
 	prerequisite = { focus = AET_corrupt_the_weak }
 	x = 29
@@ -3040,9 +3048,9 @@ shared_focus = {
 shared_focus = {
 	id = AET_industrial_1
 	icon = GFX_goal_generic_production2
-	cost = 10.00
+	cost = 7.00
 	ai_will_do = {
-		factor = 100
+		factor = 50
 	}
 	x = 34
 	y = 0
@@ -3064,7 +3072,7 @@ shared_focus = {
 	prerequisite = { focus = AET_industrial_1 }
 	x = 34
 	y = 1
-	cost = 10.00
+	cost = 7.00
 	ai_will_do = { factor = 100 }
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_infra_development"
@@ -3124,7 +3132,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_oil
 	icon = GFX_goal_GRF_northern_oil
-	cost = 10.00
+	cost = 7.00
 	available = { owns_state = 493 owns_state = 494 }
 	prerequisite = {
 		focus = AET_infra_development
@@ -3150,7 +3158,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_oil_refineries
 	icon = GFX_goal_generic_oil_refinery
-	cost = 10.00
+	cost = 7.00
 	available = { owns_state = 494 }
 	prerequisite = {
 		focus = AET_oil
@@ -3185,7 +3193,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_oil_p
 	icon = GFX_goal_generic_consumer_goods
-	cost = 10.00
+	cost = 7.00
 	available = { owns_state = 493 owns_state = 494 }
 	prerequisite = {
 		focus = AET_oil_refineries
@@ -3237,7 +3245,7 @@ shared_focus = {
 	x = 33
 	y = 2
 	prerequisite = { focus = AET_infra_development }
-	cost = 10.00
+	cost = 7.00
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_steel_and_tungsten"
 		add_resource = {
@@ -3256,7 +3264,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_steel_road
 	icon = GFX_goal_generic_construct_infrastructure
-	cost = 10.00
+	cost = 7.00
 	ai_will_do = { factor = 100 }
 	prerequisite = {
 		focus = AET_steel_and_tungsten
@@ -3289,7 +3297,7 @@ shared_focus = {
 	x = 31
 	y = 4
 	prerequisite = { focus = AET_steel_road }
-	cost = 10.00
+	cost = 7.00
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_more_steel"
 		add_resource = {
@@ -3303,7 +3311,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_radio_f
 	icon = GFX_goal_generic_radar
-	cost = 10.00
+	cost = 7.00
 	prerequisite = {
 		focus = AET_steel_and_tungsten
 		focus = AET_oil
@@ -3327,7 +3335,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_mechainsed_agriculture
 	icon = GFX_goal_agrarian_reform
-	cost = 10.00
+	cost = 7.00
 	prerequisite = {
 		focus = AET_radio_f
 	}
@@ -3348,7 +3356,7 @@ shared_focus = {
 	icon = GFX_goal_generic_construct_civ_factory
 	x = 35
 	y = 4
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_radio_f }
 	ai_will_do = {
 		factor = 100
@@ -3391,7 +3399,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_arms_building
 	icon = GFX_goal_national_arsenal
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_more_steel }
 	prerequisite = { focus = AET_mechainsed_agriculture }
 	x = 32
@@ -3439,7 +3447,7 @@ shared_focus = {
 	icon = GFX_goal_generic_construct_civilian
 	x = 34
 	y = 6
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = AET_arms_building }
 	prerequisite = { focus = AET_industrial_2 }
 	available = {
@@ -3462,7 +3470,7 @@ shared_focus = {
 shared_focus = {
 	id = AET_army_1
 	icon = GFX_goal_generic_axis_build_infantry
-	ai_will_do = { factor = 100 }
+	ai_will_do = { factor = 1 }
 	cost = 5.00
 	x = 42
 	y = 0
