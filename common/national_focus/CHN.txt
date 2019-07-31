@@ -176,9 +176,9 @@ focus_tree = {
 			focus = thoraxian_betrayal
 			focus = destroy_thoraxian_opposition
 		}
-		available = {
-			has_war = no
-		}
+		#available = {#BALANCE
+		#	has_war = no
+		#}
 		x = 8
 		y = 4
 
@@ -198,9 +198,9 @@ focus_tree = {
 		prerequisite = {
 			focus = hive_funding
 		}
-		available = {
-			has_war = no
-		}
+		#available = {#Balance
+		#	has_war = no
+		#}
 		ai_will_do = { factor = 300 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus industrial_research"
@@ -254,8 +254,8 @@ focus_tree = {
 		prerequisite = {
 			focus = hive_funding
 		}
-		available = {
-			has_war = no
+		#available = {#Balance
+		#	has_war = no
 			309 = { is_owned_and_controlled_by = ROOT }
 		}
 		x = 6
@@ -1123,11 +1123,27 @@ focus_tree = {
 			}
 			if = {
 				limit = { country_exists = SCS NOT = { has_war_with = SCS } }
-				country_event = { id = changelings.11 days = 2 }
+				create_wargoal = {
+					target = SCS type = annex_everything
+				}
 			}
 			if = {
 				limit = { country_exists = BAL NOT = { has_war_with = BAL } }
-				country_event = { id = changelings.12 days = 2 }
+				create_wargoal = {
+					target = BAL type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = CES NOT = { has_war_with = CES } }
+				create_wargoal = {
+					target = CES type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = NMS NOT = { has_war_with = NMS } }
+				create_wargoal = {
+					target = NMS type = annex_everything
+				}
 			}
 		}
 
@@ -2927,6 +2943,7 @@ focus_tree = {
 		bypass = {
 			PLB = {
 				OR = {
+					has_country_flag = PLB_deal_CHN
 					exists = no
 					is_subject_of = ROOT
 					has_war_with = ROOT
@@ -2968,6 +2985,7 @@ focus_tree = {
 		bypass = {
 			PLB = {
 				OR = {
+					has_country_flag = PLB_deal_CHN
 					exists = no
 					is_subject_of = ROOT
 					has_war_with = ROOT
