@@ -1,0 +1,245 @@
+Link to mod https://steamcommunity.com/sharedfiles/filedetails/?id=1713746266&searchtext=z-EAW
+Changelog 1.0 Summary
+
+GENERAL
+
+Equestria
+
+CHN
+Reduced Focus Times
+Illicit Investments to 49 days(was 70)
+Vesalipolis to 35 days(was 70)
+Ditrysium to 35 days(was 70)
+Vraks to 35 days(was 70)
+Expansion of New Hives to 56 days(was 70)
+Technological Center to 35 days(was 70)
+
+Officer Academy to 35 days(was 70)
+Revitalise the military to 56 days(was 63)
+Both Infantry Equipment to 63 days(was 70)
+RCAMICD to 56 days(was 70)
+
+Total Reduction
+693 - 567 = 126
+
+Added 50 000 ponybower to Pressure olenia
+Added change economy law to war economy to "peaceful integration of olenia" and "conquest of olenia" focuses
+Added 2 years ahead of time reduction for medium tanks to Panzer Modernisation
+Added 2 years ahead of time reduction for medium tanks to Continued Panzer Modernisation
+Removed 2 years ahead of time reduction for light tanks from Continued Panzer Modernisation
+
+Lead the armies doesn’t war nightmare moon or sombra
+
+Thorax
+Commented out peace requirements for focuses
+
+EQS
+Changed Luna Event Chain to be 100% chance to avoid war if Luna Resists and 100% chance for war if Luna chooses to become nightmare moon
+(aggressive options in the events still have the normal chance to trigger war early)
+
+
+Jungle
+Added 1 mil factory to lost in jungle
+
+
+NOVA
+Teafeather now dies in 1008
+Reduced time for economic and political focuses by half. 
+Removed at peace requirements
+Changed negative political power focuses to positive ones(removed the negative)
+
+Stalliongrad
+Big discounts to most 70 day focuses, from 70 to 35 days. Should allow Stalliongrad around 6-8 more focuses by 1011
+Integrates Nova Griffonia if Socialist Union Formed
+Can form socialist union if Manehattan is occupied and gets cores on much of Eastern Equestria
+
+Equestrian socialist union does not require peace or control of crystal city
+Changelings are now a core of the Equestrian Socialist union
+
+Griffonia
+
+Aquilea
+Added cores on wingbardy to end of political tree
+
+Arcturian Order
+50% discount to most focuses except the ones leading up to shield of faith
+
+Blackrock’s Bandits
+Decisions cost much less loot
+Mercenaries are cheaper and last longer
+All political parties can deal drugs and trade on the black market
+Pony Power Rewards are 5000 ponies higher
+3000 more guns can be bought on the market
+Forced Labour is cheaper and lasts longer
+
+Raiding is cheaper and has 60 days less of a cooldown period
+Tributary can now be demanded of everyone, non-facist blackrock can also demand
+Negative Political power events now give positive political power
+
+Lawless land dosn’t cost political power per day
+Blackrock’s army gets 5% additional bonus to attack, defence and speed
+Blackrock Advisors don’t require facism
+Doing Bandity, illegal things doesn’t require facism
+
+Brodfield
+Reduced Civil war recruitment focuses to 10 days
+Added 9 additional milita units to recruitment focuses
+Removed several days from the secret path
+
+Dread League
+Extra Generals are 90% off. 
+50% discount to all focuses
+1 million free infantry weapons 1 to finis novem 
+Added many free generals to army of dread
+200 pp at start and 150 to offset other council leaving
+Bones gets free fighters
+Many more decisions for both sides for industry buffs
+Equalized bones and blood factories
+Many Industry
+
+Feathesia
+Made it possible for them to succeed the empire even if harmonic or communist
+Focuses above 56 days cut to 35 days, most others left as they were,
+Equaled the amount of factories between the different political paths, 
+Massively reduced time for the "Duke" path
+
+Griffonian Empire
+~Most Political Focuses decreased to 42 days.
+
+No longer requires control over Romau for the Romau Proclamation
+
+Griff Repub
+Focus costs now 67% of original.(35 days from 56) Should make it possible to complete a lot of political tree by 1011
+
+Hellquil
+Added conquer wargoal against longsword
+
+New Mareland
+Removed at war requirements on national mobilization
+Shortened focus times for military
+Education program focus time to 70 days from 140
+
+Prywhen
+Reduced focus times for Important Focuses
+Reduced Militia to 7 days(was 28)
+Melt spoons to make rifles to 14 days(was 35)
+Rifles of a new millennium to 14 days(was 35) 
+Industrial revolution to 70 days(was 77)
+Defence industry to 63 days(was 84)
+Steel works to 56 days(was 63)
+Demand Salt Markt to 56 days (was 63)
+Infiltrate Lushi/Griffonian Host/Gryphus to 49 days(was 70)
+Fate of  Lushi/Griffonian Host/Gryphus to 49 days(was 70)
+Northern Pressure(Pressure e(y)rie and angrivier) to 35 days(was 70)
+Lissay Region Pressure(Pressure avian, pomovarra, flowena, adelart and griefenheim) to 35 days(was 70)
+Unite the Rest to 35 days(was 70)
+
+Time saved
+1033 - 693 = 340
+A year saved.
+
+Reduced post-Griffonian Empire conquering focuses from 5 years to 2
+Stabilise to 7 days(was 70)
+Issue State Propoganda to 21 days(was 70)
+Fight Post-War Stress to 7 days(was 70)
+City improvement to 35 days(was 98)
+Modern Architecture to 35 days(was 70)
+Socialist Construction to 63 days(was 70)
+Fight the counter revolution to 14 days(was 70)
+Shadow Police to 35 days(was 70)
+Nationalisation of Corporations to 35 days(was 70)
+Griffon-wide Nationalisation of Agriculture to 35 days (was 70)
+Crush the oligarchs to 14 days(was 70)
+Grow support to 7 days(was 70)
+Military youth to 35 days(was 70)
+Militarised schools to 49 days(was 70)
+Family Care to 14 days(was 70)
+Free Healthcare to 35 days(was 70)
+One Culture to 14 days(was 70)
+Standardised language to 14 days(was 70)
+All Griffons to read to 14 days(was 70)
+Statewide school campaigns to 14 days(was 70)
+Free Schooling to 35 days(was 70)
+Labour centers to 7 days(was 49)
+Minimal Wage to 7 days (was 49)
+
+Total time saved 
+1596(days) - 546(days) = 1050
+Prywhen rids itself of post war negatives in 1.5 years rather than 4.5
+
+Added 2 more civilian factories to Industrial Revolution
+Agricultural Rise now removes start of the famine in 30 days(was 480)
+Increased steel created by 'Steel Works' to 17(was 7)
+Our Foreign Policy now gives 150 political power(was 130) and enables decisions to increase society development
+Kings labs now gives 75 more political power and an extra research slot
+
+Vedina
+20%  discount on most focuses. Should make it possible to get an army out by 1010-1011
+100 more pp at end of princess builder
+Future tech focus bonus changed to inf weapons from armor
+Armor Focus gives bonus to anti tank as well as tank
+
+Romau
+Political paths greatly reduced times,
+Buffed pp, added more party support
+Added many research bonuses across the board
+Added many more focus factories
+Added more focus resources
+More stability
+More War support
+More free ponypower
+
+Skyfall
+Election events no longer random
+
+Wingbardy
+Swapped worker’s empire and strike at empire
+Removed land holding requirement for forming the worker’s empire. Still receives cores on, but does not need to occupy falcor, sicameon, talouse, franmistria and arantiga
+
+Shortened wingbardy economic focuses by 20%
+Increased focus
+
+Added cores on aquilea to wingbardian empire and strike at the empire.  
+
+Riverlands
+Reduced focus times on many focuses in the "Dreams of a Federation" 
+Dreams of a Federation to 56 days(was 70)
+Riv Science Society to 56 days(was 70)
+River Coal and Steel to 56 days(was 70)
+Develop deponia/ponaidhean to 35 days(was 70)
+Roads in deponia/ponaidhean to 35 days(was 70)
+Dev grants in deponia/ponaidhean to 35 days(was 70)
+Rdc rail projects to 56 days(was 70)
+Rdc industry projects to 56 days (was 70)
+Rdc investment funds to 56 days (was 70)
+Develop Firtree/Farbrook/Watertowns to 56 days(was 70)
+The river fed to 105 days(was 140)
+
+Increased focus times for "River Development Company" to 77 days(was 70)
+
+Total Day Reduction (126+210-7+35 = 364 days)
+Almost a year
+
+Removed peace requirement for:
+The River Union
+The River Army
+
+Lake City
+Shortened times on cult of the prince
+Moved deponian research slot up much earlier
+Deponia will always swear loyalty to lake city
+
+Wittenland
+Added more factories to enable the construction of tanks 
+Reduced 'Review the Wittenland Military from 63 days to 35 and added 2 free military factory
+Wittenland duel now much faster
+Removed peace requirements
+
+Increased magic research bonuses
+Increased electronic bonuses
+Rounded many bonuses to 100%
+Increased the armor bonus from "Royal Armor Research" to 2x 100% bonuses, 2 year ahead of time (Was 1x)
+Added 3 military factories to wittenland military tree finisher "new wittenland standing army"
+
+Wittenland tank ideas are much better
+
