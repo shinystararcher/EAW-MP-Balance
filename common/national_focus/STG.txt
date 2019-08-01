@@ -1191,13 +1191,6 @@ focus_tree = {
 					type = annex_everything target = CRY
 				}
 			}
-			
-				every_state = {
-				limit = {
-					is_core_of = CRY
-				}
-				add_core_of = STG
-			}
 		}
 	}
 	focus = {
