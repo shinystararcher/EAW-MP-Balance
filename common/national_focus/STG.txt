@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 20
+			add = 10
 			tag = STG
 		}
 	}
@@ -169,7 +169,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 0.22
+				bonus = 0.5
 				uses = 1
 				category = armor
 			}
@@ -273,7 +273,7 @@ focus_tree = {
 	focus = {
 		id = elections
 		icon = GFX_goal_elections
-		cost = 10
+		cost = 6
 		prerequisite = {
 			focus = purge
 		}
@@ -382,7 +382,7 @@ focus_tree = {
 	focus = {
 		id = sinister_leader
 		icon = GFX_goal_sinister_focus
-		cost = 5
+		cost = 10
 		x = 23
 		y = 0
 		mutually_exclusive = {
@@ -888,12 +888,12 @@ focus_tree = {
 		prerequisite = {
 			focus = griffon_colony
 		}
-		
-		
 		x = 13
 		y = 8
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus yak_yakistan"
+			country_event = {
+				id = stalliongrad.73 days = 2}
 			if = {
 				limit = { YAK = { exists = yes } }
 				create_wargoal = {
@@ -944,7 +944,6 @@ focus_tree = {
 		prerequisite = {
 			focus = griffon_colony
 		}
-		
 		x = 12
 		y = 7
 		completion_reward = {
@@ -953,6 +952,12 @@ focus_tree = {
 				limit = { GRF = { exists = yes } }
 				create_wargoal = {
 					type = annex_everything target = GRF
+				}
+			}
+			if = {
+				limit = { GFF = { exists = yes } }
+				create_wargoal = {
+					type = annex_everything target = GFF
 				}
 			}
 			
@@ -1135,17 +1140,19 @@ focus_tree = {
 				EQS = { exists = no }
 			}
 		}
+		available = {
+			EQS = {
+				has_government = communism
+				has_civil_war = yes
+			}
+		}
 		x = 7
 		y = 9
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus com_equestrian_civil_war"
-			if = {
-				limit = { EQS = { exists = yes } }
-				create_wargoal = {
-					type = annex_everything target = EQS
-				}
+			country_event = {
+				id = stalliongrad.54 days = 2
 			}
-			
 		}
 	}
 	focus = {
@@ -1179,17 +1186,24 @@ focus_tree = {
 		id = STG_crystal_empire_union ## union with cry
 		icon = GFX_goal_stg_cry
 		cost = 5
-		
+		available = {
+			CRY = {
+				has_government = communism
+				OR = {
+					is_subject = no
+					is_subject_of = ROOT
+				}
+			}
+			has_government = communism
+			is_subject = no
+		}
 		x = 21
 		y = 12
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus STG_crystal_empire_union"
 			add_political_power = 30
-			if = {
-				limit = { CRY = { exists = yes } }
-				create_wargoal = {
-					type = annex_everything target = CRY
-				}
+			country_event = {
+				id = stalliongrad.62 days = 1
 			}
 		}
 	}
@@ -1239,13 +1253,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus world_revolution"
 			add_ideas = world_revolution
-			if = {
-				limit = { CHN = { exists = yes } }
-				create_wargoal = {
-					type = annex_everything target = CHN
-				}
-			}
-			
 		}
 	}
 	focus = {
@@ -2002,18 +2009,22 @@ focus_tree = {
 	focus = {
 		id = strike_GRF
 		icon = GFX_goal_generic_consumer_goods
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = take_down_STL
-		}
-		bypass = {
-			GRF = { exists = no }
 		}
 		x = 30
 		y = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus strike_GRF"
 			country_event = { id = stalliongrad.76 days = 1 }
+			if = {
+				limit = { GFF = { exists = yes } }
+				create_wargoal = {
+					type = annex_everything target = GFF
+				}
+			}
+			
 		}
 	}
 	focus = {
@@ -2642,7 +2653,7 @@ focus_tree = {
 	#	focus = {
 		#		id = gray_pact
 		#		icon = GFX_goal_unknown
-		#		cost = 5
+		#		cost = 10
 		#		prerequisite = {
 			#			focus = prepare_for_the_crusade
 			#		}
@@ -2653,7 +2664,7 @@ focus_tree = {
 	focus = {
 		id = complete_electrification
 		icon = GFX_goal_stg_electricity
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = manifesto_of_materialism
 		}
@@ -2670,7 +2681,7 @@ focus_tree = {
 	focus = {
 		id = new_radar_technologies
 		icon = GFX_goal_stg_radio
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = manifesto_of_materialism
 		}

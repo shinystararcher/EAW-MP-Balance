@@ -17,7 +17,7 @@ focus_tree = {
 		icon = GFX_goal_constitutional_guarantees
 		x = 5
 		y = 0
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -64,7 +64,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_domestic_policy}
 		x = 3
 		y = 2
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -117,7 +117,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_factories}
 		x = 3
 		y = 3
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -160,7 +160,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_domestic_policy}
 		x = 5
 		y = 2
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -203,7 +203,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_science_update}
 		x = 5
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -239,7 +239,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_science_update2}
 		x = 4
 		y = 4
-		cost = 20
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -278,10 +278,10 @@ focus_tree = {
 		mutually_exclusive = {focus = FLO_trade_with_GRI}
 		x = 3
 		y = 5
-		cost = 6
+		cost = 5
 
 		ai_will_do = {
-			factor = 30
+			factor = 10
 		}
 
 		available = {
@@ -310,10 +310,10 @@ focus_tree = {
 		mutually_exclusive = {focus = FLO_trade_with_JER}
 		x = 5
 		y = 5
-		cost = 6
+		cost = 5
 
 		ai_will_do = {
-			factor = 30
+			factor = 100
 		}
 
 		available = {
@@ -339,7 +339,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_domestic_policy}
 		x = 1
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -363,7 +363,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_poverty1_f}
 		x = 1
 		y = 3
-		cost = 10
+		cost = 5
 		bypass = {
 			NOT = { has_poverty = yes }
 		}
@@ -390,7 +390,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_poverty2_f}
 		x = 1
 		y = 4
-		cost = 10
+		cost = 5
 		bypass = {
 			NOT = { has_poverty = yes }
 		}
@@ -416,7 +416,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_poverty3_f}
 		x = 1
 		y = 5
-		cost = 10
+		cost = 5
 		bypass = {
 			NOT = { has_poverty = yes }
 		}
@@ -445,7 +445,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 1
 		}
 
 		available_if_capitulated = yes
@@ -468,10 +468,10 @@ focus_tree = {
 		prerequisite = {focus = FLO_military_reforms}
 		x = 7
 		y = 2
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
 
 		available_if_capitulated = yes
@@ -495,7 +495,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_new_rifles}
 		x = 7
 		y = 3
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 0
@@ -522,7 +522,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_military_reforms}
 		x = 9
 		y = 2
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 0
@@ -569,7 +569,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_new_generals}
 		x = 9
 		y = 3
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 0
@@ -592,7 +592,7 @@ focus_tree = {
 		mutually_exclusive = {focus = FLO_armor_focus}
 		x = 11
 		y = 2
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -625,7 +625,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_infantry_focus}
 		x = 11
 		y = 3
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 0
@@ -648,7 +648,7 @@ focus_tree = {
 		mutually_exclusive = {focus = FLO_infantry_focus}
 		x = 13
 		y = 2
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -675,7 +675,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_armor_focus}
 		x = 13
 		y = 3
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -702,7 +702,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_new_artillery}
 		x = 10
 		y = 4
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -718,12 +718,7 @@ focus_tree = {
 				name = special_forces_bonus
 				bonus = 1.0
 				uses = 2
-				technology = paratroopers
-				technology = paratroopers2
-				technology = marines
-				technology = marines2
-				technology = tech_mountaineers
-				technology = tech_mountaineers2
+				category = special_forces_tech
 			}
 		}
 	}
@@ -734,7 +729,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_special_force}
 		x = 9
 		y = 5
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -763,7 +758,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_special_force}
 		x = 11
 		y = 5
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -843,7 +838,7 @@ focus_tree = {
 		mutually_exclusive = {focus = FLO_artisans_strike}
 		x = 17
 		y = 2
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1000
@@ -867,7 +862,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_brother}
 		x = 17
 		y = 3
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -896,7 +891,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_preparation_coup}
 		x = 17
 		y = 4
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -928,7 +923,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_social_reforms}
 		x = 17
 		y = 5
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -964,7 +959,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_restore_city}
 		x = 17
 		y = 6
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -988,7 +983,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_family_archive}
 		x = 17
 		y = 7
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1018,7 +1013,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_buy_earth}
 		x = 17
 		y = 8
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1048,7 +1043,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_skyfall}
 		x = 17
 		y = 9
-		cost = 20
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1074,10 +1069,10 @@ focus_tree = {
 		mutually_exclusive = {focus = FLO_create_alliance}
 		x = 18
 		y = 10
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 70
 		}
 
 		available_if_capitulated = yes
@@ -1105,7 +1100,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_and_empire}
 		x = 18
 		y = 11
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1136,7 +1131,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_empire_lords}
 		x = 18
 		y = 12
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1167,7 +1162,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_empire_weapon}
 		x = 18
 		y = 13
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -1202,7 +1197,7 @@ focus_tree = {
 		mutually_exclusive = {focus = FLO_create_alliance}
 		x = 16
 		y = 10
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1224,7 +1219,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_my_line}
 		x = 16
 		y = 11
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1246,7 +1241,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_new_quartals}
 		x = 16
 		y = 12
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1280,7 +1275,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_new_work}
 		x = 16
 		y = 13
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1309,7 +1304,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_road_problem}
 		x = 16
 		y = 14
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1335,7 +1330,7 @@ focus_tree = {
 		mutually_exclusive = {focus = FLO_create_alliance}
 		x = 14
 		y = 10
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1366,7 +1361,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_JER_garanted}
 		x = 14
 		y = 11
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1397,7 +1392,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_JER_mission}
 		x = 14
 		y = 12
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1440,7 +1435,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_JER_trade}
 		x = 14
 		y = 13
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1471,7 +1466,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_JER_weapon}
 		x = 14
 		y = 14
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -1506,7 +1501,7 @@ focus_tree = {
 		mutually_exclusive = {focus = FLO_my_line}
 		x = 12
 		y = 10
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1538,7 +1533,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_create_alliance}
 		x = 12
 		y = 11
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1560,7 +1555,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_science_trade}
 		x = 12
 		y = 12
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1592,7 +1587,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_skyfall_up}
 		x = 12
 		y = 13
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1627,7 +1622,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_defend}
 		x = 12
 		y = 14
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1661,7 +1656,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_trade_up}
 		x = 12
 		y = 15
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1683,7 +1678,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_constitution}
 		x = 12
 		y = 16
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1721,7 +1716,7 @@ focus_tree = {
 		mutually_exclusive = {focus = FLO_artisans_strike}
 		x = 20
 		y = 2
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1745,7 +1740,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_secret_meet}
 		x = 20
 		y = 3
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1770,7 +1765,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_agitation_army}
 		x = 20
 		y = 4
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1797,7 +1792,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_armed_coup}
 		x = 23
 		y = 5
-		cost = 15
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1824,7 +1819,7 @@ focus_tree = {
 		mutually_exclusive = {focus = FLO_military_society}
 		x = 19
 		y = 5
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1848,7 +1843,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_eliminate_opponents}
 		x = 19
 		y = 6
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1868,7 +1863,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_revenge}
 		x = 19
 		y = 7
-		cost = 15
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1895,7 +1890,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_military_factories}
 		x = 19
 		y = 8
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1918,7 +1913,7 @@ focus_tree = {
 		mutually_exclusive = {focus = FLO_eliminate_opponents}
 		x = 21
 		y = 5
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1948,7 +1943,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_military_society}
 		x = 21
 		y = 7
-		cost = 15
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1975,7 +1970,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_military_str_up}
 		x = 21
 		y = 8
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1996,7 +1991,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_visit_without_knocking focus = FLO_claim_of_str}
 		x = 20
 		y = 9
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -2034,7 +2029,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_development_rate}
 		x = 20
 		y = 10
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -2057,7 +2052,7 @@ focus_tree = {
 		mutually_exclusive = {focus = FLO_secret_meet}
 		x = 22
 		y = 2
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -2082,7 +2077,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_artisans_strike}
 		x = 24
 		y = 3
-		cost = 20
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -2109,7 +2104,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_in_fire}
 		x = 26
 		y = 4
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -2133,7 +2128,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_COM_red_squads}
 		x = 28
 		y = 5
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -2158,7 +2153,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_COM_five_age}
 		x = 27
 		y = 6
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -2190,7 +2185,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_COM_five_age}
 		x = 29
 		y = 6
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -2223,7 +2218,7 @@ focus_tree = {
 
 		x = 28
 		y = 7
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -2247,7 +2242,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_COM_school}
 		x = 28
 		y = 8
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -2301,7 +2296,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_way1}
 		x = 27
 		y = 10
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -2331,7 +2326,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_help_with_GRW}
 		x = 27
 		y = 11
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -2357,7 +2352,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_revolution_fire}
 		x = 27
 		y = 12
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -2381,7 +2376,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_COM_motherland}
 		x = 27
 		y = 13
-		cost = 20
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -2431,7 +2426,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_way2}
 		x = 29
 		y = 10
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -2518,7 +2513,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_gerche_factory}
 		x = 29
 		y = 13
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -2549,7 +2544,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_constructions}
 		x = 29
 		y = 14
-		cost = 15
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -2581,7 +2576,7 @@ focus_tree = {
 		prerequisite = {focus = FLO_underground}
 		x = 29
 		y = 15
-		cost = 15
+		cost = 5
 
 		ai_will_do = {
 			factor = 10

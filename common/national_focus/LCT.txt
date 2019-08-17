@@ -97,54 +97,40 @@ focus_tree = {
 
 	focus = {
 		id = LCT_long_live_the_prince
-		icon = GFX_focus_rom_royal_dictatorship
+		icon = GFX_goal_LCT_prince_snow
 		prerequisite = { focus = LCT_princely_restoration }
-		mutually_exclusive = { focus = LCT_regency_council }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = LCT_princely_restoration
 
-		cost = 20
+		cost = 10
 
 		ai_will_do = {
 			factor = 10
 		}
 
 		available = {
-
 		}
 
 		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		select_effect = {
-			add_ideas = LCT_princely_restoration_idea
-		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LCT_long_live_the_prince"
-			custom_effect_tooltip = focus_selected_idea
-			effect_tooltip = {
-				show_ideas_tooltip = LCT_princely_restoration_idea
-			}
-			custom_effect_tooltip = focus_finished_idea
-
 			create_country_leader = {
 				name = "Grand Prince Heavenly Snow"
 				desc = "POLITICS_PRINCE_SNOW_DESC"
 				picture = "Heavenly_Snow.tga"
 				expire = "1081.1.1"
-				ideology = fascism_ideology
+				ideology = nazism
 				traits = { heir_of_blessed_sowrd }
 				id = 900
 			}
-
-			add_political_power = 15
+			add_political_power = 300
 
 			hidden_effect = {
 				if = {
@@ -162,46 +148,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = LCT_regency_council
-		icon = GFX_focus_rom_handle_king
-		prerequisite = { focus = LCT_princely_restoration }
-		mutually_exclusive = { focus = LCT_long_live_the_prince }
-		x = -1
-		y = 1
-		relative_position_id = LCT_princely_restoration
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LCT_regency_council"
-			add_ideas = LCT_prince_snow_idea
-			add_political_power = 150
-		}
-	}
-
-	focus = {
 		id = LCT_demand_DEP
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = LCT_long_live_the_prince focus = LCT_regency_council }
+		prerequisite = { focus = LCT_long_live_the_prince }
 		x = -3
 		y = 1
-		relative_position_id = LCT_regency_council
+		relative_position_id = LCT_long_live_the_prince
 
 		will_lead_to_war_with = DEP
 
@@ -228,16 +180,55 @@ focus_tree = {
 			DEP = { country_event = lakecity.10 }
 		}
 	}
-
+	
 	focus = {
-		id = LCT_DEP_railways
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = LCT_demand_DEP}
-		x = -1
+		id = LCT_DEP_research
+		icon = GFX_focus_research
+		prerequisite = { focus = LCT_demand_DEP }
+		x = 0
 		y = 1
 		relative_position_id = LCT_demand_DEP
 
 		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			OR = {
+				DEP = {
+					is_subject_of = ROOT
+					has_full_control_of_state = 544
+				}
+				has_full_control_of_state = 544
+				owns_state = 544
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LCT_DEP_research"
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = LCT_DEP_railways
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = LCT_DEP_research}
+		x = -2
+		y = 1
+		relative_position_id = LCT_DEP_research
+
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -330,12 +321,12 @@ focus_tree = {
 	focus = {
 		id = LCT_forced_industrialization
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = LCT_demand_DEP}
-		x = 1
+		prerequisite = { focus = LCT_DEP_research }
+		x = 0
 		y = 1
-		relative_position_id = LCT_demand_DEP
+		relative_position_id = LCT_DEP_research
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -393,7 +384,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = LCT_DEP_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -476,7 +467,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = LCT_forced_industrialization
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -525,53 +516,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = LCT_DEP_research
-		icon = GFX_focus_research
-		prerequisite = { focus = LCT_Resource_harvesting}
-		prerequisite = { focus = LCT_DEP_forts}
-		x = -1
-		y = 1
-		relative_position_id = LCT_Resource_harvesting
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-			OR = {
-				DEP = {
-					is_subject_of = ROOT
-					has_full_control_of_state = 544
-				}
-				has_full_control_of_state = 544
-				owns_state = 544
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LCT_DEP_research"
-			add_research_slot = 1
-		}
-	}
-
-	focus = {
 		id = LCT_anti_griff_research
 		icon = GFX_focus_research2
-		prerequisite = { focus = LCT_DEP_research}
+		prerequisite = { focus = LCT_Resource_harvesting}
+		prerequisite = { focus = LCT_DEP_forts }
 		prerequisite = { focus = LCT_anti_griffon_propaganda}
 		x = 0
 		y = 1
-		relative_position_id = LCT_DEP_research
+		relative_position_id = LCT_Resource_harvesting
 
 		cost = 10
 
@@ -600,10 +552,10 @@ focus_tree = {
 	focus = {
 		id = LCT_subjugate_the_guilds
 		icon = GFX_focus_jap_zaibatsu
-		prerequisite = { focus = LCT_long_live_the_prince focus = LCT_regency_council }
+		prerequisite = { focus = LCT_long_live_the_prince }
 		x = 1
 		y = 1
-		relative_position_id = LCT_regency_council
+		relative_position_id = LCT_long_live_the_prince
 
 		cost = 10
 
@@ -624,6 +576,18 @@ focus_tree = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
+		add_ideas = partial_economic_mobilisation
+			random_state = {
+				limit = {
+					has_state_flag = LCT_increase_military_funding_factories
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 			random_state = {
 				limit = {
 					has_state_flag = LCT_guilds_s_factories
@@ -642,6 +606,14 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LCT_subjugate_the_guilds"
+			if = {
+				limit = {
+					NOT = { has_idea = partial_economic_mobilisation }
+					NOT = { has_idea = war_economy }
+					NOT = { has_idea = tot_economic_mobilisation }
+				}
+				add_ideas = partial_economic_mobilisation
+			}
 			random_owned_controlled_state = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
@@ -660,6 +632,23 @@ focus_tree = {
 				}
 				set_state_flag = LCT_guilds_s_factories
 			}
+			random_owned_controlled_state = {
+				limit = {
+					is_fully_controlled_by = PREV
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = LCT_increase_military_funding_factories
+			}
 			swap_ideas = {
 				remove_idea = LCT_guilds
 				add_idea = LCT_guilds_subjugated
@@ -670,8 +659,8 @@ focus_tree = {
 	focus = {
 		id = LCT_increase_military_funding
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = LCT_long_live_the_prince focus = LCT_regency_council }
-		x = 1
+		prerequisite = { focus = LCT_long_live_the_prince }
+		x = 3
 		y = 1
 		relative_position_id = LCT_long_live_the_prince
 
@@ -732,10 +721,10 @@ focus_tree = {
 	focus = {
 		id = LCT_princely_welfare
 		icon = GFX_focus_generic_concessions
-		prerequisite = { focus = LCT_long_live_the_prince focus = LCT_regency_council }
+		prerequisite = { focus = LCT_long_live_the_prince }
 		x = -1
 		y = 1
-		relative_position_id = LCT_regency_council
+		relative_position_id = LCT_long_live_the_prince
 
 		cost = 10
 
@@ -1065,6 +1054,9 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LCT_anti_griffon_propaganda"
+			add_state_core = 552
+			add_state_core = 505
+			add_state_core = 540
 			add_timed_idea = {
 				days = 730
 				idea = LCT_anti_griffon_propaganda_idea
@@ -1636,7 +1628,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = LCT_reclaim_river
 
-		cost = 20
+		cost = 10
 
 		ai_will_do = {
 			factor = 10
@@ -1722,7 +1714,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = LCT_strike_at_the_source
 
-		cost = 20
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -1814,7 +1806,7 @@ focus_tree = {
 	focus = {
 		id = LCT_vanguard_restores_order
 		icon = GFX_goal_generic_major_war
-		x = 9
+		x = 10
 		y = 0
 		relative_position_id = LCT_princely_restoration
 		mutually_exclusive = { focus = LCT_democracy_prevails }
@@ -3518,7 +3510,7 @@ focus_tree = {
 		relative_position_id = LCT_democracy_prevails
 		mutually_exclusive = { focus = LCT_placate_the_militery }
 
-		cost = 20
+		cost = 10
 
 		ai_will_do = {
 			factor = 7
@@ -5013,8 +5005,7 @@ focus_tree = {
 				name = LCT_special_forces
 				bonus = 1.0
 				uses = 2
-				category = para_tech
-				category = mountaineers_tech
+				category = special_forces_tech
 			}
 		}
 	}
@@ -5065,7 +5056,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = LCT_army_modernisation
 
-		cost = 8
+		cost = 10
 
 		ai_will_do = {
 			factor = 4
@@ -5099,7 +5090,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = LCT_establish_air_force
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = air_doctrine
 			}
 		}
@@ -5124,7 +5115,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = LCT_establish_air_force
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = air_doctrine
 			}
 		}
@@ -5138,7 +5129,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = LCT_establish_air_force
 
-		cost = 8
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -5171,7 +5162,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = LCT_unlock_fighter_man
 
-		cost = 8
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -5225,7 +5216,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = LCT_establish_air_force
 
-		cost = 8
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -5258,7 +5249,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = LCT_unlock_med_air_man
 
-		cost = 8
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -5335,14 +5326,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = air_doc_bonus
 				bonus = 1.0
-				uses = 3
+				uses = 1
 				category = air_doctrine
-			}
-			550 = {
-				add_resource = {
-					type = aluminium
-					amount = 12
-				}
 			}
 			add_ideas = LCT_air_focus
 		}
@@ -5419,22 +5404,6 @@ focus_tree = {
 				category = light_fighter
 				category = cat_heavy_fighter
 			}
-			random_owned_controlled_state = {
-				limit = {
-					is_fully_controlled_by = PREV
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
 		}
 	}
 
@@ -5473,22 +5442,6 @@ focus_tree = {
 				category = cas_bomber
 				category = tactical_bomber
 				category = cat_strategic_bomber
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_fully_controlled_by = PREV
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
 			}
 		}
 	}
@@ -5853,6 +5806,7 @@ focus_tree = {
 
 		available = {
 			any_owned_state = {
+				is_controlled_by = ROOT
 				is_coastal = yes
 			}
 		}

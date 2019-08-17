@@ -1,4 +1,4 @@
-shared_focus = {
+shared_focus = {#Cut Many focuses down from 70 days to 35 days
 
 	id = FIR_peaceful_resolution
 	icon = GFX_goal_generic_major_alliance_pony

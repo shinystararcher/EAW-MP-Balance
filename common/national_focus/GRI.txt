@@ -36,7 +36,7 @@ focus_tree = {
 		icon = GFX_focus_generic_the_giant_wakes
 		x = 16
 		y = 2
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = GRI_commoner_voting focus = GRI_noble_voting
 		}
@@ -56,7 +56,7 @@ focus_tree = {
 		prerequisite = { focus = GRI_fix_bureaucracy }
 		x = 16
 		y = 7
-		cost = 8.00
+		cost = 6.00
 		ai_will_do = { factor = 180 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRI_education_effort"
@@ -73,7 +73,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		x = 14
 		y = 1
-		cost = 5.00
+		cost = 6.00
 		prerequisite = {
 			focus = GRI_emperor_passed
 		}
@@ -100,7 +100,7 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity_claws
 		x = 13
 		y = 2
-		cost = 5.00
+		cost = 6.00
 		prerequisite = {
 			focus = GRI_commoner_voting focus = GRI_noble_voting
 		}
@@ -128,7 +128,7 @@ focus_tree = {
 		prerequisite = { focus = GRI_industry_modern }
 		x = 14
 		y = 3
-		cost = 7.00
+		cost = 6.00
 		ai_will_do = { factor = 180 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRI_commoner_industry"
@@ -147,7 +147,7 @@ focus_tree = {
 		icon = GFX_goal_generic_improve_relations
 		x = 18
 		y = 1
-		cost = 5.00
+		cost = 6.00
 		prerequisite = {
 			focus = GRI_emperor_passed
 		}
@@ -175,7 +175,7 @@ focus_tree = {
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 19
 		y = 2
-		cost = 5.00
+		cost = 6.00
 		prerequisite = {
 			focus = GRI_commoner_voting focus = GRI_noble_voting
 		}
@@ -204,7 +204,7 @@ focus_tree = {
 		prerequisite = { focus = GRI_industry_modern }
 		x = 18
 		y = 3
-		cost = 7.00
+		cost = 6.00
 		ai_will_do = { factor = 180 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRI_noble_industry"
@@ -221,7 +221,7 @@ focus_tree = {
 	focus = {
 		id = GRI_eagleclaw
 		icon = GFX_focus_rom_royal_dictatorship
-		cost = 7
+		cost = 6.00
 		ai_will_do = { factor = 180 }
 		available = {
 			NOT = { has_war_with = STW }
@@ -274,7 +274,7 @@ focus_tree = {
 	focus = {
 		id = GRI_noble_council
 		icon = GFX_goal_generic_neutrality_focus
-		cost = 8.00
+		cost = 6.00
 		ai_will_do = { factor = 180 }
 		prerequisite = {
 			focus = GRI_eagleclaw
@@ -291,7 +291,7 @@ focus_tree = {
 	focus = {
 		id = GRI_the_secret_service
 		icon = GFX_goal_secret_agents
-		cost = 8.00
+		cost = 6.00
 		ai_will_do = { factor = 180 }
 		prerequisite = {
 			focus = GRI_noble_council
@@ -311,7 +311,7 @@ focus_tree = {
 	focus = {
 		id = GRI_invite_erion
 		icon = GFX_focus_rom_abdicate
-		cost = 8.00
+		cost = 6.00
 		ai_will_do = { factor = 180 }
 		prerequisite = {
 			focus = GRI_eagleclaw
@@ -332,7 +332,7 @@ focus_tree = {
 	focus = {
 		id = GRI_noble_industrial_council
 		icon = GFX_goal_state_economy
-		cost = 10.00
+		cost = 6.00
 		ai_will_do = { factor = 180 }
 		prerequisite = {
 			focus = GRI_eagleclaw focus = GRI_eros
@@ -349,7 +349,7 @@ focus_tree = {
 	focus = {
 		id = GRI_prepare_for_war
 		icon = GFX_focus_generic_industry_3
-		cost = 8.00
+		cost = 6.00
 		ai_will_do = { factor = 180 }
 		prerequisite = {
 			focus = GRI_noble_industrial_council
@@ -380,7 +380,7 @@ focus_tree = {
 	focus = {
 		id = GRI_noble_industrial
 		icon = GFX_goal_economic_control
-		cost = 10.00
+		cost = 6.00
 		ai_will_do = { factor = 180 }
 		prerequisite = {
 			focus = GRI_noble_industrial_council
@@ -460,7 +460,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_alliance
 		x = 20
 		y = 7
-		cost = 10.00
+		cost = 6.00
 		ai_will_do = {
 			factor = 180
 		}
@@ -497,7 +497,7 @@ focus_tree = {
 	focus = {
 		id = GRI_PYT_uni
 		icon = GFX_goal_technological_supremacy
-		cost = 10.00
+		cost = 6.00
 		ai_will_do = {
 			factor = 140
 		}
@@ -526,7 +526,7 @@ focus_tree = {
 	focus = {
 		id = GRI_joint_armies
 		icon = GFX_goal_conscription
-		cost = 10.00
+		cost = 6.00
 		ai_will_do = {
 			factor = 140
 		}
@@ -549,7 +549,7 @@ focus_tree = {
 	focus = {
 		id = GRI_oligarhcy
 		icon = GFX_goal_further_oil
-		cost = 10.00
+		cost = 6.00
 		ai_will_do = {
 			factor = 140
 		}
@@ -610,7 +610,7 @@ focus_tree = {
 	focus = {
 		id = GRI_technocrats
 		icon = GFX_goal_coffee_boom
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = GRI_oligarhcy
 		}
@@ -684,7 +684,7 @@ focus_tree = {
 	focus = {
 		id = GRI_unite_noble
 		icon = GFX_focus_generic_self_management
-		cost = 10.00
+		cost = 6.00
 		ai_will_do = { factor = 180 }
 		prerequisite = {
 			focus = GRI_technocrats
@@ -706,7 +706,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_war
 		x = 20
 		y = 11
-		cost = 5.00
+		cost = 6.00
 		prerequisite = { focus = GRI_unite_noble }
 
 		ai_will_do = {
@@ -764,7 +764,7 @@ focus_tree = {
 		icon = GFX_goal_generic_attack_allies
 		x = 19
 		y = 12
-		cost = 8.00
+		cost = 6.00
 		available = {
 			ROU = { OR = { exists = no  is_subject_of = ROOT  is_in_faction_with = ROOT } }
 			YAL = { OR = { exists = no  is_subject_of = ROOT  is_in_faction_with = ROOT } }
@@ -786,7 +786,7 @@ focus_tree = {
 		icon = GFX_goal_generic_attack_allies
 		x = 21
 		y = 12
-		cost = 8.00
+		cost = 6.00
 		available = {
 			ANG = { OR = { exists = no  is_subject_of = ROOT  is_in_faction_with = ROOT } }
 			KAT = { OR = { exists = no  is_subject_of = ROOT  is_in_faction_with = ROOT } }
@@ -805,7 +805,7 @@ focus_tree = {
 	focus = {
 		id = GRI_noble_empire
 		icon = GFX_goal_generic_national_unity_claws
-		cost = 15
+		cost = 10
 		ai_will_do = { factor = 180 }
 		prerequisite = {
 			focus = GRI_crush_ANG
@@ -827,7 +827,7 @@ focus_tree = {
 	focus = {
 		id = GRI_eros
 		icon = GFX_focus_rom_handle_king
-		cost = 7
+		cost = 6
 		ai_will_do = { factor = 180 }
 		prerequisite = {
 			focus = GRI_commoner_right_ensured
@@ -856,7 +856,7 @@ focus_tree = {
 	focus = {
 		id = GRI_land_reform
 		icon = GFX_goal_generic_position_armies
-		cost = 8.00
+		cost = 6.00
 		ai_will_do = { factor = 180 }
 		prerequisite = {
 			focus = GRI_eros
@@ -878,7 +878,7 @@ focus_tree = {
 	focus = {
 		id = GRI_empower_archons
 		icon = GFX_goal_generic_demand_territory
-		cost = 8.00
+		cost = 6.00
 		ai_will_do = { factor = 180 }
 		prerequisite = {
 			focus = GRI_eros
@@ -896,7 +896,7 @@ focus_tree = {
 	focus = {
 		id = GRI_fix_bureaucracy
 		icon = GFX_goal_government_icon
-		cost = 10.00
+		cost = 6.00
 		ai_will_do = { factor = 180 }
 		prerequisite = {
 			focus = GRI_eros focus = GRI_eagleclaw
@@ -912,7 +912,7 @@ focus_tree = {
 	focus = {
 		id = GRI_imperial_central_bank
 		icon = GFX_goal_gold_reserve
-		cost = 10.00
+		cost = 6.00
 		ai_will_do = { factor = 180 }
 		prerequisite = {
 			focus = GRI_fix_bureaucracy
@@ -928,7 +928,7 @@ focus_tree = {
 	focus = {
 		id = GRI_industrial_development
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10.00
+		cost = 6.00
 		ai_will_do = { factor = 180 }
 		prerequisite = {
 			focus = GRI_fix_bureaucracy
@@ -1003,7 +1003,7 @@ focus_tree = {
 	focus = {
 		id = GRI_military_support
 		icon = GFX_goal_conscription
-		cost = 10.00
+		cost = 6.00
 		ai_will_do = { factor = 180 }
 		prerequisite = {
 			focus = GRI_eros focus = GRI_eagleclaw
@@ -1021,7 +1021,7 @@ focus_tree = {
 	focus = {
 		id = GRI_kill_the_traitors
 		icon = GFX_goal_purge_opposition
-		cost = 8.00
+		cost = 6.00
 		ai_will_do = { factor = 180 }
 		prerequisite = {
 			focus = GRI_empower_archons
@@ -1070,7 +1070,7 @@ focus_tree = {
 	focus = {
 		id = GRI_loyal_officer_core
 		icon = GFX_focus_generic_military_mission
-		cost = 8.00
+		cost = 6.00
 		ai_will_do = { factor = 180 }
 		prerequisite = {
 			focus = GRI_military_support
@@ -1086,7 +1086,7 @@ focus_tree = {
 	focus = {
 		id = GRI_holy_order
 		icon = GFX_focus_generic_strike_at_democracy1
-		cost = 10.00
+		cost = 6.00
 		ai_will_do = { factor = 180 }
 		prerequisite = { focus = GRI_empower_archons }
 		prerequisite = { focus = GRI_land_reform }
@@ -1109,7 +1109,7 @@ focus_tree = {
 		icon = GFX_goal_anschluss
 		x = 12
 		y = 7
-		cost = 10.00
+		cost = 6.00
 		ai_will_do = {
 			factor = 180
 		}
@@ -1146,20 +1146,9 @@ focus_tree = {
 	focus = {
 		id = GRI_ROU_uni
 		icon = GFX_goal_supremacy_of_will
-		cost = 10.00
+		cost = 6.00
 		ai_will_do = {
 			factor = 140
-		}
-		available = {
-			674 = {
-				owner = {
-					OR = {
-						tag = ROOT
-						is_subject_of = ROOT
-						is_in_faction_with = ROOT
-					}
-				}
-			}
 		}
 		prerequisite = { focus = GRI_reward_loyalty }
 		prerequisite = { focus = GRI_education_effort }
@@ -1175,7 +1164,7 @@ focus_tree = {
 	focus = {
 		id = GRI_greenback_stuff
 		icon = GFX_goal_generic_construction2
-		cost = 8.00
+		cost = 6.00
 		ai_will_do = {
 			factor = 140
 		}
@@ -1219,7 +1208,7 @@ focus_tree = {
 	focus = {
 		id = GRI_monasteries
 		icon = GFX_goal_agrarian_reform
-		cost = 10.00
+		cost = 6.00
 		ai_will_do = { factor = 140 }
 		available = {
 			YAL = { OR = { exists = no is_subject_of = ROOT is_in_faction_with = ROOT } }
@@ -1259,7 +1248,7 @@ focus_tree = {
 	focus = {
 		id = GRI_farms
 		icon = GFX_focus_generic_industry_3
-		cost = 10.00
+		cost = 6.00
 		ai_will_do = { factor = 140 }
 		available = {
 			411 = {
@@ -1312,7 +1301,7 @@ focus_tree = {
 		icon = GFX_focus_generic_strike_at_democracy2
 		x = 12
 		y = 10
-		cost = 5.00
+		cost = 6.00
 		prerequisite = { focus = GRI_farms }
 		prerequisite = { focus = GRI_greenback_stuff }
 
@@ -1370,7 +1359,7 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		x = 11
 		y = 11
-		cost = 8.00
+		cost = 6.00
 		available = {
 			FEA = { OR = { exists = no is_subject_of = ROOT is_in_faction_with = ROOT } }
 			PYT = { OR = { exists = no is_subject_of = ROOT is_in_faction_with = ROOT } }
@@ -1392,7 +1381,7 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		x = 13
 		y = 11
-		cost = 8.00
+		cost = 6.00
 		available = {
 			STW = { OR = { exists = no is_subject_of = ROOT is_in_faction_with = ROOT } }
 			BRZ = { OR = { exists = no is_subject_of = ROOT is_in_faction_with = ROOT } }
@@ -1413,7 +1402,7 @@ focus_tree = {
 		icon = GFX_focus_generic_strike_at_democracy1
 		x = 12
 		y = 12
-		cost = 10.00
+		cost = 6.00
 		prerequisite = { focus = GRI_crush_STW focus = GRI_crush_FEA }
 		bypass = {
 			TRD = {
@@ -1516,9 +1505,9 @@ focus_tree = {
 		icon = GFX_goal_generic_attack_allies
 		x = 16
 		y = 15
-		cost = 16.00
+		cost = 10.00 # BALANCE MOD
 		prerequisite = { focus = GRI_strike_north }
-		available = { has_political_power > 200
+		available = { #has_political_power > 200 BALANCE MOD
 			FAT = { exists = no }
 			SRS = { exists = no }
 			MNC = { exists = no }
@@ -1534,7 +1523,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRI_core_north"
-			add_political_power = -300
+			#add_political_power = -300 BALANCE MOD
 			every_state = { limit = { is_core_of = FAT } add_core_of = ROOT }
 			every_state = { limit = { is_core_of = SRS } add_core_of = ROOT }
 			every_state = { limit = { is_core_of = MNC } add_core_of = ROOT }
@@ -1584,9 +1573,9 @@ focus_tree = {
 		icon = GFX_goal_generic_attack_allies
 		x = 13
 		y = 16
-		cost = 16.00
+		cost = 10.00#BALANCE MOD
 		prerequisite = { focus = GRI_strike_lakes }
-		available = { has_political_power > 200
+		available = { #has_political_power > 200 #BALANCE MOD
 			BOI = { exists = no }
 		}
 		ai_will_do = {
@@ -1600,7 +1589,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRI_core_lakes"
-			add_political_power = -300
+			#add_political_power = -300 #BALANCE MOD
 			every_state = { limit = { is_core_of = AVI } add_core_of = ROOT }
 			every_state = { limit = { is_core_of = BAN } add_core_of = ROOT }
 			every_state = { limit = { is_core_of = EYR } add_core_of = ROOT }
@@ -1663,9 +1652,9 @@ focus_tree = {
 		icon = GFX_goal_generic_attack_allies
 		x = 19
 		y = 16
-		cost = 16.00
+		cost = 10.00
 		prerequisite = { focus = GRI_strike_west }
-		available = { has_political_power > 200
+		available = { #BALANCE MOD has_political_power > 200
 			JER = { exists = no }
 			JEB = { exists = no }
 		}
@@ -1680,7 +1669,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRI_core_west"
-			add_political_power = -300
+			#add_political_power = -300 #BALANCE MOD
 			every_state = { limit = { is_core_of = TRD } add_core_of = ROOT }
 			every_state = { limit = { is_core_of = AET } add_core_of = ROOT }
 			every_state = { limit = { is_core_of = FEZ } add_core_of = ROOT }
@@ -1747,7 +1736,7 @@ focus_tree = {
 		y = 17
 		cost = 16.00
 		prerequisite = { focus = GRI_strike_south }
-		available = { has_political_power > 200
+		available = { #has_political_power > 200 #BALANCE MOD
 			WNG = { exists = no }
 		}
 		ai_will_do = {
@@ -1761,7 +1750,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRI_core_south"
-			add_political_power = -300
+			#add_political_power = -300 #BALANCE MOD
 			every_state = { limit = { is_core_of = ARA } add_core_of = GRI }
 			every_state = { limit = { is_core_of = FRN } add_core_of = GRI }
 			every_state = { limit = { is_core_of = TAL } add_core_of = GRI }
@@ -1827,7 +1816,7 @@ focus_tree = {
 		available = { OR = { has_completed_focus = GRI_eros has_completed_focus = GRI_eagleclaw } }
 		x = 2
 		y = 1
-		cost = 8.00
+		cost = 7.00
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRI_industry_technology"
@@ -1843,7 +1832,7 @@ focus_tree = {
 	focus = {
 		id = GRI_romau_roads
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 8.00
+		cost = 7.00
 		ai_will_do = { factor = 80 }
 		available = { owns_state = 665 }
 		mutually_exclusive = { focus = GRI_greenback_roads }
@@ -1903,7 +1892,7 @@ focus_tree = {
 	focus = {
 		id = GRI_greenback_roads
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 8.00
+		cost = 7.00
 		ai_will_do = { factor = 80 }
 		available = { owns_state = 398 }
 		mutually_exclusive = { focus = GRI_romau_roads }
@@ -2011,7 +2000,7 @@ focus_tree = {
 	focus = {
 		id = GRI_imperial_roads
 		icon = GFX_goal_generic_construct_civilian
-		cost = 8.00
+		cost = 7.00
 		ai_will_do = { factor = 80 }
 		prerequisite = {
 			focus = GRI_industry_technology
@@ -2061,7 +2050,7 @@ focus_tree = {
 	focus = {
 		id = GRI_feathesia_roads
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 8.00
+		cost = 7.00
 		ai_will_do = { factor = 80 }
 		mutually_exclusive = { focus = GRI_strawberry_roads }
 		available = { controls_state = 520 }
@@ -2177,7 +2166,7 @@ focus_tree = {
 	focus = {
 		id = GRI_strawberry_roads
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 8.00
+		cost = 7.00
 		ai_will_do = { factor = 80 }
 		mutually_exclusive = { focus = GRI_feathesia_roads }
 		available = { controls_state = 486 }
@@ -2269,7 +2258,7 @@ focus_tree = {
 		prerequisite = { focus = GRI_industry_technology }
 		x = 2
 		y = 2
-		cost = 8.00
+		cost = 7.00
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRI_central_industry"
@@ -2302,7 +2291,7 @@ focus_tree = {
 	focus = {
 		id = GRI_trade_dock
 		icon = GFX_goal_dockyard_generic_psody
-		cost = 8.00
+		cost = 7.00
 		available = { OR = { owns_state = 381  381 = { owner = { is_subject_of = ROOT } } } }
 		prerequisite = { focus = GRI_modern_industry  }
 		x = 2
@@ -2344,7 +2333,7 @@ focus_tree = {
 		prerequisite = { focus = GRI_industry_technology }
 		x = 5
 		y = 2
-		cost = 8.00
+		cost = 7.00
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRI_crona_industry"
@@ -2374,7 +2363,7 @@ focus_tree = {
 		}
 		x = 27
 		y = 0
-		cost = 5.00
+		cost = 6.00
 
 		ai_will_do = {
 			factor = 70
@@ -2871,7 +2860,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GRI_mobile_warfare_focus }
 		x = 34
 		y = 3
-		cost = 8.00
+		cost = 5.00
 		ai_will_do = {
 			factor = 50
 			modifier = {
@@ -3001,12 +2990,7 @@ focus_tree = {
 				name = special_forces_bonus
 				bonus = 1.0
 				uses = 2
-				technology = paratroopers
-				technology = paratroopers2
-				technology = marines
-				technology = marines2
-				technology = tech_mountaineers
-				technology = tech_mountaineers2
+				category = special_forces_tech
 			}
 		}
 	}
@@ -3038,7 +3022,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GRI_mobile_warfare_focus }
 		x = 36
 		y = 3
-		cost = 8.00
+		cost = 5.00
 		ai_will_do = {
 			factor = 50
 			modifier = {
@@ -3152,7 +3136,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GRI_doctrine_superior_firepower }
 		x = 38
 		y = 3
-		cost = 8.00
+		cost = 5.00
 		ai_will_do = {
 			factor = 70
 			modifier = {
@@ -3356,7 +3340,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GRI_operational_integrit }
 		x = 43
 		y = 1
-		cost = 8.00
+		cost = 7.00
 
 		ai_will_do = {
 			factor = 60
@@ -3381,7 +3365,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GRI_operational_integrit }
 		x = 45
 		y = 1
-		cost = 8.00
+		cost = 7.00
 
 		ai_will_do = {
 			factor = 60
@@ -3406,7 +3390,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GRI_air_superior }
 		x = 47
 		y = 1
-		cost = 8.00
+		cost = 7.00
 
 		ai_will_do = {
 			factor = 60
@@ -3429,7 +3413,7 @@ focus_tree = {
 		prerequisite = { focus = GRI_operational_integrit focus = GRI_air_superior focus = GRI_strat_destruction }
 		x = 45
 		y = 2
-		cost = 8.00
+		cost = 7.00
 
 		ai_will_do = {
 			factor = 60
@@ -3503,7 +3487,7 @@ focus_tree = {
 		prerequisite = { focus = GRI_strat_bombers_focus }
 		x = 45
 		y = 4
-		cost = 8.00
+		cost = 7.00
 
 		ai_will_do = {
 			factor = 60

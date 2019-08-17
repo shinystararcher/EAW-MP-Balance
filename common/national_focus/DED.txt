@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 20
+			add = 20#Balance Mod
 			tag = DED
 		}
 	}
@@ -15,7 +15,7 @@ focus_tree = {
 	focus = {
 		id = DED_Council
 		icon = GFX_councils_decision_icon
-		cost = 14.00
+		cost = 14.00 #Balance Mod
 		ai_will_do = {
 			factor = 100
 		}
@@ -40,7 +40,7 @@ focus_tree = {
 	focus = {
 		id = DED_Army_Dead
 		icon = GFX_army_dread_icon
-		cost = 5.00
+		cost = 5.00 #Balance Mod
 		ai_will_do = {
 			factor = 20
 		}
@@ -54,7 +54,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DED_Army_Dead"
 			army_experience = 20
-			add_ideas = DED_leader_cost_factor
+			add_ideas = DED_leader_cost_factor#Balance Mod
 
 			create_field_marshal = {
 				name = "Hell Van Moltke"
@@ -206,7 +206,7 @@ focus_tree = {
 	focus = {
 		id = DED_Prep_Crusade
 		icon = GFX_preparing_crusade_icon
-		cost = 5.00
+		cost = 5.00 #Balance Mod
 		ai_will_do = {
 			factor = 40
 		}
@@ -629,7 +629,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus DED_Black_Crusade"
 			custom_effect_tooltip = DED_Black_Crusade_tp
 			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
+				type = infantry_equipment_0
 				amount = 1000000
 				producer = CHN
 			}

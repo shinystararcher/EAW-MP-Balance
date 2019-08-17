@@ -2,7 +2,7 @@
 
 shared_focus = {
 	id = FEA_economy
-	icon = GFX_goal_bankruptcy
+	icon = GFX_goal_feathisia_money
 	cost = 1.00
 	ai_will_do = { factor = 500 }
 	x = 5
@@ -313,7 +313,7 @@ shared_focus = {
 	x = 0
 	y = 4
 	relative_position_id = FEA_government_intervention
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_buyout_noble_assets }
 	prerequisite = { focus = FEA_nationalize_industries }
 
@@ -362,7 +362,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = FEA_free_market
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_free_market }
 
 	ai_will_do = {
@@ -382,7 +382,7 @@ shared_focus = {
 	x = -1
 	y = 2
 	relative_position_id = FEA_free_market
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_bailout_banks }
 
 	ai_will_do = {
@@ -404,7 +404,7 @@ shared_focus = {
 	x = -1
 	y = 3
 	relative_position_id = FEA_free_market
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_prop_up_nobles }
 
 	ai_will_do = {
@@ -452,7 +452,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = FEA_free_market
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_free_market }
 
 	ai_will_do = {
@@ -470,7 +470,7 @@ shared_focus = {
 	x = 1
 	y = 2
 	relative_position_id = FEA_free_market
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_the_little_griffon }
 
 	ai_will_do = {
@@ -500,7 +500,7 @@ shared_focus = {
 	x = 1
 	y = 3
 	relative_position_id = FEA_free_market
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_the_industrial_gamble }
 
 	ai_will_do = {
@@ -577,7 +577,7 @@ shared_focus = {
 	x = 0
 	y = 4
 	relative_position_id = FEA_free_market
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_big_business_rupport }
 	prerequisite = { focus = FEA_protect_the_commoners }
 
@@ -603,7 +603,7 @@ shared_focus = {
 	x = 0
 	y = 6
 	relative_position_id = FEA_economy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_the_market_saves_us_all focus = FEA_finish_intervention }
 	available = { always = no }
 	bypass = {
@@ -652,7 +652,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = FEA_PvdA_policy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_PvdA_policy }
 
 	ai_will_do = {
@@ -729,7 +729,7 @@ shared_focus = {
 	x = -1
 	y = 2
 	relative_position_id = FEA_PvdA_policy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_unionism }
 
 	ai_will_do = {
@@ -748,7 +748,7 @@ shared_focus = {
 	x = -1
 	y = 3
 	relative_position_id = FEA_PvdA_policy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_workers_rights }
 
 	ai_will_do = {
@@ -798,7 +798,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = FEA_PvdA_policy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_PvdA_policy }
 
 	ai_will_do = {
@@ -878,7 +878,7 @@ shared_focus = {
 	x = 1
 	y = 2
 	relative_position_id = FEA_PvdA_policy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_railroad_project }
 
 	ai_will_do = {
@@ -897,7 +897,7 @@ shared_focus = {
 	x = 1
 	y = 3
 	relative_position_id = FEA_PvdA_policy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_free_healthcare }
 
 	ai_will_do = {
@@ -945,7 +945,7 @@ shared_focus = {
 	x = 0
 	y = 4
 	relative_position_id = FEA_PvdA_policy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_public_works_projects }
 	prerequisite = { focus = FEA_the_great_experiment }
 
@@ -988,7 +988,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = FEA_LDP_policy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_LDP_policy }
 
 	ai_will_do = {
@@ -1125,7 +1125,7 @@ shared_focus = {
 	x = -1
 	y = 2
 	relative_position_id = FEA_LDP_policy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_industrial_investements }
 
 	ai_will_do = {
@@ -1143,7 +1143,7 @@ shared_focus = {
 	x = -1
 	y = 3
 	relative_position_id = FEA_LDP_policy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_welfare_for_the_citizens }
 
 	ai_will_do = {
@@ -1266,7 +1266,7 @@ shared_focus = {
 	x = 0
 	y = 3
 	relative_position_id = FEA_new_economic_policy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_trade_relations }
 
 	ai_will_do = {
@@ -1346,7 +1346,7 @@ shared_focus = {
 	x = 0
 	y = 4
 	relative_position_id = FEA_new_economic_policy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_attract_investors }
 
 	ai_will_do = {
@@ -1376,7 +1376,7 @@ shared_focus = {
 	x = 0
 	y = 5
 	relative_position_id = FEA_new_economic_policy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_massive_infrastructure_projeects focus = FEA_modern_methods }
 	prerequisite = { focus = FEA_dockyards }
 
@@ -1417,7 +1417,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = FEA_FHP_policy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_FHP_policy }
 
 	ai_will_do = {
@@ -1462,7 +1462,7 @@ shared_focus = {
 	x = 1
 	y = 2
 	relative_position_id = FEA_FHP_policy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_agrarianism }
 
 	ai_will_do = {
@@ -1493,10 +1493,10 @@ shared_focus = {
 					}
 				}
 			}
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -1523,10 +1523,10 @@ shared_focus = {
 					}
 				}
 			}
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -1539,7 +1539,7 @@ shared_focus = {
 	x = 1
 	y = 3
 	relative_position_id = FEA_FHP_policy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_minor_industrial_projects }
 
 	ai_will_do = {
@@ -1550,7 +1550,7 @@ shared_focus = {
 		add_tech_bonus = {
 			name = industrial_bonus
 			bonus = 1.0
-			uses = 1
+			uses = 2
 			category = industry
 		}
 		add_tech_bonus = {
@@ -1590,7 +1590,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = FEA_FNV_policy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_FNV_policy }
 
 	ai_will_do = {
@@ -1667,7 +1667,7 @@ shared_focus = {
 	x = -1
 	y = 2
 	relative_position_id = FEA_FNV_policy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_nationalization_act }
 
 	ai_will_do = {
@@ -1685,7 +1685,7 @@ shared_focus = {
 	x = -1
 	y = 3
 	relative_position_id = FEA_FNV_policy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_labour_battalions }
 
 	ai_will_do = {
@@ -1736,7 +1736,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = FEA_FNV_policy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_FNV_policy }
 
 	ai_will_do = {
@@ -1781,7 +1781,7 @@ shared_focus = {
 	x = 1
 	y = 2
 	relative_position_id = FEA_FNV_policy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_subsides_farmers }
 
 	ai_will_do = {
@@ -1864,7 +1864,7 @@ shared_focus = {
 	x = 1
 	y = 3
 	relative_position_id = FEA_FNV_policy
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_autobahn }
 
 	ai_will_do = {
@@ -1896,7 +1896,7 @@ shared_focus = {
 	x = 0
 	y = 4
 	relative_position_id = FEA_FNV_policy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_resource_nationalisation }
 	prerequisite = { focus = FEA_state_unions }
 
@@ -1913,7 +1913,7 @@ shared_focus = {
 
 shared_focus = {
 	id = FEA_army_stuff
-	icon = GFX_focus_chi_army_reform
+	icon = GFX_goal_feathisian_soldier
 	cost = 5.00
 	ai_will_do = { factor = 80 }
 	x = 18
@@ -1968,7 +1968,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = FEA_mobile_1
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_mobile_1 }
 
 	ai_will_do = {
@@ -1997,7 +1997,7 @@ shared_focus = {
 	x = -1
 	y = 2
 	relative_position_id = FEA_mobile_1
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_mobile_2 }
 
 	ai_will_do = {
@@ -2045,7 +2045,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = FEA_mobile_1
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_mobile_1 }
 
 	ai_will_do = {
@@ -2072,7 +2072,7 @@ shared_focus = {
 	x = 1
 	y = 2
 	relative_position_id = FEA_mobile_1
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_mobile_4 }
 
 	ai_will_do = {
@@ -2095,7 +2095,7 @@ shared_focus = {
 	x = 0
 	y = 3
 	relative_position_id = FEA_mobile_1
-	cost = 10.00
+	cost = 8.00
 	prerequisite = { focus = FEA_mobile_3 }
 	prerequisite = { focus = FEA_mobile_5 }
 
@@ -2161,7 +2161,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = FEA_superior_1
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_superior_1 }
 
 	ai_will_do = {
@@ -2190,7 +2190,7 @@ shared_focus = {
 	x = -1
 	y = 2
 	relative_position_id = FEA_superior_1
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_superior_2 }
 
 	ai_will_do = {
@@ -2238,7 +2238,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = FEA_superior_1
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_superior_1 }
 
 	ai_will_do = {
@@ -2251,12 +2251,7 @@ shared_focus = {
 			name = special_forces_bonus
 			bonus = 1.0
 			uses = 2
-			technology = paratroopers
-			technology = paratroopers2
-			technology = marines
-			technology = marines2
-			technology = tech_mountaineers
-			technology = tech_mountaineers2
+			category = special_forces_tech
 		}
 	}
 }
@@ -2267,7 +2262,7 @@ shared_focus = {
 	x = 1
 	y = 2
 	relative_position_id = FEA_superior_1
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_superior_4 }
 
 	ai_will_do = {
@@ -2293,7 +2288,7 @@ shared_focus = {
 	x = 0
 	y = 3
 	relative_position_id = FEA_superior_1
-	cost = 10.00
+	cost = 8.00
 	prerequisite = { focus = FEA_superior_3 }
 	prerequisite = { focus = FEA_superior_5 }
 
@@ -2359,7 +2354,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = FEA_grand_1
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_grand_1 }
 
 	ai_will_do = {
@@ -2383,7 +2378,7 @@ shared_focus = {
 	x = -1
 	y = 2
 	relative_position_id = FEA_grand_1
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_grand_2 }
 
 	ai_will_do = {
@@ -2407,7 +2402,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = FEA_grand_1
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_grand_1 }
 
 	ai_will_do = {
@@ -2431,7 +2426,7 @@ shared_focus = {
 	x = 1
 	y = 2
 	relative_position_id = FEA_grand_1
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_grand_4 }
 
 	ai_will_do = {
@@ -2450,7 +2445,7 @@ shared_focus = {
 	x = 0
 	y = 3
 	relative_position_id = FEA_grand_1
-	cost = 10.00
+	cost = 8.00
 	prerequisite = { focus = FEA_grand_3 }
 	prerequisite = { focus = FEA_grand_5 }
 
@@ -2516,7 +2511,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = FEA_mass_1
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_mass_1 }
 
 	ai_will_do = {
@@ -2540,7 +2535,7 @@ shared_focus = {
 	x = -1
 	y = 2
 	relative_position_id = FEA_mass_1
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_mass_2 }
 
 	ai_will_do = {
@@ -2564,7 +2559,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = FEA_mass_1
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_mass_1 }
 
 	ai_will_do = {
@@ -2588,7 +2583,7 @@ shared_focus = {
 	x = 1
 	y = 2
 	relative_position_id = FEA_mass_1
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_mass_4 }
 
 	ai_will_do = {
@@ -2665,7 +2660,7 @@ shared_focus = {
 	x = 0
 	y = 3
 	relative_position_id = FEA_mass_1
-	cost = 10.00
+	cost = 8.00
 	prerequisite = { focus = FEA_mass_3 }
 	prerequisite = { focus = FEA_mass_5 }
 
@@ -2693,7 +2688,7 @@ shared_focus = {
 	x = 0
 	y = 5
 	relative_position_id = FEA_army_stuff
-	cost = 10.00
+	cost = 8.00
 	prerequisite = { focus = FEA_mobile_6 focus = FEA_superior_6 focus = FEA_grand_6 focus = FEA_mass_6}
 
 	ai_will_do = {
@@ -2711,7 +2706,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = FEA_military_science
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_military_science }
 
 	ai_will_do = {
@@ -2734,7 +2729,7 @@ shared_focus = {
 	x = -3
 	y = 1
 	relative_position_id = FEA_military_science
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_military_science }
 
 	ai_will_do = {
@@ -2760,7 +2755,7 @@ shared_focus = {
 	x = 3
 	y = 1
 	relative_position_id = FEA_military_science
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_military_science }
 
 	ai_will_do = {
@@ -2787,7 +2782,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = FEA_military_science
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_military_science }
 
 	ai_will_do = {
@@ -2824,7 +2819,7 @@ shared_focus = {
 	x = -2
 	y = 1
 	relative_position_id = FEA_navy_stuff
-	cost = 8.00
+	cost = 7.00
 	prerequisite = { focus = FEA_navy_stuff }
 	mutually_exclusive = { focus = FEA_strike_1 }
 
@@ -2856,7 +2851,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = FEA_being_1
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_being_1 }
 
 	ai_will_do = {
@@ -2880,7 +2875,7 @@ shared_focus = {
 	x = -1
 	y = 2
 	relative_position_id = FEA_being_1
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_being_2 }
 	bypass = { NOT = { owns_state = 433 } }
 
@@ -2917,7 +2912,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = FEA_being_1
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_being_1 }
 
 	ai_will_do = {
@@ -2940,7 +2935,7 @@ shared_focus = {
 	x = 1
 	y = 2
 	relative_position_id = FEA_being_1
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_being_4 }
 
 	ai_will_do = {
@@ -2964,7 +2959,7 @@ shared_focus = {
 	x = 0
 	y = 3
 	relative_position_id = FEA_being_1
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_being_3 }
 	prerequisite = { focus = FEA_being_5 }
 	ai_will_do = {
@@ -2988,7 +2983,7 @@ shared_focus = {
 	x = 2
 	y = 1
 	relative_position_id = FEA_navy_stuff
-	cost = 8.00
+	cost = 7.00
 	prerequisite = { focus = FEA_navy_stuff }
 	mutually_exclusive = { focus = FEA_being_1 }
 
@@ -3020,7 +3015,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = FEA_strike_1
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_strike_1 }
 
 	ai_will_do = {
@@ -3043,7 +3038,7 @@ shared_focus = {
 	x = -1
 	y = 2
 	relative_position_id = FEA_strike_1
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_strike_2 }
 
 	ai_will_do = {
@@ -3066,7 +3061,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = FEA_strike_1
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_strike_1 }
 
 	ai_will_do = {
@@ -3089,7 +3084,7 @@ shared_focus = {
 	x = 1
 	y = 2
 	relative_position_id = FEA_strike_1
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_strike_4 }
 
 	ai_will_do = {
@@ -3119,7 +3114,7 @@ shared_focus = {
 	x = 0
 	y = 3
 	relative_position_id = FEA_strike_1
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_strike_3 }
 	prerequisite = { focus = FEA_strike_5 }
 	ai_will_do = {
@@ -3143,7 +3138,7 @@ shared_focus = {
 	x = 0
 	y = 5
 	relative_position_id = FEA_navy_stuff
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_being_6 focus = FEA_strike_6 }
 	ai_will_do = {
 		factor = 60
@@ -3178,7 +3173,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = FEA_further_expansion
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_further_expansion }
 	ai_will_do = {
 		factor = 60
@@ -3199,7 +3194,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = FEA_further_expansion
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_further_expansion }
 	ai_will_do = {
 		factor = 60
@@ -3210,8 +3205,7 @@ shared_focus = {
 			name = special_forces_bonus
 			bonus = 1.0
 			uses = 2
-			technology = marines
-			technology = marines2
+			category = marine_tech
 		}
 	}
 }
@@ -3252,7 +3246,7 @@ shared_focus = {
 	x = -2
 	y = 1
 	relative_position_id = FEA_air_stuff
-	cost = 8.00
+	cost = 7.00
 	prerequisite = { focus = FEA_air_stuff }
 	mutually_exclusive = { focus = FEA_air_bombing_1 }
 
@@ -3277,7 +3271,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = FEA_air_superior_1
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_air_superior_1 }
 
 	ai_will_do = {
@@ -3300,7 +3294,7 @@ shared_focus = {
 	x = -1
 	y = 2
 	relative_position_id = FEA_air_superior_1
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_air_superior_2 }
 
 	ai_will_do = {
@@ -3323,7 +3317,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = FEA_air_superior_1
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_air_superior_1 }
 
 	ai_will_do = {
@@ -3346,7 +3340,7 @@ shared_focus = {
 	x = 1
 	y = 2
 	relative_position_id = FEA_air_superior_1
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_air_superior_4 }
 
 	ai_will_do = {
@@ -3378,7 +3372,7 @@ shared_focus = {
 	x = 0
 	y = 3
 	relative_position_id = FEA_air_superior_1
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_air_superior_3 }
 	prerequisite = { focus = FEA_air_superior_5 }
 	ai_will_do = {
@@ -3402,7 +3396,7 @@ shared_focus = {
 	x = 2
 	y = 1
 	relative_position_id = FEA_air_stuff
-	cost = 8.00
+	cost = 7.00
 	prerequisite = { focus = FEA_air_stuff }
 	mutually_exclusive = { focus = FEA_air_superior_1 }
 
@@ -3427,7 +3421,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = FEA_air_bombing_1
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_air_bombing_1 }
 
 	ai_will_do = {
@@ -3450,7 +3444,7 @@ shared_focus = {
 	x = -1
 	y = 2
 	relative_position_id = FEA_air_bombing_1
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_air_bombing_2 }
 
 	ai_will_do = {
@@ -3473,7 +3467,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = FEA_air_bombing_1
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_air_bombing_1 }
 
 	ai_will_do = {
@@ -3496,7 +3490,7 @@ shared_focus = {
 	x = 1
 	y = 2
 	relative_position_id = FEA_air_bombing_1
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_air_bombing_4 }
 
 	ai_will_do = {
@@ -3519,7 +3513,7 @@ shared_focus = {
 	x = 0
 	y = 3
 	relative_position_id = FEA_air_bombing_1
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_air_bombing_3 }
 	prerequisite = { focus = FEA_air_bombing_5 }
 
@@ -3544,7 +3538,7 @@ shared_focus = {
 	x = 0
 	y = 5
 	relative_position_id = FEA_air_stuff
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_air_superior_6 focus = FEA_air_bombing_6}
 
 	ai_will_do = {
@@ -3578,7 +3572,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = FEA_airbase_expansion
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_airbase_expansion }
 
 	ai_will_do = {
@@ -3601,7 +3595,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = FEA_airbase_expansion
-	cost = 10.00
+	cost = 7.00
 	prerequisite = { focus = FEA_airbase_expansion }
 
 	ai_will_do = {
@@ -3613,8 +3607,7 @@ shared_focus = {
 			name = special_forces_bonus
 			bonus = 3
 			uses = 1
-			technology = paratroopers
-			technology = paratroopers2
+			category = para_tech
 		}
 	}
 }
@@ -3623,7 +3616,7 @@ shared_focus = {
 
 shared_focus = {
 	id = FEA_government_problems
-	icon = GFX_focus_generic_strike_at_democracy2
+	icon = GFX_goal_feathasia
 	cost = 5.00
 	available = { always = no }
 	bypass = {
@@ -4069,7 +4062,7 @@ shared_focus = {
 	x = -2
 	y = 1
 	relative_position_id = FEA_red_dawn
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_red_dawn }
 
 	ai_will_do = {
@@ -4088,7 +4081,7 @@ shared_focus = {
 	x = -3
 	y = 2
 	relative_position_id = FEA_red_dawn
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_new_parliament }
 
 	ai_will_do = {
@@ -4108,7 +4101,7 @@ shared_focus = {
 	x = -1
 	y = 2
 	relative_position_id = FEA_red_dawn
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_new_parliament }
 
 	ai_will_do = {
@@ -4128,7 +4121,7 @@ shared_focus = {
 	x = -2
 	y = 3
 	relative_position_id = FEA_red_dawn
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_sideline_rozenkamp_brothers }
 	prerequisite = { focus = FEA_work_with_others }
 
@@ -4201,7 +4194,7 @@ shared_focus = {
 	x = 0
 	y = 3
 	relative_position_id = FEA_red_dawn
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_education_reform_pvda }
 
 	ai_will_do = {
@@ -4220,7 +4213,7 @@ shared_focus = {
 	x = 2
 	y = 1
 	relative_position_id = FEA_red_dawn
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_red_dawn }
 
 	ai_will_do = {
@@ -4267,7 +4260,7 @@ shared_focus = {
 	x = 1
 	y = 2
 	relative_position_id = FEA_red_dawn
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_resource_nationalization }
 
 	ai_will_do = {
@@ -4313,7 +4306,7 @@ shared_focus = {
 	x = 3
 	y = 2
 	relative_position_id = FEA_red_dawn
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_resource_nationalization }
 
 	ai_will_do = {
@@ -4390,7 +4383,7 @@ shared_focus = {
 	x = 2
 	y = 3
 	relative_position_id = FEA_red_dawn
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_support_farmers }
 	prerequisite = { focus = FEA_industrial_planning }
 
@@ -4410,7 +4403,7 @@ shared_focus = {
 	x = 1
 	y = 4
 	relative_position_id = FEA_red_dawn
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_socialist_education2 }
 
 	ai_will_do = {
@@ -4441,10 +4434,10 @@ shared_focus = {
 					}
 				}
 			}
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -4457,7 +4450,7 @@ shared_focus = {
 	x = 0
 	y = 5
 	relative_position_id = FEA_a_new_dawn
-	cost = 10.00
+	cost = 8.00
 	prerequisite = { focus = FEA_the_duke_is_our_comrade }
 	prerequisite = { focus = FEA_increase_science_base_pvda }
 	prerequisite = { focus = FEA_local_gunsmiths }
@@ -4502,7 +4495,7 @@ shared_focus = {
 	x = -2
 	y = 1
 	relative_position_id = FEA_spring_in_feathisia
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_spring_in_feathisia }
 
 	ai_will_do = {
@@ -4523,7 +4516,7 @@ shared_focus = {
 	x = -3
 	y = 2
 	relative_position_id = FEA_spring_in_feathisia
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_break_bread }
 
 	ai_will_do = {
@@ -4549,7 +4542,7 @@ shared_focus = {
 	x = -1
 	y = 2
 	relative_position_id = FEA_spring_in_feathisia
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_break_bread }
 
 	ai_will_do = {
@@ -4569,7 +4562,7 @@ shared_focus = {
 	x = -2
 	y = 3
 	relative_position_id = FEA_spring_in_feathisia
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_with_the_enemy }
 	prerequisite = { focus = FEA_PvdA_members }
 
@@ -4611,7 +4604,7 @@ shared_focus = {
 	x = -1
 	y = 4
 	relative_position_id = FEA_spring_in_feathisia
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_a_pillarized_political_system }
 
 	ai_will_do = {
@@ -4650,7 +4643,7 @@ shared_focus = {
 	x = 0
 	y = 3
 	relative_position_id = FEA_spring_in_feathisia
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_education_reform_ldp }
 
 	ai_will_do = {
@@ -4669,7 +4662,7 @@ shared_focus = {
 	x = 2
 	y = 1
 	relative_position_id = FEA_spring_in_feathisia
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_spring_in_feathisia }
 
 	ai_will_do = {
@@ -4698,7 +4691,7 @@ shared_focus = {
 	x = 1
 	y = 2
 	relative_position_id = FEA_spring_in_feathisia
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_modernization }
 
 	ai_will_do = {
@@ -4719,7 +4712,7 @@ shared_focus = {
 	x = 3
 	y = 2
 	relative_position_id = FEA_spring_in_feathisia
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_modernization }
 
 	ai_will_do = {
@@ -4796,7 +4789,7 @@ shared_focus = {
 	x = 2
 	y = 3
 	relative_position_id = FEA_spring_in_feathisia
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_open_door_policy }
 	prerequisite = { focus = FEA_support_factories }
 
@@ -4831,7 +4824,7 @@ shared_focus = {
 	x = 1
 	y = 4
 	relative_position_id = FEA_spring_in_feathisia
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_open_to_world }
 
 	ai_will_do = {
@@ -4877,7 +4870,7 @@ shared_focus = {
 	x = 0
 	y = 5
 	relative_position_id = FEA_a_new_dawn
-	cost = 10.00
+	cost = 8.00
 	prerequisite = { focus = FEA_loyal_army }
 	prerequisite = { focus = FEA_increase_science_base_ldp }
 	prerequisite = { focus = FEA_housing }
@@ -4922,7 +4915,7 @@ shared_focus = {
 	x = -2
 	y = 1
 	relative_position_id = FEA_the_old_guard
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_the_old_guard }
 
 	ai_will_do = {
@@ -4942,7 +4935,7 @@ shared_focus = {
 	x = -3
 	y = 2
 	relative_position_id = FEA_the_old_guard
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_open_sphere }
 
 	ai_will_do = {
@@ -4964,7 +4957,7 @@ shared_focus = {
 	x = -1
 	y = 2
 	relative_position_id = FEA_the_old_guard
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_open_sphere }
 
 	ai_will_do = {
@@ -5011,7 +5004,7 @@ shared_focus = {
 	x = -2
 	y = 3
 	relative_position_id = FEA_the_old_guard
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_FNV_members }
 	prerequisite = { focus = FEA_protect_workers }
 
@@ -5033,7 +5026,7 @@ shared_focus = {
 	x = -1
 	y = 4
 	relative_position_id = FEA_the_old_guard
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_new_police_force }
 
 	ai_will_do = {
@@ -5086,7 +5079,7 @@ shared_focus = {
 	x = 0
 	y = 3
 	relative_position_id = FEA_the_old_guard
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_education_reform_fhp }
 
 	ai_will_do = {
@@ -5105,7 +5098,7 @@ shared_focus = {
 	x = 2
 	y = 1
 	relative_position_id = FEA_the_old_guard
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_the_old_guard }
 
 	ai_will_do = {
@@ -5126,7 +5119,7 @@ shared_focus = {
 	x = 1
 	y = 2
 	relative_position_id = FEA_the_old_guard
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_education_for_everyone }
 
 	ai_will_do = {
@@ -5145,7 +5138,7 @@ shared_focus = {
 	x = 3
 	y = 2
 	relative_position_id = FEA_the_old_guard
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_education_for_everyone }
 
 	ai_will_do = {
@@ -5199,7 +5192,7 @@ shared_focus = {
 	x = 2
 	y = 3
 	relative_position_id = FEA_the_old_guard
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_noble_support }
 	prerequisite = { focus = FEA_industrial_experts }
 
@@ -5281,7 +5274,7 @@ shared_focus = {
 	x = 1
 	y = 4
 	relative_position_id = FEA_the_old_guard
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_railroad_projects }
 
 	ai_will_do = {
@@ -5358,7 +5351,7 @@ shared_focus = {
 	x = 0
 	y = 5
 	relative_position_id = FEA_a_new_dawn
-	cost = 10.00
+	cost = 8.00
 	prerequisite = { focus = FEA_the_ducal_guard }
 	prerequisite = { focus = FEA_increase_science_base_fhp }
 	prerequisite = { focus = FEA_support_local_companies }
@@ -5403,7 +5396,7 @@ shared_focus = {
 	x = -2
 	y = 1
 	relative_position_id = FEA_a_new_dawn
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_a_new_dawn }
 
 	ai_will_do = {
@@ -5421,7 +5414,7 @@ shared_focus = {
 	x = -3
 	y = 2
 	relative_position_id = FEA_a_new_dawn
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_deal_with_sentinels }
 
 	ai_will_do = {
@@ -5458,7 +5451,7 @@ shared_focus = {
 	x = -2
 	y = 3
 	relative_position_id = FEA_a_new_dawn
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_new_deputy }
 	prerequisite = { focus = FEA_reformed_paramiliatry_units }
 
@@ -5478,7 +5471,7 @@ shared_focus = {
 	x = -1
 	y = 4
 	relative_position_id = FEA_a_new_dawn
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_deal_with_the_rest }
 
 	ai_will_do = {
@@ -5531,7 +5524,7 @@ shared_focus = {
 	x = 0
 	y = 3
 	relative_position_id = FEA_a_new_dawn
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_education_reform }
 
 	ai_will_do = {
@@ -5550,7 +5543,7 @@ shared_focus = {
 	x = 2
 	y = 1
 	relative_position_id = FEA_a_new_dawn
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_a_new_dawn }
 
 	ai_will_do = {
@@ -5569,7 +5562,7 @@ shared_focus = {
 	x = 1
 	y = 2
 	relative_position_id = FEA_a_new_dawn
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_welfare_for_the_feathisian }
 
 	ai_will_do = {
@@ -5590,7 +5583,7 @@ shared_focus = {
 	x = 3
 	y = 2
 	relative_position_id = FEA_a_new_dawn
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_welfare_for_the_feathisian }
 
 	ai_will_do = {
@@ -5667,7 +5660,7 @@ shared_focus = {
 	x = 2
 	y = 3
 	relative_position_id = FEA_a_new_dawn
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_youth_groups }
 	prerequisite = { focus = FEA_state_factories }
 
@@ -5688,7 +5681,7 @@ shared_focus = {
 	x = 1
 	y = 4
 	relative_position_id = FEA_a_new_dawn
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_revived_nationalism }
 
 	ai_will_do = {
@@ -5726,7 +5719,7 @@ shared_focus = {
 	x = 0
 	y = 5
 	relative_position_id = FEA_a_new_dawn
-	cost = 10.00
+	cost = 8.00
 	prerequisite = { focus = FEA_loyalty_to_the_duke_and_minister }
 	prerequisite = { focus = FEA_increase_science_base }
 	prerequisite = { focus = FEA_memories_of_greater_feathisia }
@@ -5782,7 +5775,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = FEA_stappenbeld_communists
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_stappenbeld_communists }
 
 	ai_will_do = {
@@ -5800,7 +5793,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = FEA_stappenbeld_communists
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_stappenbeld_communists }
 
 	ai_will_do = {
@@ -5877,7 +5870,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	relative_position_id = FEA_stappenbeld_communists
-	cost = 5.00
+	cost = 1.00
 	prerequisite = { focus = FEA_vanguardism }
 	prerequisite = { focus = FEA_collectiveisation }
 
@@ -5896,7 +5889,7 @@ shared_focus = {
 	x = -1
 	y = 3
 	relative_position_id = FEA_stappenbeld_communists
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_the_general_secretary }
 
 	ai_will_do = {
@@ -5916,7 +5909,7 @@ shared_focus = {
 	x = -1
 	y = 4
 	relative_position_id = FEA_stappenbeld_communists
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_organize_the_workers }
 
 	ai_will_do = {
@@ -5936,7 +5929,7 @@ shared_focus = {
 	x = 1
 	y = 3
 	relative_position_id = FEA_stappenbeld_communists
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_the_general_secretary }
 
 	ai_will_do = {
@@ -5956,7 +5949,7 @@ shared_focus = {
 	x = 1
 	y = 4
 	relative_position_id = FEA_stappenbeld_communists
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_communal_farming }
 
 	ai_will_do = {
@@ -5977,7 +5970,7 @@ shared_focus = {
 	x = 0
 	y = 5
 	relative_position_id = FEA_stappenbeld_communists
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_communist_army }
 	prerequisite = { focus = FEA_destroy_the_enemy }
 
@@ -6024,7 +6017,7 @@ shared_focus = {
 	x = -3
 	y = 3
 	relative_position_id = FEA_party_convention
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_education_reform_communist }
 
 	ai_will_do = {
@@ -6063,7 +6056,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = FEA_kogchel_socialists
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_kogchel_socialists }
 
 	ai_will_do = {
@@ -6081,7 +6074,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = FEA_kogchel_socialists
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_kogchel_socialists }
 
 	ai_will_do = {
@@ -6099,7 +6092,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	relative_position_id = FEA_kogchel_socialists
-	cost = 5.00
+	cost = 1.00
 	prerequisite = { focus = FEA_workers_rights_2 }
 	prerequisite = { focus = FEA_free_healthcare_2 }
 
@@ -6118,7 +6111,7 @@ shared_focus = {
 	x = -1
 	y = 3
 	relative_position_id = FEA_kogchel_socialists
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_direct_democracy }
 
 	ai_will_do = {
@@ -6197,7 +6190,7 @@ shared_focus = {
 	x = -1
 	y = 4
 	relative_position_id = FEA_kogchel_socialists
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_unionism_2 }
 
 	ai_will_do = {
@@ -6217,7 +6210,7 @@ shared_focus = {
 	x = 1
 	y = 3
 	relative_position_id = FEA_kogchel_socialists
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_direct_democracy }
 
 	ai_will_do = {
@@ -6237,7 +6230,7 @@ shared_focus = {
 	x = 1
 	y = 4
 	relative_position_id = FEA_kogchel_socialists
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_public_works_projects_2 }
 
 	ai_will_do = {
@@ -6257,7 +6250,7 @@ shared_focus = {
 	x = 0
 	y = 5
 	relative_position_id = FEA_kogchel_socialists
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_union_militias }
 	prerequisite = { focus = FEA_defend_the_homeland }
 
@@ -6301,7 +6294,7 @@ shared_focus = {
 	x = 3
 	y = 3
 	relative_position_id = FEA_party_convention
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_education_reform_communist_2 }
 
 	ai_will_do = {
@@ -6340,7 +6333,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = FEA_rozenkamp_strasserists
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_rozenkamp_strasserists }
 
 	ai_will_do = {
@@ -6362,7 +6355,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = FEA_rozenkamp_strasserists
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_rozenkamp_strasserists }
 
 	ai_will_do = {
@@ -6380,7 +6373,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	relative_position_id = FEA_rozenkamp_strasserists
-	cost = 5.00
+	cost = 1.00
 	prerequisite = { focus = FEA_industrial_plan }
 	prerequisite = { focus = FEA_purge_opposition }
 
@@ -6399,7 +6392,7 @@ shared_focus = {
 	x = -1
 	y = 3
 	relative_position_id = FEA_rozenkamp_strasserists
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_the_fuhrer }
 
 	ai_will_do = {
@@ -6419,7 +6412,7 @@ shared_focus = {
 	x = -1
 	y = 4
 	relative_position_id = FEA_rozenkamp_strasserists
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_secret_police }
 
 	ai_will_do = {
@@ -6439,7 +6432,7 @@ shared_focus = {
 	x = 1
 	y = 3
 	relative_position_id = FEA_rozenkamp_strasserists
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_the_fuhrer }
 
 	ai_will_do = {
@@ -6518,7 +6511,7 @@ shared_focus = {
 	x = 1
 	y = 4
 	relative_position_id = FEA_rozenkamp_strasserists
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_work_for_feathisia }
 
 	ai_will_do = {
@@ -6568,7 +6561,7 @@ shared_focus = {
 	x = 0
 	y = 5
 	relative_position_id = FEA_rozenkamp_strasserists
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_loyal_army_stras }
 	prerequisite = { focus = FEA_the_war_economy }
 
@@ -6630,7 +6623,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = FEA_hermans_stratocracy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_hermans_stratocracy }
 
 	ai_will_do = {
@@ -6651,7 +6644,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = FEA_hermans_stratocracy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_hermans_stratocracy }
 
 	ai_will_do = {
@@ -6728,7 +6721,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	relative_position_id = FEA_hermans_stratocracy
-	cost = 5.00
+	cost = 1.00
 	prerequisite = { focus = FEA_purge_the_enemies }
 	prerequisite = { focus = FEA_armouries_on_every_corner }
 
@@ -6747,7 +6740,7 @@ shared_focus = {
 	x = -1
 	y = 3
 	relative_position_id = FEA_hermans_stratocracy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_a_puppet_duke }
 
 	ai_will_do = {
@@ -6768,7 +6761,7 @@ shared_focus = {
 	x = -1
 	y = 4
 	relative_position_id = FEA_hermans_stratocracy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_mandatory_serivce_for_all }
 
 	ai_will_do = {
@@ -6818,7 +6811,7 @@ shared_focus = {
 	x = 1
 	y = 3
 	relative_position_id = FEA_hermans_stratocracy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_a_puppet_duke }
 
 	ai_will_do = {
@@ -6838,7 +6831,7 @@ shared_focus = {
 	x = 1
 	y = 4
 	relative_position_id = FEA_hermans_stratocracy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_militarized_society }
 
 	ai_will_do = {
@@ -6858,7 +6851,7 @@ shared_focus = {
 	x = 0
 	y = 5
 	relative_position_id = FEA_hermans_stratocracy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_calibrate_the_economy }
 	prerequisite = { focus = FEA_partisan_warfare }
 
@@ -6902,7 +6895,7 @@ shared_focus = {
 	x = -3
 	y = 3
 	relative_position_id = FEA_the_fate_of_feathisia
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_education_reform_fascist_1 }
 
 	ai_will_do = {
@@ -6941,7 +6934,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = FEA_moldernik_the_leader
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_moldernik_the_leader }
 
 	ai_will_do = {
@@ -6959,7 +6952,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = FEA_moldernik_the_leader
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_moldernik_the_leader }
 
 	ai_will_do = {
@@ -6977,7 +6970,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	relative_position_id = FEA_moldernik_the_leader
-	cost = 5.00
+	cost = 1.00
 	prerequisite = { focus = FEA_welfare_for_the_feathisian_2 }
 	prerequisite = { focus = FEA_youth_groups_2 }
 
@@ -6996,7 +6989,7 @@ shared_focus = {
 	x = -1
 	y = 3
 	relative_position_id = FEA_moldernik_the_leader
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_eliminate_heeren }
 
 	ai_will_do = {
@@ -7075,7 +7068,7 @@ shared_focus = {
 	x = -1
 	y = 4
 	relative_position_id = FEA_moldernik_the_leader
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_corporate_allies }
 
 	ai_will_do = {
@@ -7125,7 +7118,7 @@ shared_focus = {
 	x = 1
 	y = 3
 	relative_position_id = FEA_moldernik_the_leader
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_eliminate_heeren }
 
 	ai_will_do = {
@@ -7145,7 +7138,7 @@ shared_focus = {
 	x = 1
 	y = 4
 	relative_position_id = FEA_moldernik_the_leader
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_grand_new_army }
 
 	ai_will_do = {
@@ -7165,7 +7158,7 @@ shared_focus = {
 	x = 0
 	y = 5
 	relative_position_id = FEA_moldernik_the_leader
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_state_unions_2 }
 	prerequisite = { focus = FEA_labour_battalions_2 }
 
@@ -7228,7 +7221,7 @@ shared_focus = {
 	x = 3
 	y = 3
 	relative_position_id = FEA_the_fate_of_feathisia
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_education_reform_fascist_2 }
 
 	ai_will_do = {
@@ -7267,7 +7260,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = FEA_oh_god_why
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_oh_god_why }
 
 	ai_will_do = {
@@ -7288,7 +7281,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = FEA_oh_god_why
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_oh_god_why }
 
 	ai_will_do = {
@@ -7306,7 +7299,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	relative_position_id = FEA_oh_god_why
-	cost = 5.00
+	cost = 1.00
 	prerequisite = { focus = FEA_literal_gestapo }
 	prerequisite = { focus = FEA_sentinels_integrated }
 
@@ -7316,6 +7309,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FEA_the_great_purge"
 		country_event = { days = 1 id = feat.53 }
+		add_stability = 0.10
 	}
 }
 
@@ -7325,7 +7319,7 @@ shared_focus = {
 	x = -1
 	y = 3
 	relative_position_id = FEA_oh_god_why
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_the_great_purge }
 
 	ai_will_do = {
@@ -7355,7 +7349,7 @@ shared_focus = {
 	x = -1
 	y = 4
 	relative_position_id = FEA_oh_god_why
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_death_squads }
 
 	ai_will_do = {
@@ -7375,7 +7369,7 @@ shared_focus = {
 	x = 1
 	y = 3
 	relative_position_id = FEA_oh_god_why
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_the_great_purge }
 
 	ai_will_do = {
@@ -7455,7 +7449,7 @@ shared_focus = {
 	x = 1
 	y = 4
 	relative_position_id = FEA_oh_god_why
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_corporate_allies_2 }
 
 	ai_will_do = {
@@ -7534,7 +7528,7 @@ shared_focus = {
 	x = 0
 	y = 5
 	relative_position_id = FEA_oh_god_why
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_liberty_through_work }
 	prerequisite = { focus = FEA_labour_for_the_state }
 
@@ -7574,7 +7568,7 @@ shared_focus = {
 shared_focus = {
 	id = FEA_c_industry_1
 	icon = GFX_goal_bankruptcy
-	cost = 7.00
+	cost = 4.00
 	ai_will_do = { factor = 100 }
 	x = 31
 	y = 0
@@ -7593,7 +7587,7 @@ shared_focus = {
 	x = -2
 	y = 1
 	relative_position_id = FEA_c_industry_1
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_c_industry_1 }
 
 	ai_will_do = {
@@ -7627,7 +7621,7 @@ shared_focus = {
 	x = -3
 	y = 2
 	relative_position_id = FEA_c_industry_1
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_c_industry_2 }
 
 	ai_will_do = {
@@ -7647,7 +7641,7 @@ shared_focus = {
 		}
 		add_resource = {
 			type = steel
-			amount = 8
+			amount = 12
 			state = 433
 		}
 	}
@@ -7659,7 +7653,7 @@ shared_focus = {
 	x = -1
 	y = 2
 	relative_position_id = FEA_c_industry_1
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_c_industry_2 }
 
 	ai_will_do = {
@@ -7674,7 +7668,7 @@ shared_focus = {
 		}
 		add_resource = {
 			type = chromium
-			amount = 10
+			amount = 12
 			state = 538
 		}
 	}
@@ -7686,7 +7680,7 @@ shared_focus = {
 	x = -2
 	y = 3
 	relative_position_id = FEA_c_industry_1
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_c_industry_3 }
 	prerequisite = { focus = FEA_c_industry_4 }
 
@@ -7702,10 +7696,10 @@ shared_focus = {
 			category = synth_resources
 		}
 		538 = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = synthetic_refinery
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -7718,7 +7712,7 @@ shared_focus = {
 	x = 2
 	y = 1
 	relative_position_id = FEA_c_industry_1
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_c_industry_1 }
 
 	ai_will_do = {
@@ -7805,7 +7799,7 @@ shared_focus = {
 	x = 1
 	y = 2
 	relative_position_id = FEA_c_industry_1
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_c_industry_6 }
 
 	ai_will_do = {
@@ -7836,10 +7830,10 @@ shared_focus = {
 					}
 				}
 			}
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -7866,10 +7860,10 @@ shared_focus = {
 					}
 				}
 			}
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -7882,7 +7876,7 @@ shared_focus = {
 	x = 3
 	y = 2
 	relative_position_id = FEA_c_industry_1
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_c_industry_6 }
 
 	ai_will_do = {
@@ -7913,10 +7907,10 @@ shared_focus = {
 					}
 				}
 			}
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -7943,10 +7937,10 @@ shared_focus = {
 					}
 				}
 			}
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -7959,7 +7953,7 @@ shared_focus = {
 	x = 2
 	y = 3
 	relative_position_id = FEA_c_industry_1
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_c_industry_7 }
 	prerequisite = { focus = FEA_c_industry_8 }
 
@@ -7990,7 +7984,7 @@ shared_focus = {
 	x = -4
 	y = 1
 	relative_position_id = FEA_c_industry_1
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_c_industry_1 }
 
 	ai_will_do = {
@@ -7999,31 +7993,31 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FEA_c_industry_10"
 		666 = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 		}
 		441 = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 		}
 		440 = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 		}
 		520 = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 		}
 		434 = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 		}
 		497 = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 		}
 		498 = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 		}
 		433 = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 		}
 		538 = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 		}
 	}
 }
@@ -8034,7 +8028,7 @@ shared_focus = {
 	x = -4
 	y = 4
 	relative_position_id = FEA_c_industry_1
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_c_industry_10 }
 
 	ai_will_do = {
@@ -8043,31 +8037,31 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FEA_c_industry_11"
 		666 = {
-			add_manpower = 40000
+			add_manpower = 50000
 		}
 		441 = {
-			add_manpower = 40000
+			add_manpower = 50000
 		}
 		440 = {
-			add_manpower = 40000
+			add_manpower = 50000
 		}
 		520 = {
-			add_manpower = 40000
+			add_manpower = 50000
 		}
 		434 = {
-			add_manpower = 40000
+			add_manpower = 50000
 		}
 		497 = {
-			add_manpower = 40000
+			add_manpower = 50000
 		}
 		498 = {
-			add_manpower = 40000
+			add_manpower = 50000
 		}
 		433 = {
-			add_manpower = 40000
+			add_manpower = 50000
 		}
 		538 = {
-			add_manpower = 40000
+			add_manpower = 50000
 		}
 	}
 }
@@ -8078,7 +8072,7 @@ shared_focus = {
 	x = 4
 	y = 1
 	relative_position_id = FEA_c_industry_1
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_c_industry_1 }
 
 	ai_will_do = {
@@ -8101,7 +8095,7 @@ shared_focus = {
 	x = 4
 	y = 4
 	relative_position_id = FEA_c_industry_1
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_c_industry_12 }
 
 	ai_will_do = {
@@ -8124,7 +8118,7 @@ shared_focus = {
 	x = 0
 	y = 4
 	relative_position_id = FEA_c_industry_1
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_c_industry_5 }
 	prerequisite = { focus = FEA_c_industry_9 }
 
@@ -8154,7 +8148,7 @@ shared_focus = {
 	x = 0
 	y = 5
 	relative_position_id = FEA_c_industry_1
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_c_industry_11 }
 	prerequisite = { focus = FEA_c_industry_13 }
 	prerequisite = { focus = FEA_c_industry_14 }
@@ -8207,7 +8201,7 @@ shared_focus = {
 	x = -2
 	y = 2
 	relative_position_id = FEA_martial_law
-	cost = 5.00
+	cost = 2.00
 	prerequisite = { focus = FEA_disband_parliament }
 	available = { has_idea = FEA_commie_ressistance }
 	ai_will_do = {
@@ -8238,7 +8232,7 @@ shared_focus = {
 	x = -2
 	y = 3
 	relative_position_id = FEA_martial_law
-	cost = 6.00
+	cost = 2.00
 	prerequisite = { focus = FEA_deal_with_PvdA }
 	available = { has_idea = FEA_commie_ressistance }
 	ai_will_do = {
@@ -8297,7 +8291,7 @@ shared_focus = {
 	x = -2
 	y = 4
 	relative_position_id = FEA_martial_law
-	cost = 8.00
+	cost = 3.00
 	prerequisite = { focus = FEA_pull_them_out }
 	available = { has_idea = FEA_commie_ressistance }
 	ai_will_do = {
@@ -8316,7 +8310,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	relative_position_id = FEA_martial_law
-	cost = 5.00
+	cost = 2.00
 	prerequisite = { focus = FEA_disband_parliament }
 	available = { has_idea = FEA_democratic_ressistance }
 	ai_will_do = {
@@ -8346,7 +8340,7 @@ shared_focus = {
 	x = 0
 	y = 3
 	relative_position_id = FEA_martial_law
-	cost = 6.00
+	cost = 2.00
 	prerequisite = { focus = FEA_deal_with_LDP }
 	available = { has_idea = FEA_democratic_ressistance }
 	ai_will_do = {
@@ -8425,7 +8419,7 @@ shared_focus = {
 	x = 0
 	y = 4
 	relative_position_id = FEA_martial_law
-	cost = 8.00
+	cost = 3.00
 	prerequisite = { focus = FEA_liberals_get_noose_too }
 	available = { has_idea = FEA_democratic_ressistance }
 	ai_will_do = {
@@ -8444,7 +8438,7 @@ shared_focus = {
 	x = 2
 	y = 2
 	relative_position_id = FEA_martial_law
-	cost = 5.00
+	cost = 2.00
 	prerequisite = { focus = FEA_disband_parliament }
 	available = { has_idea = FEA_fascist_ressistance }
 	ai_will_do = {
@@ -8474,7 +8468,7 @@ shared_focus = {
 	x = 2
 	y = 3
 	relative_position_id = FEA_martial_law
-	cost = 5.00
+	cost = 2.00
 	prerequisite = { focus = FEA_deal_with_the_FNV }
 	available = { has_idea = FEA_fascist_ressistance }
 	ai_will_do = {
@@ -8492,7 +8486,7 @@ shared_focus = {
 	x = 2
 	y = 4
 	relative_position_id = FEA_martial_law
-	cost = 8.00
+	cost = 3.00
 	prerequisite = { focus = FEA_strangle_the_leadership }
 	available = { has_idea = FEA_fascist_ressistance }
 	ai_will_do = {
@@ -8530,7 +8524,7 @@ shared_focus = {
 	x = 0
 	y = 6
 	relative_position_id = FEA_martial_law
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_dukes_country }
 	ai_will_do = {
 		factor = 120
@@ -8550,7 +8544,7 @@ shared_focus = {
 	x = 0
 	y = 8
 	relative_position_id = FEA_martial_law
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_dukes_education }
 
 	ai_will_do = {
@@ -8569,7 +8563,7 @@ shared_focus = {
 	x = -2
 	y = 6
 	relative_position_id = FEA_martial_law
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_dukes_country }
 
 	ai_will_do = {
@@ -8587,7 +8581,7 @@ shared_focus = {
 	x = -3
 	y = 7
 	relative_position_id = FEA_martial_law
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_the_dukes_army }
 
 	ai_will_do = {
@@ -8605,6 +8599,7 @@ shared_focus = {
 			planning_skill = 2
 			logistics_skill = 2
 		}
+		custom_effect_tooltip = FEA_jacob_stats_tp
 		create_corps_commander = {
 			name = "Nicolaas Swartvleugel"
 			portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_3.dds"
@@ -8615,6 +8610,7 @@ shared_focus = {
 			planning_skill = 3
 			logistics_skill = 2
 		}
+		custom_effect_tooltip = FEA_nicolaas_stats_tp
 		create_corps_commander = {
 			name = "General Jan Onverschrikt"
 			portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_5.dds"
@@ -8625,6 +8621,7 @@ shared_focus = {
 			planning_skill = 2
 			logistics_skill = 2
 		}
+		custom_effect_tooltip = FEA_jan_stats_tp
 	}
 }
 
@@ -8634,7 +8631,7 @@ shared_focus = {
 	x = -1
 	y = 7
 	relative_position_id = FEA_martial_law
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_the_dukes_army }
 
 	ai_will_do = {
@@ -8652,7 +8649,7 @@ shared_focus = {
 	x = -2
 	y = 8
 	relative_position_id = FEA_martial_law
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_the_dukes_secret_service }
 	prerequisite = { focus = FEA_new_generals }
 
@@ -8673,7 +8670,7 @@ shared_focus = {
 	x = -1
 	y = 9
 	relative_position_id = FEA_martial_law
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_new_officer_core }
 
 	ai_will_do = {
@@ -8750,7 +8747,7 @@ shared_focus = {
 	x = 2
 	y = 6
 	relative_position_id = FEA_martial_law
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_dukes_country }
 
 	ai_will_do = {
@@ -8773,7 +8770,7 @@ shared_focus = {
 	x = 1
 	y = 7
 	relative_position_id = FEA_martial_law
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_crush_remaining_dissidents }
 
 	ai_will_do = {
@@ -8830,7 +8827,7 @@ shared_focus = {
 	x = 3
 	y = 7
 	relative_position_id = FEA_martial_law
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_crush_remaining_dissidents }
 
 	ai_will_do = {
@@ -8851,7 +8848,7 @@ shared_focus = {
 	x = 2
 	y = 8
 	relative_position_id = FEA_martial_law
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_banker_loyalty }
 	prerequisite = { focus = FEA_the_privy_council }
 
@@ -8889,7 +8886,7 @@ shared_focus = {
 	x = 1
 	y = 9
 	relative_position_id = FEA_martial_law
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_ancient_claims }
 
 	ai_will_do = {
@@ -8907,7 +8904,7 @@ shared_focus = {
 	x = 0
 	y = 10
 	relative_position_id = FEA_martial_law
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_dukes_proper_science_base }
 	prerequisite = { focus = FEA_industrial_council }
 	prerequisite = { focus = FEA_dukes_armouries }
@@ -8934,7 +8931,7 @@ shared_focus = {
 shared_focus = {
 	id = FEA_recalibrate_the_economy
 	icon = GFX_goal_generic_production2
-	cost = 7.00
+	cost = 5.00
 	ai_will_do = { factor = 100 }
 	available = { has_completed_focus = FEA_disband_parliament }
 	x = 6
@@ -8978,7 +8975,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = FEA_recalibrate_the_economy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_recalibrate_the_economy }
 
 	ai_will_do = {
@@ -9068,7 +9065,7 @@ shared_focus = {
 	x = -2
 	y = 3
 	relative_position_id = FEA_recalibrate_the_economy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_d_infrastructure_project }
 	prerequisite = { focus = FEA_d_state_unions }
 
@@ -9146,7 +9143,7 @@ shared_focus = {
 	x = -3
 	y = 4
 	relative_position_id = FEA_recalibrate_the_economy
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_d_arms_factories }
 
 	ai_will_do = {
@@ -9178,7 +9175,7 @@ shared_focus = {
 	x = -1
 	y = 4
 	relative_position_id = FEA_recalibrate_the_economy
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_d_arms_factories }
 
 	ai_will_do = {
@@ -9214,7 +9211,7 @@ shared_focus = {
 	x = -2
 	y = 5
 	relative_position_id = FEA_recalibrate_the_economy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_oil_experiments }
 	prerequisite = { focus = FEA_steelworks }
 
@@ -9246,7 +9243,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = FEA_recalibrate_the_economy
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_recalibrate_the_economy }
 
 	ai_will_do = {
@@ -9264,7 +9261,7 @@ shared_focus = {
 	x = 2
 	y = 3
 	relative_position_id = FEA_recalibrate_the_economy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_d_labour_battalion }
 	prerequisite = { focus = FEA_d_state_unions }
 
@@ -9342,7 +9339,7 @@ shared_focus = {
 	x = 1
 	y = 4
 	relative_position_id = FEA_recalibrate_the_economy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_d_factories }
 
 	ai_will_do = {
@@ -9387,7 +9384,7 @@ shared_focus = {
 	x = 3
 	y = 4
 	relative_position_id = FEA_recalibrate_the_economy
-	cost = 8.00
+	cost = 5.00
 	prerequisite = { focus = FEA_d_factories }
 
 	ai_will_do = {
@@ -9416,7 +9413,7 @@ shared_focus = {
 	x = 2
 	y = 5
 	relative_position_id = FEA_recalibrate_the_economy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_d_modern_methods }
 	prerequisite = { focus = FEA_d_agrarianism }
 
@@ -9440,7 +9437,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	relative_position_id = FEA_recalibrate_the_economy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_recalibrate_the_economy }
 
 	ai_will_do = {
@@ -9488,7 +9485,7 @@ shared_focus = {
 	x = 0
 	y = 3
 	relative_position_id = FEA_recalibrate_the_economy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_d_state_unions }
 
 	ai_will_do = {
@@ -9536,7 +9533,7 @@ shared_focus = {
 	x = 0
 	y = 6
 	relative_position_id = FEA_recalibrate_the_economy
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_d_war_economy }
 	prerequisite = { focus = FEA_ducal_dockyards }
 	prerequisite = { focus = FEA_d_engineering_uni }
@@ -9615,7 +9612,7 @@ shared_focus = {
 shared_focus = {
 	id = FEA_the_throne
 	icon = GFX_focus_generic_home_defense
-	cost = 7.00
+	cost = 1.00
 	ai_will_do = { factor = 100 }
 	x = 58
 	y = 0
@@ -9655,7 +9652,7 @@ shared_focus = {
 	x = -3
 	y = 2
 	relative_position_id = FEA_the_throne
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_protection_alliance }
 	bypass = {
 		OR = {
@@ -9685,7 +9682,7 @@ shared_focus = {
 	x = -3
 	y = 3
 	relative_position_id = FEA_the_throne
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_PYT_dealing }
 
 	available = {
@@ -9718,7 +9715,7 @@ shared_focus = {
 	x = -1
 	y = 2
 	relative_position_id = FEA_the_throne
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_protection_alliance }
 
 	ai_will_do = {
@@ -9762,7 +9759,7 @@ shared_focus = {
 	x = -1
 	y = 3
 	relative_position_id = FEA_the_throne
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_BRZ_and_STW }
 
 	ai_will_do = {
@@ -9814,7 +9811,7 @@ shared_focus = {
 	x = 3
 	y = 2
 	relative_position_id = FEA_the_throne
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_the_south }
 
 	ai_will_do = {
@@ -9861,7 +9858,7 @@ shared_focus = {
 	x = 3
 	y = 3
 	relative_position_id = FEA_the_throne
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_ROU_and_YAL }
 
 	ai_will_do = {
@@ -9895,7 +9892,7 @@ shared_focus = {
 	x = 1
 	y = 2
 	relative_position_id = FEA_the_throne
-	cost = 7.00
+	cost = 5.00
 	prerequisite = { focus = FEA_the_south }
 
 	ai_will_do = {
@@ -9943,7 +9940,7 @@ shared_focus = {
 	x = 1
 	y = 3
 	relative_position_id = FEA_the_throne
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_KAT_and_ANG }
 
 	ai_will_do = {
@@ -9976,7 +9973,7 @@ shared_focus = {
 	x = 0
 	y = 4
 	relative_position_id = FEA_the_throne
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_core_BRZ_and_STW }
 	prerequisite = { focus = FEA_core_ROU_and_YAL }
 	prerequisite = { focus = FEA_core_PYT }
@@ -10001,7 +9998,7 @@ shared_focus = {
 	x = 0
 	y = 5
 	relative_position_id = FEA_the_throne
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_the_empire_rises }
 	ai_will_do = {
 		factor = 100
@@ -10053,7 +10050,7 @@ shared_focus = {
 	x = 0
 	y = 6
 	relative_position_id = FEA_the_throne
-	cost = 16.00
+	cost = 5.00
 	prerequisite = { focus = FEA_the_empire_rises }
 	available = {
 		has_political_power > 200
@@ -10084,7 +10081,7 @@ shared_focus = {
 	x = -2
 	y = 6
 	relative_position_id = FEA_the_throne
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_reclaim_north }
 	ai_will_do = {
 		factor = 100
@@ -10122,7 +10119,7 @@ shared_focus = {
 	x = -3
 	y = 7
 	relative_position_id = FEA_the_throne
-	cost = 16.00
+	cost = 5.00
 	prerequisite = { focus = FEA_reclaim_center }
 	available = {
 		has_political_power > 200
@@ -10158,7 +10155,7 @@ shared_focus = {
 	x = 2
 	y = 6
 	relative_position_id = FEA_the_throne
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_reclaim_north }
 	ai_will_do = {
 		factor = 100
@@ -10202,7 +10199,7 @@ shared_focus = {
 	x = 3
 	y = 7
 	relative_position_id = FEA_the_throne
-	cost = 16.00
+	cost = 5.00
 	prerequisite = { focus = FEA_reclaim_west }
 	available = {
 		has_political_power > 200
@@ -10239,7 +10236,7 @@ shared_focus = {
 	x = 0
 	y = 7
 	relative_position_id = FEA_the_throne
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_reclaim_north }
 	ai_will_do = {
 		factor = 100
@@ -10276,7 +10273,7 @@ shared_focus = {
 	x = 0
 	y = 8
 	relative_position_id = FEA_the_throne
-	cost = 10.00
+	cost = 5.00
 	prerequisite = { focus = FEA_reclaim_south }
 	available = {
 		has_political_power > 200
@@ -10311,7 +10308,7 @@ shared_focus = {
 	x = 0
 	y = 9
 	relative_position_id = FEA_the_throne
-	cost = 15.00
+	cost = 5.00
 	prerequisite = { focus = FEA_core_south }
 	prerequisite = { focus = FEA_core_west }
 	prerequisite = { focus = FEA_core_center }

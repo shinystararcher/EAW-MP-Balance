@@ -2,7 +2,7 @@
 shared_focus = {
 	id = HLR_final_decree
 	icon = GFX_goal_generic_forceful_treaty
-	cost = 20.00
+	cost = 10.00
 
 	ai_will_do = {
 		factor = 100
@@ -65,7 +65,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_ring_bells
 	icon = GFX_goal_generic_propaganda
-	cost = 020.00
+	cost = 010.00
 
 	ai_will_do = {
 		factor = 100
@@ -92,7 +92,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_headmaster_succession
 	icon = GFX_goal_generic_dangerous_deal_pony_griffon
-	cost = 10.00
+	cost = 5.0
 
 	ai_will_do = {
 		factor = 100
@@ -326,7 +326,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_People_Choice
 	icon = GFX_focus_generic_support_the_left_right_claw
-	cost = 10.00
+	cost = 5.0
 
 	ai_will_do = {
 		factor = 80
@@ -351,7 +351,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Senate_Deliberate
 	icon = GFX_goal_generic_neutrality_focus
-	cost = 10.00
+	cost = 5.0
 
 	ai_will_do = {
 		factor = 80
@@ -376,7 +376,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Force_Law
 	icon = GFX_goal_poland_goal
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_Senate_Deliberate
 
 	ai_will_do = {
@@ -402,7 +402,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_People_Power
 	icon = GFX_goal_generic_political_pressure
-	cost = 10.00
+	cost = 5.0
 
 	ai_will_do = {
 		factor = 80
@@ -438,7 +438,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Wiliam_Steel_Beak
 	icon = GFX_focus_generic_home_defense
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_Force_Law
 
 	ai_will_do = {
@@ -500,7 +500,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Senate_Debate
 	icon = GFX_goal_generic_neutrality_focus
-	cost = 10.00
+	cost = 5.0
 
 	ai_will_do = {
 		factor = 80
@@ -526,7 +526,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Legacy_High_King
 	icon = GFX_goal_tfv_strengthen_commonwealth_ties_pony_griffon
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_Senate_Debate
 	x = 0
 	y = 1
@@ -552,7 +552,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Senate_Funding
 	icon = GFX_goal_generic_positive_trade_relations
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_Legacy_High_King
 	x = 1
 	y = 1
@@ -587,7 +587,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Guilds
 	icon = GFX_goal_tfv_generic_tech_sharing
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_Legacy_High_King
 
 	ai_will_do = {
@@ -615,7 +615,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Ostvold_Vlad
 	icon = GFX_focus_generic_home_defense
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_Guilds
 	x = 1
 	y = 1
@@ -678,7 +678,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Stable
 	icon = GFX_focus_generic_the_giant_wakes
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_Wiliam_Steel_Beak
 
 	prerequisite = {
@@ -706,7 +706,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Gather_War_Support
 	icon = GFX_focus_RAJ_lions_of_the_great_war
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_Wiliam_Steel_Beak
 
 	prerequisite = {
@@ -728,7 +728,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Fortify_The_Border
 	icon = GFX_focus_generic_coastal_fort
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_Wiliam_Steel_Beak
 
 	prerequisite = {
@@ -753,7 +753,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Technological_Investments
 	icon = GFX_focus_research
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_Ostvold_Vlad
 
 	prerequisite = {
@@ -779,7 +779,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_War_Economy
 	icon = GFX_focus_secret_rearmament
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_Ostvold_Vlad
 
 	prerequisite = {
@@ -867,7 +867,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Reformation
 	icon = GFX_goal_generic_allies_build_infantry
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_final_decree
 
 	ai_will_do = {
@@ -893,7 +893,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Remember
 	icon = GFX_goal_generic_build_tank
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_final_decree
 
 	ai_will_do = {
@@ -915,7 +915,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Tap_Rock
 	icon = GFX_goal_generic_propaganda
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_Reformation
 
 	ai_will_do = {
@@ -942,7 +942,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Holy_Line
 	icon = GFX_goal_generic_construct_military
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_Remember
 
 	ai_will_do = {
@@ -993,7 +993,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Seal_Faith
 	icon = GFX_goal_generic_fortify_city
-	cost = 10.00
+	cost = 5.00
 	relative_position_id = HLR_Holy_Line
 
 	ai_will_do = {
@@ -1382,6 +1382,29 @@ shared_focus = {
 	y = 2
 	select_effect = {
 		hidden_effect = {
+		
+		if = {
+			limit = {
+				DED = {
+					has_completed_focus = DED_Bone_Queen
+					}
+				}
+			DED = { 
+			country_event = {id = deadempire.99 days = 7 }
+			}
+		}
+		
+		if = {
+			limit = {
+				DED = {
+					has_completed_focus = DED_Blood_Queen
+					}
+				}
+			DED = { 
+			country_event = {id = deadempire.100 days = 7 }
+			}
+		}
+		
 			if = {
 				limit = {
 					OR = {
@@ -1417,7 +1440,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Dynasty_Politics
 	icon = GFX_focus_generic_support_the_left_right_claw
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_Dreads
 
 	ai_will_do = {
@@ -1458,7 +1481,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Senate_Negotiations
 	icon = GFX_goal_generic_neutrality_focus
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_Dreads
 
 	ai_will_do = {
@@ -1500,7 +1523,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_the_war_trials
 	icon = GFX_goal_generic_neutrality_focus
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_Dreads
 
 	ai_will_do = {
@@ -1531,7 +1554,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_redeem_rosa
 	icon = GFX_focus_indy_give_democracy
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_the_war_trials
 
 	ai_will_do = {
@@ -1563,7 +1586,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_kill_rosa
 	icon = GFX_focus_indy_swing_the_sword
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_the_war_trials
 
 	ai_will_do = {
@@ -1595,7 +1618,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_rapid_industrialisation
 	icon = GFX_goal_generic_construct_infrastructure
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_Dreads
 
 	ai_will_do = {
@@ -1626,7 +1649,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_science_growth
 	icon = GFX_focus_research
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_rapid_industrialisation
 
 	ai_will_do = {
@@ -1653,7 +1676,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_new_heavy_industries
 	icon = GFX_goal_generic_construction
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_Dreads
 
 	ai_will_do = {
@@ -1698,7 +1721,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_firm_investments
 	icon = GFX_goal_generic_positive_trade_relations
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_new_heavy_industries
 
 	ai_will_do = {
@@ -1713,9 +1736,9 @@ shared_focus = {
 	y = 1
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus HLR_firm_investments"
-		add_tech_bonus = { bonus = 0.7 uses = 1 category = infantry_weapons }
-		add_tech_bonus = { bonus = 0.7 uses = 4 category = industry }
-		add_tech_bonus = { bonus = 0.7 uses = 2 category = electronics }
+		add_tech_bonus = { bonus = 3 uses = 1 category = infantry_weapons }
+		add_tech_bonus = { bonus = 3 uses = 4 category = industry }
+		add_tech_bonus = { bonus = 3 uses = 2 category = electronics }
 		set_country_flag = HLR_Industry_Getting_Up_To_Standard
 		hidden_effect = {
 			set_country_flag = HLR_Reformed
@@ -1726,7 +1749,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_lessons_of_the_war
 	icon = GFX_goal_generic_allies_build_infantry
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_Dreads
 
 	ai_will_do = {
@@ -1747,10 +1770,10 @@ shared_focus = {
 	y = 1
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus HLR_lessons_of_the_war"
-		add_tech_bonus = { bonus = 0.7 uses = 2 category = support_tech }
-		add_tech_bonus = { bonus = 0.7 uses = 1 category = infantry_weapons }
-		add_tech_bonus = { bonus = 0.7 uses = 2 category = armor }
-		add_tech_bonus = { bonus = 0.7 uses = 4 category = land_doctrine }
+		add_tech_bonus = { bonus = 3 uses = 2 category = support_tech }
+		add_tech_bonus = { bonus = 3 uses = 1 category = infantry_weapons }
+		add_tech_bonus = { bonus = 3 uses = 2 category = armor }
+		add_tech_bonus = { bonus = 3 uses = 4 category = land_doctrine }
 		set_country_flag = HLR_learned_from_the_war
 		hidden_effect = {
 			set_country_flag = HLR_Reformed
@@ -1761,7 +1784,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_A_New_Kingdom
 	icon = GFX_focus_hun_elect_a_king
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_Dynasty_Politics
 
 	ai_will_do = {
@@ -1793,7 +1816,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_the_investigation
 	icon = GFX_goal_secret_agents
-	cost = 10.00
+	cost = 5.0
 	relative_position_id = HLR_A_New_Kingdom
 
 	ai_will_do = {
@@ -1951,7 +1974,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_New_Economy
 	icon = GFX_goal_generic_production
-	cost = 10.00
+	cost = 5.00
 	relative_position_id = HLR_Remember
 
 	ai_will_do = {
@@ -1978,7 +2001,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Civilian_Investment
 	icon = GFX_goal_generic_construct_civ_factory
-	cost = 10.00
+	cost = 5.00
 	relative_position_id = HLR_New_Economy
 
 	ai_will_do = {
@@ -2010,7 +2033,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Infrastructure_Projects
 	icon = GFX_goal_generic_construct_infrastructure
-	cost = 10.00
+	cost = 5.00
 	relative_position_id = HLR_Civilian_Investment
 
 	ai_will_do = {
@@ -2042,7 +2065,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Military_Investment
 	icon = GFX_goal_generic_construct_mil_factory
-	cost = 10.00
+	cost = 5.00
 	relative_position_id = HLR_New_Economy
 
 	ai_will_do = {
@@ -2074,7 +2097,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Military_Access_Rights
 	icon = GFX_goal_generic_construct_infrastructure
-	cost = 10.00
+	cost = 5.00
 	relative_position_id = HLR_Military_Investment
 
 	ai_will_do = {
@@ -2106,7 +2129,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Resource_Access_Initiative
 	icon = GFX_goal_generic_construct_infrastructure
-	cost = 10.00
+	cost = 5.00
 	relative_position_id = HLR_Military_Access_Rights
 
 	ai_will_do = {
@@ -2138,7 +2161,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Revitalised_Industry
 	icon = GFX_goal_generic_construction
-	cost = 10.00
+	cost = 5.00
 	relative_position_id = HLR_Resource_Access_Initiative
 
 	ai_will_do = {
@@ -2161,7 +2184,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Continued_Developement
 	icon = GFX_goal_generic_construct_infrastructure
-	cost = 10.00
+	cost = 5.00
 	relative_position_id = HLR_Infrastructure_Projects
 
 	ai_will_do = {
@@ -2193,7 +2216,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Mining_Expansion
 	icon = GFX_goal_generic_construction
-	cost = 10.00
+	cost = 5.00
 	relative_position_id = HLR_Resource_Access_Initiative
 
 	ai_will_do = {
@@ -2216,7 +2239,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Factory_Modernization
 	icon = GFX_goal_generic_construction
-	cost = 10.00
+	cost = 5.00
 	relative_position_id = HLR_Continued_Developement
 
 	ai_will_do = {
@@ -2241,7 +2264,7 @@ shared_focus = {
 shared_focus = {
 	id = HLR_Dealing_With_The_Devil
 	icon = GFX_goal_gunpoint_diplomacy
-	cost = 10.00
+	cost = 5.00
 	relative_position_id = HLR_New_Economy
 
 	available = {
