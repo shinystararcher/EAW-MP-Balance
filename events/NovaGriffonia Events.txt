@@ -27,7 +27,7 @@ country_event = { #Teafeather dead
 			traits = { provisional }
 		}
 		add_ideas = GRF_political_chaos
-		add_political_power = -150
+		add_political_power = -125
 		hidden_effect = {
 			country_event = { days = 130 id=griffons.3 }
 			set_country_flag = GRF_teafeather_dead
@@ -108,8 +108,8 @@ country_event = { # Solutions for our immense problems
 		}
 		set_country_flag = GRF_junta
 		clr_country_flag = teafeather_dead
-		add_political_power = -200
-		add_stability = -0.20
+		add_political_power = -150
+		add_stability = -0.15
 
 		add_ideas = { GRF_communist_militias }
 		add_ideas = { GRF_fight_for_freedom }
@@ -759,7 +759,6 @@ country_event = {
 
 	option = {
 		name = griffons.21.a
-		add_political_power = -20
 	}
 }
 country_event = {
@@ -774,7 +773,6 @@ country_event = {
 
 	option = {
 		name = griffons.22.a
-		add_political_power = 10
 		add_popularity = { 
 			ideology = fascism
 			popularity = 0.02 
@@ -793,7 +791,6 @@ country_event = {
 
 	option = {
 		name = griffons.23.a
-		add_manpower = -200
 		add_popularity = { 
 			ideology = fascism
 			popularity = -0.01 
@@ -816,7 +813,6 @@ country_event = {
 
 	option = {
 		name = griffons.24.a
-		add_political_power = -15
 		add_popularity = { 
 			ideology = democratic
 			popularity = -0.02 
@@ -835,7 +831,6 @@ country_event = {
 
 	option = {
 		name = griffons.25.a
-		add_political_power = -20
 		add_popularity = { 
 			ideology = communism
 			popularity = 0.01 
@@ -922,7 +917,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = griffons.30.a
-		add_political_power = -100
+		add_political_power = -75
 		random_owned_controlled_state = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {

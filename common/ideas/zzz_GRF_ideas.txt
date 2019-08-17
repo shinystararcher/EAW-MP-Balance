@@ -53,15 +53,6 @@ ideas = {
 			}
 		}
 
-		#		erwin = {
-			#			allowed = {
-				#				original_tag = GRF
-				#			}
-			#			traits = { army_chief_offensive_2 }
-			#			ai_will_do = {
-				#				factor = 1
-				#			}
-			#		}
 		astraea = {
 			allowed = {
 				original_tag = GRF
@@ -511,7 +502,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_infantry_bonus
+			picture = GRF_militias
 			removal_cost = -1
 			modifier = {
 				conscription = 0.01
@@ -530,29 +521,50 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_manpower_bonus
+			picture = GRF_militias
 			removal_cost = -1
 			modifier = {
-				conscription = 0.025
-				army_morale_factor = 0.10
-				army_defence_factor = 0.10
-				army_org_Factor = -0.20
-				planning_speed = -0.20
+				conscription = 0.015
+				army_morale_factor = 0.05
+				training_time_factor = -0.05
+				army_org_Factor = -0.10
+				planning_speed = -0.10
 			}
 		}
 	}
+	
 	country = {
-		GRF_compromise_army = {
+		GRF_better_militias_2 = {
 			allowed = {
 				always = no
 			}
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_infantry_bonus
+			picture = GRF_militias
 			removal_cost = -1
 			modifier = {
-				conscription = 0.005
+				conscription = 0.02
+				army_morale_factor = 0.10
+				training_time_factor = -0.10
+				army_org_Factor = -0.05
+				planning_speed = -0.05
+			}
+		}
+	}
+	
+	country = {
+		GRF_compromise_army_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = EQC_griffon_minorities1
+			removal_cost = -1
+			modifier = {
+				conscription = 0.01
 				army_morale_factor = 0.05
 				army_attack_factor = 0.025
 				army_defence_factor = 0.025
@@ -561,6 +573,26 @@ ideas = {
 			}
 		}
 	}
+	
+	country = {
+		GRF_compromise_army_idea_2 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = EQC_griffon_minorities1
+			removal_cost = -1
+			modifier = {
+				conscription = 0.015
+				army_morale_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+	}
+	
 	country = {
 		GRF_proper_army = {
 			allowed = {
@@ -572,14 +604,95 @@ ideas = {
 			picture = german_advisors
 			removal_cost = -1
 			modifier = {
-				army_morale_factor = -0.025
-				army_org_Factor = 0.10
-				planning_speed = 0.10
+				conscription_factor = -0.15
+				training_time_factor = 0.05
+				army_org_Factor = 0.05
+				planning_speed = 0.05
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
 			}
 		}
 	}
+	
+	country = {
+		GRF_proper_army_2 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = german_advisors
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.25
+				training_time_factor = 0.10
+				army_org_Factor = 0.05
+				planning_speed = 0.10
+				army_attack_factor = 0.10
+				army_defence_factor = 0.10
+			}
+		}
+	}
+	
+	country = {
+		GRF_reserveist_system_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_war_preparation
+			removal_cost = -1
+			modifier = {
+				conscription = 0.01
+				training_time_factor = -0.05
+				mobilization_speed = 0.10
+			}
+		}
+	}
+	
+	country = {
+		GRF_ranger_corps_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_secret_police
+			removal_cost = -1
+			modifier = {
+				recon_factor = 0.10
+				army_speed_factor = 0.05
+				supply_consumption_factor = -0.15
+				winter_attrition_factor = -0.10
+			}
+		}
+	}
+	
+	country = {
+		GRF_general_staff_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = FRA_scw_intervention_nationalists_focus
+			removal_cost = -1
+			modifier = {
+				experience_gain_army = 0.02
+				max_planning = 0.10
+				planning_speed = 0.05	
+			}
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+		}
+	}
+	
 	country = {
 		GRF_stagnated_economy = {
 			allowed = {
@@ -773,10 +886,10 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				communism_drift = 0.03
-				political_power_cost = 0.20
-				stability_factor = -0.10
-				war_support_factor = -0.10
-				conscription = -0.005
+				political_power_cost = 0.25
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				conscription = -0.015
 			}
 		}
 	}
@@ -793,10 +906,10 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				democratic_drift = 0.03
-				political_power_cost = 0.20
-				stability_factor = -0.10
-				war_support_factor = -0.10
-				conscription = -0.005
+				political_power_cost = 0.25
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				conscription = -0.015
 			}
 		}
 	}
@@ -1430,6 +1543,24 @@ ideas = {
 				stability_factor = -0.075
 				political_power_gain = -0.25
 				conscription = 0.01
+			}
+		}
+	}
+	
+	country = {
+		GRF_trained_pilots = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = FRA_army_of_aggression_focus
+			removal_cost = -1
+			modifier = {
+				air_ace_generation_chance_factor = 0.3
+				air_attack_factor = 0.1
+				air_defence_factor = 0.1
 			}
 		}
 	}

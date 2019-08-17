@@ -98,41 +98,6 @@ HLQ_core_LSM = {
 		}
 	}
 	
-### for bandit longsword ###
-
-LNS_core_HLQ = {
-		available = {
-		tag = LNS
-		}
-		cost = 0
-		ai_will_do = {
-			factor = 10
-		}
-		is_good = yes
-		visible = {
-			tag = LNS
-			has_country_flag = LNS_bandit_takeover
-			any_owned_state = {
-				is_core_of = HLQ
-				NOT = { has_state_flag = cored_by_LNS }
-			}
-		}
-		days_remove = 1
-		modifier = {
-		}
-		complete_effect = {
-			every_state = {
-				limit = {
-					is_core_of = HLQ
-					NOT = { has_state_flag = cored_by_LNS }
-					is_controlled_by = LNS
-				}
-				add_core_of = LNS
-				set_state_flag = cored_by_LNS
-			}
-		}
-	}
-	
 
 #################################### NORTH ######################
 
@@ -1923,9 +1888,12 @@ ARA_core_FRN = {
 		}
 	}
 	
-		ARA_core_EYR_ERI = {
+###################################################################
+### NOVA ###
+
+	GRF_core_PNG = {
 		available = {
-		tag = ARA
+		tag = GRF
 		}
 		cost = 5
 		ai_will_do = {
@@ -1933,11 +1901,10 @@ ARA_core_FRN = {
 		}
 		is_good = yes
 		visible = {
-			tag = ARA
-			has_government = fascism
+			tag = GRF
 			any_owned_state = {
-				is_core_of = EYR
-				NOT = { has_state_flag = cored_by_ARA }
+				is_core_of = PNG
+				NOT = { has_state_flag = cored_by_GRF }
 			}
 		}
 		days_remove = 120
@@ -1948,19 +1915,19 @@ ARA_core_FRN = {
 		complete_effect = {
 			every_state = {
 				limit = {
-					is_core_of = EYR
-					NOT = { has_state_flag = cored_by_ARA }
-					is_controlled_by = ARA
+					is_core_of = PNG
+					NOT = { has_state_flag = cored_by_GRF }
+					is_controlled_by = GRF
 				}
-				add_core_of = ARA
-				set_state_flag = cored_by_ARA
+				add_core_of = GRF
+				set_state_flag = cored_by_GRF
 			}
 		}
 	}
 	
-	ARA_core_ERI = {
+		GRF_core_JAK = {
 		available = {
-		tag = ARA
+		tag = GRF
 		}
 		cost = 5
 		ai_will_do = {
@@ -1968,11 +1935,46 @@ ARA_core_FRN = {
 		}
 		is_good = yes
 		visible = {
-			tag = ARA
-			has_government = fascism
+			tag = GRF
+			275 = { is_owned_by = ROOT }
+			269 = { is_owned_by = ROOT }
+			274 = { is_owned_by = ROOT }
+			340 = { is_owned_by = ROOT }
+			341 = { is_owned_by = ROOT }
+			253 = { is_owned_by = ROOT }
+			342 = { is_owned_by = ROOT }
+		}
+		days_remove = 120
+		modifier = {
+			political_power_gain = -0.25
+			civilian_factory_use = 3
+		}
+		complete_effect = {
+			275 = { add_core_of = ROOT }
+			269 = { add_core_of = ROOT }
+			274 = { add_core_of = ROOT }
+			340 = { add_core_of = ROOT }
+			341 = { add_core_of = ROOT }
+			253 = { add_core_of = ROOT }
+			342 = { add_core_of = ROOT }
+			
+		}
+	}
+	
+		GRF_core_PLB = {
+		available = {
+		tag = GRF
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		is_good = yes
+		visible = {
+			tag = GRF
 			any_owned_state = {
-				is_core_of = ERI
-				NOT = { has_state_flag = cored_by_ARA }
+				is_core_of = PLB
+				NOT = { has_state_flag = cored_by_GRF }
 			}
 		}
 		days_remove = 120
@@ -1983,13 +1985,14 @@ ARA_core_FRN = {
 		complete_effect = {
 			every_state = {
 				limit = {
-					is_core_of = ERI
-					NOT = { has_state_flag = cored_by_ARA }
-					is_controlled_by = ARA
+					is_core_of = PLB
+					NOT = { has_state_flag = cored_by_GRF }
+					is_controlled_by = GRF
 				}
-				add_core_of = ARA
-				set_state_flag = cored_by_ARA
+				add_core_of = GRF
+				set_state_flag = cored_by_GRF
 			}
 		}
 	}
+	
 }

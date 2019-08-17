@@ -1,4 +1,4 @@
-﻿ideas = {
+ideas = {
 	country = {
 		BAN_lawless_land = {
 			allowed = {
@@ -11,7 +11,7 @@
 			modifier = {
 				stability_factor = -0.3
 				war_support_factor = -0.15
-			
+				#political_power_cost = 0.3 #BALANCE_MOD
 				partisan_effect = 0.5
 			}
 		}
@@ -60,9 +60,9 @@
 			picture = great_depression
 
 			modifier = {
-				production_factory_max_efficiency_factor = -0.10
-				production_factory_efficiency_gain_factor = -0.10
-				production_speed_buildings_factor = -0.10
+				production_factory_max_efficiency_factor = -0.20
+				production_factory_efficiency_gain_factor = -0.20
+				production_speed_buildings_factor = -0.40
 			}
 		}
 		
@@ -76,9 +76,9 @@
 			picture = great_depression
 
 			modifier = {
-				production_factory_max_efficiency_factor = -0.05
-				production_factory_efficiency_gain_factor = -0.05
-				production_speed_buildings_factor = -0.05
+				production_factory_max_efficiency_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.10
+				production_speed_buildings_factor = -0.20
 			}
 		}
 		
@@ -92,9 +92,9 @@
 			picture = great_depression
 			
 			modifier = {
-				production_factory_max_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
-				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				production_speed_buildings_factor = -0.10
 			}
 		}
 		
@@ -106,12 +106,12 @@
 			picture = generic_intel_bonus
 			modifier = {
 				conscription = 0.04
-				army_attack_factor = 0.15
-				army_defence_factor = 0.10
-				army_speed_factor = 0.15
-				attrition = 0.05
-				supply_consumption_factor = 0.05
-				partisan_effect = 0.4
+				army_attack_factor = 0.15 #BALANCE_MOD
+				army_defence_factor = 0.10 #BALANCE_MOD
+				army_speed_factor = 0.10 #BALANCE_MOD
+				attrition = 0.1
+				supply_consumption_factor = 0.20
+				partisan_effect = 0.2
 			}
 		}
 		BAN_professional_army = {
@@ -122,10 +122,10 @@
 			picture = generic_manpower_bonus
 			modifier = {
 				conscription = 0.02
-				army_attack_factor = 0.15
-				army_defence_factor = 0.15
-				army_speed_factor = 0.15
-				experience_gain_army = 0.10
+				army_attack_factor = 0.10
+				army_defence_factor = 0.10
+				army_speed_factor = 0.10
+				experience_gain_army = 0.05
 			}
 		}
 		
@@ -137,7 +137,7 @@
 			picture = german_advisors
 			modifier = {
 				encryption_factor = 0.05
-				enemy_partisan_effect = 0.10
+				enemy_partisan_effect = -0.10
 				drift_defence_factor = 0.10
 			}
 		}
@@ -148,7 +148,7 @@
 			removal_cost = -1
 			picture = jap_supremacy_of_technology
 			modifier = {
-				research_speed_factor = 0.10
+				research_speed_factor = 0.05
 			}
 		}
 		
@@ -159,7 +159,7 @@
 			removal_cost = -1
 			picture = YUG_federal_defense_council
 			modifier = {
-				army_core_defence_factor = 0.30
+				army_core_defence_factor = 0.10
 			}
 		}
 		
@@ -170,9 +170,9 @@
 			removal_cost = -1
 			picture = ROM_king_carol_emptied_accounts
 			modifier = {
-				production_speed_buildings_factor = 0.20
-				consumer_goods_factor = -0.15
-				stability_factor = 0.10
+				production_speed_buildings_factor = 0.10
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
 			}
 		}
 		BAN_tribute_loss = {
@@ -184,7 +184,7 @@
 			modifier = {
 				production_speed_buildings_factor = -0.10
 				consumer_goods_factor = 0.05
-				stability_factor = 0.05
+				stability_factor = -0.05
 			}
 		}
 		
@@ -243,10 +243,10 @@
 			removal_cost = -1
 			picture = generic_agrarian_society
 			modifier = {
-				stability_factor = 0.10
-				consumer_goods_factor = -0.05
-				production_factory_max_efficiency_factor = 0.10
-				political_power_gain = 0.20
+				stability_factor = 0.05
+				consumer_goods_factor = -0.02
+				production_factory_max_efficiency_factor = 0.05
+				political_power_gain = 0.10
 			}
 		}
 		BAN_growing_drug_trade2 = {
@@ -256,10 +256,10 @@
 			removal_cost = -1
 			picture = generic_agrarian_society
 			modifier = {
-				stability_factor = 0.20
-				consumer_goods_factor = -0.08
-				production_factory_max_efficiency_factor = 0.20
-				political_power_gain = 0.40
+				stability_factor = 0.10
+				consumer_goods_factor = -0.04
+				production_factory_max_efficiency_factor = 0.10
+				political_power_gain = 0.20
 			}
 		}
 		
@@ -272,8 +272,8 @@
 			modifier = {
 				stability_factor = 0.10
 				political_power_gain = 0.15
-				production_factory_max_efficiency_factor = 0.20
-				fascism_drift = 0.05
+				production_factory_max_efficiency_factor = 0.10
+				fascism_drift = 0.02
 			}
 		}
 		
@@ -285,7 +285,7 @@
 			removal_cost = -1
 			picture = generic_production_bonus
 			modifier = {
-				production_speed_buildings_factor = 0.35
+				production_speed_buildings_factor = 0.20
 			}
 		}
 		BAN_stolen_scientists = {
@@ -295,7 +295,7 @@
 			removal_cost = -1
 			picture = jap_supremacy_of_will
 			modifier = {
-				research_speed_factor = 0.25
+				research_speed_factor = 0.10
 			}
 		}
 		
@@ -626,7 +626,7 @@
 				original_tag = BAN
 			}
 			visible = {
-				
+				#has_government = fascism
 			}
 			traits = {
 				army_chief_offensive_3
@@ -708,6 +708,31 @@
 				factor = 1
 			}
 		}
+		BAN_don_adv = {
+			picture = unknown_advisor
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_government = fascism
+				has_country_flag = SIC_BAN_marriage
+				SIC = {
+					OR = {
+						exists = no
+						NOT = {
+							has_government = fascism
+						}
+					}
+				}
+			}
+			traits = {
+				navy_chief_commerce_raiding_3
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 
 	high_command = {
@@ -763,7 +788,7 @@
 				original_tag = BAN
 			}
 			research_bonus = {
-				land_doctrine = 0.20
+				land_doctrine = 0.10
 			}
 
 			traits = { military_theorist }

@@ -45,7 +45,6 @@ DED_necromancy = {
 			}
 		}
 	}
-	
 
 	DED_raise_converted_dead = {
 		icon = generic_magic
