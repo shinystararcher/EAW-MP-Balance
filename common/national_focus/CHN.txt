@@ -2698,7 +2698,7 @@ focus_tree = {
 	focus = {
 		id = CHN_Army
 		icon = GFX_goal_chn_man_helmet
-		cost = 9
+		cost = 10
 		available = {
 			OR = {
 				has_completed_focus = CHN_griffon_school_of_war
@@ -2926,15 +2926,10 @@ focus_tree = {
 			add_tech_bonus = {
 				name = tank_research
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = cat_light_armor
 			}
-			add_tech_bonus = {
-				name = tank_research
-				bonus = 1.0
-				uses = 1
-				category = cat_medium_armor
-			}
+			
 		}
 	}
 	focus = {
@@ -2956,14 +2951,8 @@ focus_tree = {
 				name = tank_research
 				bonus = 1.0
 				uses = 2
-				category = cat_light_armor
-				ahead_reduction = 2
-			}
-			add_tech_bonus = {
-				name = tank_research
-				bonus = 1.0
-				uses = 1
 				category = cat_medium_armor
+				ahead_reduction = 2
 			}
 			add_tech_bonus = {
 				name = tank_research
