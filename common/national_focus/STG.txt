@@ -940,7 +940,7 @@ focus_tree = {
 	focus = {
 		id = griffon_colony_civil_war
 		icon = GFX_focus_generic_little_entente
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = griffon_colony
 		}
@@ -1709,7 +1709,7 @@ focus_tree = {
 					level = 2
 					instant_build = yes }
 				add_building_construction = { type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes }
 			}
 		}
@@ -1982,7 +1982,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = infantry_weapons_bonus
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = infantry_weapons
 			}
 		}
@@ -2054,7 +2054,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus STG_liquid_magic"
 			add_tech_bonus = {
 				name = magical_bonus
-				bonus = 0.65
+				bonus = 1.0
 				uses = 2
 				category = magical_tech
 			}
@@ -2269,7 +2269,7 @@ focus_tree = {
 	focus = {
 		id = STG_attack_PNG
 		icon = GFX_goal_support_communism
-		cost = 6
+		cost = 5
 		will_lead_to_war_with = PNG
 		prerequisite = {
 			focus = STG_attack_yaks
@@ -2303,13 +2303,13 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus prepare_for_the_crusade"
-			add_timed_idea = { idea = crusaders days = 340 }
+			add_timed_idea = { idea = crusaders days = 700 }
 		}
 	}
 	focus = {
 		id = changeling_liberation
 		icon = GFX_goal_stg_chn
-		cost = 8
+		cost = 10
 		prerequisite = {
 			focus = prepare_for_the_crusade
 		}
@@ -2348,7 +2348,7 @@ focus_tree = {
 	focus = {
 		id = the_war_to_end_disorder
 		icon = GFX_goal_stg_sinister_war_on_eqs
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = prepare_for_the_crusade
 			focus = STG_attack_PNG
