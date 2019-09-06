@@ -26,7 +26,7 @@ focus_tree = {
 		id = STL_society_reform
 		icon = GFX_goal_government_icon
 		prerequisite = { focus = STL_abolish_equality }
-		cost = 10.00
+		cost = 5
 		x = 10
 		y = 0
 		completion_reward = {
@@ -39,9 +39,12 @@ focus_tree = {
 	focus = {
 		id = STL_one_factory
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10.00
+		cost = 5
 		x = 15
 		y = 0
+		ai_will_do = {
+			factor = 100
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus STL_one_factory"
 			57 = {add_extra_state_shared_building_slots = 1
@@ -54,7 +57,7 @@ focus_tree = {
 		id = STL_neighbors_help
 		icon = GFX_goal_cry_stalliongrad
 		mutually_exclusive = {focus = STL_twilight_teaching }
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = STL_elections
 		}
@@ -74,7 +77,7 @@ focus_tree = {
 	focus = {
 		id = STL_independence_line
 		icon = GFX_focus_generic_support_the_left_right
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = STL_neighbors_help
 		}
@@ -90,7 +93,7 @@ focus_tree = {
 	focus = {
 		id = STL_industrial_effort
 		icon = GFX_goal_industrial_pony
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = STL_independence_line
 		}
@@ -107,7 +110,7 @@ focus_tree = {
 	focus = {
 		id = STL_industrial_help
 		icon = GFX_goal_generic_intelligence_exchange_pony
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = STL_neighbors_help
 		}
@@ -118,12 +121,16 @@ focus_tree = {
 			country_event = {
 				id = starlight.6 days = 1
 			}
+			57 = {add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex
+					level = 1
+					instant_build = yes } }
 		}
 	}
 	focus = {
 		id = STL_STG_military_advisors
 		icon = GFX_goal_stg_stl
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = STL_neighbors_help
 		}
@@ -134,12 +141,16 @@ focus_tree = {
 			country_event = {
 				id = starlight.7 days = 1
 			}
+			57 = {add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory
+					level = 2
+					instant_build = yes } }
 		}
 	}
 	focus = {
 		id = STL_new_army
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = STL_STG_military_advisors
 		}
@@ -379,7 +390,7 @@ focus_tree = {
 	focus = {
 		id = STL_second_factory
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = STL_one_factory
 		}
