@@ -67,6 +67,21 @@ CRY_sombra_marriage = {
 				exists = yes
 				has_country_leader = { ruling_only = yes name = "Sinister Serov" }
 			}
+			NOT = {
+				AND = {
+					any_state = {
+						is_on_continent = europe #Equestria
+						owner = {
+							NOT = {
+								tag = STG
+								tag = CRY
+								is_subject_of = STG
+								is_subject_of = CRY
+							}
+						}
+					}
+				}
+			}
 		}
 		cost = 10
 		fire_only_once = yes
