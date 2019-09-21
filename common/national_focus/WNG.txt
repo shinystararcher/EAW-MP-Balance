@@ -433,6 +433,7 @@ focus_tree = {
 		will_lead_to_war_with = ARA
 		will_lead_to_war_with = TAL
 		will_lead_to_war_with = FRN
+		will_lead_to_war_with = BOI
 		will_lead_to_war_with = FAL
 		will_lead_to_war_with = SIC
 		prerequisite = {
@@ -449,6 +450,10 @@ focus_tree = {
 				has_war_with = ARA
 				NOT = { country_exists = ARA }
 				ARA = { is_subject_of = ROOT }
+			}			OR = {
+				has_war_with = BOI
+				NOT = { country_exists = BOI }
+				BOI = { is_subject_of = ROOT }
 			}
 			OR = {
 				has_war_with = TAL
@@ -491,6 +496,15 @@ focus_tree = {
 				create_wargoal = {
 					type = annex_everything
 					target = ARA
+				}
+			}
+            if = {
+				limit = {
+					NOT = { BOI = { has_government = communism } }
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = BOI
 				}
 			}
 			if = {
@@ -800,7 +814,7 @@ focus_tree = {
 			}
 		}
 		will_lead_to_war_with = GRI
-		will_lead_to_war_with = BOI
+		#will_lead_to_war_with = BOI
 		will_lead_to_war_with = LAK
 		will_lead_to_war_with = ANG
 		will_lead_to_war_with = KAT
@@ -815,10 +829,10 @@ focus_tree = {
 				type = annex_everything
 				target = event_target:griffonian_empire
 			}
-			create_wargoal = {
-				type = annex_everything
-				target = BOI
-			}
+			#create_wargoal = {
+			#	type = annex_everything
+			#	target = BOI
+			#}
 			create_wargoal = {
 				type = annex_everything
 				target = LAK
