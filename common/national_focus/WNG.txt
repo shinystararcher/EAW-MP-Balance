@@ -1685,6 +1685,9 @@ focus_tree = {
 		cost = 10.00
 		will_lead_to_war_with = GRI
 		prerequisite = {
+			focus = WNG_claim_griffonstone
+		}
+		mutually_exclusive = {
 			focus = WNG_wingbard_empire
 		}
 		x = 10
