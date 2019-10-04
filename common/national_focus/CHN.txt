@@ -130,7 +130,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 0.66
-				uses = 1
+				uses = 2
 				category = industry
 			}
 		}
@@ -1441,6 +1441,7 @@ focus_tree = {
 		will_lead_to_war_with = SCS
 		will_lead_to_war_with = BAL
 		will_lead_to_war_with = CES
+		will_lead_to_war_with = JUN
 		will_lead_to_war_with = NMS
 		will_lead_to_war_with = LSP
 		prerequisite = {
@@ -1527,6 +1528,12 @@ focus_tree = {
 				limit = { country_exists = NMS NOT = { has_war_with = NMS } }
 				create_wargoal = {
 					target = NMS type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = JUN NOT = { has_war_with = JUN } }
+				create_wargoal = {
+					target = JUN type = annex_everything
 				}
 			}
 		if = {
@@ -2016,7 +2023,7 @@ focus_tree = {
 		ai_will_do = { factor = 120 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHN_canterlot_appropriation"
-			#add_research_slot = 1
+			swap_ideas = { remove_idea = canterlot_defeat add_idea = canterlot_victory }
 			3 = {
 				add_extra_state_shared_building_slots = 2
 			}
@@ -2041,9 +2048,7 @@ focus_tree = {
 		ai_will_do = { factor = 120 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHN_crystal_city_appropriation"
-			add_ideas = {
-				CHN_crystal_city_research
-			}
+			add_ideas = CHN_crystal_city_research
 			53 = {
 				add_extra_state_shared_building_slots = 1
 			}
@@ -2144,6 +2149,12 @@ focus_tree = {
 		prerequisite = {
 			focus = war_academy
 		}
+		bypass = {
+			NOT = {
+				has_idea = CHN_army_reorganization
+				has_idea = CHN_army_reorganization_officers
+			}
+		}
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus war_academy"
@@ -2170,6 +2181,12 @@ focus_tree = {
 		relative_position_id = war_academy
 		prerequisite = {
 			focus = war_academy
+		}
+		bypass = {
+			NOT = {
+				has_idea = CHN_army_reorganization
+				has_idea = CHN_army_reorganization_high_com
+			}
 		}
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -2204,7 +2221,13 @@ focus_tree = {
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus war_academy"
-			swap_ideas = { remove_idea = CHN_army_reorganization_2 add_idea = CHN_army_reorganization_3 }
+			if = {
+				limit = { NOT = { has_idea = CHN_army_reorganization_2 } }
+				add_ideas = CHN_army_reorganization_3
+			}
+			else = {
+				swap_ideas = { remove_idea = CHN_army_reorganization_2 add_idea = CHN_army_reorganization_3 }
+			}
 		}
 	}
 
@@ -2220,6 +2243,9 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = CHN_changeling_school_of_war
+		}
+		available = {
+			has_idea = CHN_army_reorganization_3
 		}
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -2239,6 +2265,9 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = CHN_griffon_school_of_war
+		}
+		available = {
+			has_idea = CHN_army_reorganization_3
 		}
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -2698,7 +2727,7 @@ focus_tree = {
 	focus = {
 		id = CHN_Army
 		icon = GFX_goal_chn_man_helmet
-		cost = 10
+		cost = 9
 		available = {
 			OR = {
 				has_completed_focus = CHN_griffon_school_of_war
@@ -3154,7 +3183,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 3
 				uses = 1
-				category = ca_tech
+				category = cv_tech
 			}
 		}
 	}
@@ -3462,7 +3491,7 @@ focus_tree = {
 				name = carrier_research
 				bonus = 0.5
 				uses = 1
-				category = ca_tech
+				category = cv_tech
 			}
 		}
 	}
