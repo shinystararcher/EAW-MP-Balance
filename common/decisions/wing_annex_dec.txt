@@ -7,7 +7,7 @@ WNG_annex_FRN = {
 		FRN = { is_ai = yes}
 		NOT = { has_country_flag = WNG_annex_ally }
 	}
-	cost = 100
+	cost = 50
 	ai_will_do = {
 		factor = 0
 	}
@@ -16,9 +16,9 @@ WNG_annex_FRN = {
 		tag = WNG
 		is_in_faction_with = FRN
 	}
-	days_remove = 120
+	days_remove = 100
 	modifier = {
-		political_power_gain = -0.25
+		political_power_gain = -0.2
 		civilian_factory_use = 3
 	}
 	complete_effect = {
@@ -39,7 +39,7 @@ WNG_annex_TAL = {
 		TAL = { is_ai = yes}
 		NOT = { has_country_flag = WNG_annex_ally }
 	}
-	cost = 100
+	cost = 50
 	ai_will_do = {
 		factor = 0
 	}
@@ -48,9 +48,9 @@ WNG_annex_TAL = {
 		tag = WNG
 		is_in_faction_with = TAL
 	}
-	days_remove = 120
+	days_remove = 100
 	modifier = {
-		political_power_gain = -0.25
+		political_power_gain = -0.2
 		civilian_factory_use = 3
 	}
 	complete_effect = {
@@ -71,7 +71,7 @@ WNG_annex_ARA = {
 		ARA = { is_ai = yes}
 		NOT = { has_country_flag = WNG_annex_ally }
 	}
-	cost = 100
+	cost = 50
 	ai_will_do = {
 		factor = 0
 	}
@@ -80,9 +80,9 @@ WNG_annex_ARA = {
 		tag = WNG
 		is_in_faction_with = ARA
 	}
-	days_remove = 120
+	days_remove = 100
 	modifier = {
-		political_power_gain = -0.25
+		political_power_gain = -0.2
 		civilian_factory_use = 3
 	}
 	complete_effect = {
