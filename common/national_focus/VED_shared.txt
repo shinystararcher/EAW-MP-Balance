@@ -793,7 +793,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Enemies_Without
 	icon = GFX_goal_generic_navy_battleship
-	cost = 10.00
+	cost = 8.00
 	x = -1
 	y = 1
 	
@@ -819,7 +819,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Expect_Unexpected
 	icon = GFX_goal_generic_navy_submarine
-	cost = 10.00
+	cost = 8.00
 	x = 1
 	y = 1
 	
@@ -1146,7 +1146,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Left_Behind
 	icon = GFX_focus_generic_little_entente
-	cost = 12.00
+	cost = 8.00
 	x = -3
 	y = 1
 	
@@ -1170,7 +1170,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Build_Future
 	icon = GFX_focus_generic_the_giant_wakes
-	cost = 12.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -1197,7 +1197,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Education_All
 	icon = GFX_goal_griffon_books
-	cost = 12.00
+	cost = 8.00
 	x = 0
 	y = 2
 	
@@ -1351,7 +1351,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Building_War_Economy
 	icon = GFX_goal_generic_construct_mil_factory
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -1391,7 +1391,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_First_Railway
 	icon = GFX_goal_quit_preindustrial_society
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -2195,7 +2195,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Harmonious_Foreign_Policy
 	icon = GFX_goal_tree_of_harmony
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -2221,7 +2221,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Harmonious_Modernisation_Path
 	icon = GFX_goal_griffon_agriculture
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -2242,7 +2242,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Harmony_New_Dawn
 	icon = GFX_focus_generic_industry_3
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 2
 	
@@ -2263,7 +2263,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Age_Of_Chivalry
 	icon = GFX_goal_celestia_raising_the_sun
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 4
 	
@@ -2288,7 +2288,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Our_Place_In_The_World
 	icon = GFX_goal_generic_propaganda
-	cost = 10.00
+	cost = 8.00
 	x = -4
 	y = 1
 	
@@ -2316,7 +2316,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Join_Entente
 	icon = GFX_goal_aquileia
-	cost = 10.00
+	cost = 8.00
 	x = -1
 	y = 1
 	
@@ -2360,7 +2360,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Join_Griffonian_Alliance
 	icon = GFX_goal_griffonia_alliance
-	cost = 10.00
+	cost = 8.00
 	x = 1
 	y = 1
 	
@@ -2410,7 +2410,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Knights_Aquelia
 	icon = GFX_goal_aquileia
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -2442,7 +2442,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Knights_Republic
 	icon = GFX_goal_griffonian_republic
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -2474,7 +2474,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Beacon_Of_Chivalry
 	icon = GFX_goal_griffon_knights
-	cost = 10.00
+	cost = 8.00
 	x = 1
 	y = 1
 	
@@ -2500,7 +2500,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Western_Agenda_Harmony
 	icon = GFX_goal_news
-	cost = 10.00
+	cost = 8.00
 	x = 4
 	y = 1
 	
@@ -2546,7 +2546,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Unity_With_Colonies
 	icon = GFX_goal_support_democracy
-	cost = 10.00
+	cost = 8.00
 	x = -1
 	y = 1
 	
@@ -2582,7 +2582,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Errant_Colony_Harmony
 	icon = GFX_goal_generic_defence
-	cost = 10.00
+	cost = 8.00
 	x = 1
 	y = 1
 	
@@ -2670,7 +2670,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Knights_Nova_Harmony
 	icon = GFX_focus_indy_give_democracy
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -2699,7 +2699,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Guiding_Claw_Harmony
 	icon = GFX_focus_generic_anti_fascist_diplomacy
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -2741,7 +2741,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Boon_Of_West_Harmony
 	icon = GFX_focus_indy_aristocratic_funding
-	cost = 10.00
+	cost = 8.00
 	x = 1
 	y = 1
 	
@@ -2797,7 +2797,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Neutral_Foreign_Policy
 	icon = GFX_focus_generic_home_defense
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -2823,7 +2823,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Neutral_Modernisation
 	icon = GFX_goal_griffon_agriculture
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -2844,7 +2844,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Neutral_New_Dawn
 	icon = GFX_focus_generic_industry_3
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 2
 	
@@ -2865,7 +2865,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Death_Of_Chivalry
 	icon = GFX_focus_generic_strike_at_democracy1
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 4
 	
@@ -2889,7 +2889,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Isolation
 	icon = GFX_focus_generic_little_entente
-	cost = 10.00
+	cost = 8.00
 	x = -4
 	y = 1
 	
@@ -2911,7 +2911,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Join_Empire
 	icon = GFX_goal_hoist_the_flag
-	cost = 10.00
+	cost = 8.00
 	x = -1
 	y = 1
 	
@@ -2951,7 +2951,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Go_Alone
 	icon = GFX_goal_generic_demand_territory
-	cost = 10.00
+	cost = 8.00
 	x = 1
 	y = 1
 	
@@ -2982,7 +2982,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Knights_Empire
 	icon = GFX_goal_griffon_levy
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -3015,7 +3015,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Modern_Knights
 	icon = GFX_goal_griffon_knights
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -3036,7 +3036,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_War_Has_Changed
 	icon = GFX_goal_GEA_guerilla_warfare
-	cost = 10.00
+	cost = 8.00
 	x = 1
 	y = 1
 	
@@ -3073,7 +3073,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Western_Agenda_Neutral
 	icon = GFX_goal_news
-	cost = 10.00
+	cost = 8.00
 	x = 4
 	y = 1
 	
@@ -3151,7 +3151,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Errant_Colony_Neutral
 	icon = GFX_goal_generic_defence
-	cost = 10.00
+	cost = 8.00
 	x = 1
 	y = 1
 	
@@ -3232,7 +3232,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Knights_Nova_Neutral
 	icon = GFX_goal_griffon_knights
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -3263,7 +3263,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Guiding_Claw_Neutral
 	icon = GFX_focus_generic_anti_fascist_diplomacy
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -3305,7 +3305,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Boon_Of_West_Neutral
 	icon = GFX_focus_indy_aristocratic_funding
-	cost = 10.00
+	cost = 8.00
 	x = 1
 	y = 1
 	
@@ -3361,7 +3361,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Evil_Foreign_Policy
 	icon = GFX_goal_support_fascism
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -3387,7 +3387,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Evil_Modernisation
 	icon = GFX_goal_griffon_agriculture
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -3408,7 +3408,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Evil_New_Dawn
 	icon = GFX_focus_generic_industry_3
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 2
 	
@@ -3429,7 +3429,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Doom_Of_Griffonia
 	icon = GFX_goal_solar_attack_griffonia
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 4
 	
@@ -3460,7 +3460,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Prey
 	icon = GFX_focus_indy_industrial_tanks
-	cost = 10.00
+	cost = 8.00
 	x = -4
 	y = 1
 	
@@ -3486,7 +3486,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_War_Socialists
 	icon = GFX_goal_generic_war_with_comintern
-	cost = 10.00
+	cost = 8.00
 	x = -1
 	y = 1
 	
@@ -3534,7 +3534,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Choose_Allies
 	icon = GFX_goal_generic_military_deal_pony_griffon
-	cost = 10.00
+	cost = 8.00
 	x = 1
 	y = 1
 	
@@ -3560,7 +3560,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Core_Socialists
 	icon = GFX_goal_generic_forceful_treaty
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -3590,7 +3590,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_War_Republic
 	icon = GFX_goal_griffonian_republic
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -3636,7 +3636,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_War_Corruption
 	icon = GFX_goal_chn_axis_build_infantry_grey
-	cost = 10.00
+	cost = 8.00
 	x = 1
 	y = 1
 	
@@ -3658,7 +3658,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_War_NTR
 	icon = GFX_goal_generic_attack_allies
-	cost = 10.00
+	cost = 8.00
 	x = -1
 	y = 4
 	
@@ -3733,7 +3733,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_attack_empire
 	icon = GFX_goal_generic_major_war
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 5
 	
@@ -3832,7 +3832,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_War_Preperations
 	icon = GFX_focus_generic_little_entente
-	cost = 10.00
+	cost = 8.00
 	x = 4
 	y = 1
 	
@@ -3853,7 +3853,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Socialist_Border
 	icon = GFX_focus_generic_home_defense
-	cost = 10.00
+	cost = 8.00
 	x = -1
 	y = 1
 	
@@ -3994,7 +3994,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Coast_Forts
 	icon = GFX_focus_generic_coastal_fort
-	cost = 10.00
+	cost = 8.00
 	x = 1
 	y = 1
 	
@@ -4068,7 +4068,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_War_Changes_Evil
 	icon = GFX_goal_generic_small_arms
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -4101,7 +4101,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Republic_Border
 	icon = GFX_goal_generic_construct_military
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -4223,7 +4223,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Fuel_Fires
 	icon = GFX_goal_generic_construct_mil_factory
-	cost = 10.00
+	cost = 8.00
 	x = 1
 	y = 1
 	
@@ -4260,7 +4260,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Continual_Army_Reform
 	icon = GFX_goal_generic_build_tank
-	cost = 10.00
+	cost = 8.00
 	x = 40
 	y = 0
 	
@@ -4282,7 +4282,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Land_War
 	icon = GFX_goal_generic_army_doctrines
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 2
 	
@@ -4303,7 +4303,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_New_Tech
 	icon = GFX_goal_generic_small_arms
-	cost = 10.00
+	cost = 8.00
 	x = -1
 	y = 1
 	
@@ -4324,7 +4324,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Arty_Tech
 	icon = GFX_goal_generic_army_artillery2
-	cost = 10.00
+	cost = 8.00
 	x = -2
 	y = 1
 	
@@ -4345,7 +4345,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Tank_Tech
 	icon = GFX_goal_generic_army_tanks
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -4367,7 +4367,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Spec_Ops
 	icon = GFX_goal_generic_secret_weapon
-	cost = 10.00
+	cost = 8.00
 	x = 1
 	y = 1
 	
@@ -4388,7 +4388,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Magic_Equipment
 	icon = GFX_goal_generic_magic
-	cost = 10.00
+	cost = 8.00
 	x = 2
 	y = 1
 	
@@ -4409,7 +4409,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Integrated_Support
 	icon = GFX_goal_generic_army_motorized
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -4433,7 +4433,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Sea_War
 	icon = GFX_goal_generic_navy_doctrines_tactics
-	cost = 10.00
+	cost = 8.00
 	x = -8
 	y = 2
 	
@@ -4454,7 +4454,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Little_Ships
 	icon = GFX_goal_generic_wolf_pack
-	cost = 10.00
+	cost = 8.00
 	x = -1
 	y = 1
 	
@@ -4475,7 +4475,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_New_Ports
 	icon = GFX_goal_generic_build_navy
-	cost = 10.00
+	cost = 8.00
 	x = -2
 	y = 1
 	
@@ -4540,7 +4540,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Under_Sea
 	icon = GFX_goal_generic_navy_submarine
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -4561,7 +4561,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Big_Ships
 	icon = GFX_goal_generic_navy_battleship
-	cost = 10.00
+	cost = 8.00
 	x = 1
 	y = 1
 	
@@ -4582,7 +4582,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Plane_Dock
 	icon = GFX_goal_generic_navy_carrier
-	cost = 10.00
+	cost = 8.00
 	x = 2
 	y = 1
 	
@@ -4603,7 +4603,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Mass_Ship_Production
 	icon = GFX_goal_generic_construct_naval_dockyard
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -4673,7 +4673,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Air_War
 	icon = GFX_goal_generic_air_doctrine
-	cost = 10.00
+	cost = 8.00
 	x = 8
 	y = 2
 	
@@ -4694,7 +4694,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Light_Air
 	icon = GFX_goal_generic_air_fighter
-	cost = 10.00
+	cost = 8.00
 	x = -1
 	y = 1
 	
@@ -4715,7 +4715,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Close_Encounters
 	icon = GFX_goal_generic_CAS
-	cost = 10.00
+	cost = 8.00
 	x = -2
 	y = 1
 	
@@ -4736,7 +4736,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Air_Detection_Equipment
 	icon = GFX_goal_generic_radar
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
@@ -4757,7 +4757,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Heavy_Air
 	icon = GFX_goal_generic_air_bomber
-	cost = 10.00
+	cost = 8.00
 	x = 1
 	y = 1
 	
@@ -4778,7 +4778,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Navy_Destroyer
 	icon = GFX_goal_bombs_away
-	cost = 10.00
+	cost = 8.00
 	x = 2
 	y = 1
 	
@@ -4799,7 +4799,7 @@ shared_focus = {
 shared_focus = {
 	id = VED_Air_Bases
 	icon = GFX_goal_generic_build_airforce
-	cost = 10.00
+	cost = 8.00
 	x = 0
 	y = 1
 	
