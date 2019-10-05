@@ -16,9 +16,9 @@ Read the wiki at https://equestria-at-war.fandom.com/wiki/Equestria_at_War_Wiki
 Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
 
 * Authors  
-Lukas - most of the code  
+Lukas - some of the code  
 Tom - some code and writeups.
-Feveros - Wingbardy Decisions
+Feveros - a bunch of code
 Ser Pounce - Blackrock Changes
 
 * Acknowledgments  
