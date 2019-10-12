@@ -1075,6 +1075,7 @@ shared_focus = {
 		factor = 100
 	}
 	completion_reward = {
+        add_political_power = 300
 		log = "[GetDateText]: [Root.GetName]: Focus VED_Flight_Home"
 		add_tech_bonus = { bonus = 3 uses = 1 category = air_equipment }
 		if = {
