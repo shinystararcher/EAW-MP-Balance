@@ -1101,20 +1101,6 @@ focus_tree = {
 					}
 				}
 			}
-			add_named_threat = { threat = 5 name = pressure_olenia }
-			if = {
-				limit = { has_idea = civilian_economy }
-				add_ideas = war_economy
-			}
-			else_if = {
-				limit = { has_idea = low_economic_mobilisation }
-				add_ideas = war_economy
-			}
-			else_if = {
-				limit = { has_idea = partial_economic_mobilisation }
-				add_ideas = war_economy
-			}
-				add_political_power = -150
 		}
 		
 		x = 15
@@ -2963,7 +2949,6 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				technology = basic_medium_tank
-				category = cat_medium_armor
 			}
 		}
 	}
@@ -2987,7 +2972,6 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				technology = improved_medium_tank
-				category = cat_medium_armor
 				ahead_reduction = 2
 			}
 			add_tech_bonus = {
