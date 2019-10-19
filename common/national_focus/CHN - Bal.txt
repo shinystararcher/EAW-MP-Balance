@@ -1101,6 +1101,7 @@ focus_tree = {
 					}
 				}
 			}
+			add_named_threat = { threat = 5 name = pressure_olenia }
 		}
 		
 		x = 15
