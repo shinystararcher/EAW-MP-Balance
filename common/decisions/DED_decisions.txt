@@ -779,7 +779,7 @@ DED_exponential_necromancy = {
 		}
 		available = {
 			has_completed_focus = DED_Spooky_Factory
-			has_army_manpower = { size > 100000 }
+			has_army_manpower = { size > 50000 }
 		}
 		visible = {
 			has_completed_focus = DED_Spooky_Factory
@@ -803,7 +803,7 @@ DED_exponential_necromancy = {
 		}
 		available = {
 			has_completed_focus = DED_Spooky_Factory
-			has_army_manpower = { size > 250000 }
+			has_army_manpower = { size > 100000 }
 		}
 		visible = {
 			has_completed_focus = DED_Spooky_Factory
@@ -827,7 +827,7 @@ DED_exponential_necromancy = {
 		}
 		available = {
 			has_completed_focus = DED_Spooky_Factory
-			has_army_manpower = { size > 500000 }
+			has_army_manpower = { size > 150000 }
 		}
 		visible = {
 			has_completed_focus = DED_Spooky_Factory
@@ -851,7 +851,7 @@ DED_exponential_necromancy = {
 		}
 		available = {
 			has_completed_focus = DED_Spooky_Factory
-			has_army_manpower = { size > 1000000 }
+			has_army_manpower = { size > 250000 }
 		}
 		visible = {
 			has_completed_focus = DED_Spooky_Factory
@@ -875,7 +875,7 @@ DED_exponential_necromancy = {
 		}
 		available = {
 			has_completed_focus = DED_Spooky_Factory
-			has_army_manpower = { size > 2000000 }
+			has_army_manpower = { size > 500000 }
 		}
 		visible = {
 			has_completed_focus = DED_Spooky_Factory
