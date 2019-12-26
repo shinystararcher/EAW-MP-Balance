@@ -55,9 +55,12 @@ DED_necromancy = {
 			}
 			415 = { is_owned_and_controlled_by = ROOT }
 			has_resources_amount = { resource = crystals amount > 11 state = 415 }
-			any_state = {
-				is_controlled_by = ROOT
-				NOT = { is_core_of = ROOT }
+			custom_trigger_tooltip = {
+				tooltip = controlls_any_foreign_core_tt
+				any_of = {
+					array = controlled_states
+					var:v = { NOT = { is_core_of = ROOT } }
+				}
 			}
 		}
 		cost = 100
@@ -351,6 +354,10 @@ DED_war_plans = {
 			has_completed_focus = DED_War_Plan_Blood
 			has_country_flag = War_Plan_Blood
 			NOT = {
+				has_game_rule = {
+					rule = war_in_the_north_status
+					option = REAL_THREAT
+				}
 				has_country_flag = Unholy_War_Flag
 				has_country_flag = DED_Chose_Infiltrate
 				has_country_flag = DED_Chose_Agression
@@ -364,7 +371,7 @@ DED_war_plans = {
 		days_remove = 1
 		fire_only_once = yes
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision DED_Diplomacy_Plan"
+			log = "[GetDateText]: [Root.GetName]: Decision DED_Diplomacy_Plan target: [From.GetName]"
 			FROM = {
 				country_event = {id = arcturian.12 days = 6}
 			}
@@ -406,7 +413,7 @@ DED_war_plans = {
 		days_remove = 1
 		fire_only_once = yes
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision DED_Agression_Plan"
+			log = "[GetDateText]: [Root.GetName]: Decision DED_Agression_Plan target: [From.GetName]"
 			declare_war_on = {
 				type = annex_everything
 				target = FROM
@@ -451,7 +458,7 @@ DED_war_plans = {
 		days_remove = 1
 		fire_only_once = yes
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision DED_Infiltration_Plan"
+			log = "[GetDateText]: [Root.GetName]: Decision DED_Infiltration_Plan target: [From.GetName]"
 			country_event = {id = deadempire.25 days = 1}
 			hidden_effect = {
 				set_country_flag = DED_Chose_Infiltrate
@@ -491,13 +498,9 @@ DED_black_crusade_decisions = {
 		#days_remove = -1
 		#days_re_enable = 61
 		complete_effect = {
-            custom_effect_tooltip = HLR_Call_Help_tt
-            log = "[GetDateText]: [Root.GetName]: Decision DED_shinespark"
-            FROM = { country_event = deadempire.56 }
-            set_rule = { can_create_factions = yes }
-            create_faction = "DED_faction"
-            set_country_flag = DED_fir
-        }
+			log = "[GetDateText]: [Root.GetName]: Decision DED_shinespark target: [From.GetName]"
+			FROM = { country_event = deadempire.56 }
+		}
 	}
 
 	DED_war_vedina = {
@@ -519,16 +522,13 @@ DED_black_crusade_decisions = {
 		#days_remove = -1
 		#days_re_enable = 61
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision DED_war_vedina"
+			log = "[GetDateText]: [Root.GetName]: Decision DED_war_vedina target: [From.GetName]"
 			add_tech_bonus = {
 				ahead_reduction = 2
 				bonus = 100
 				uses = 2
 				category = armor
 			}
-		}
-		modifier = {
-
 		}
 	}
 
@@ -552,14 +552,11 @@ DED_black_crusade_decisions = {
 		#days_remove = -1
 		#days_re_enable = 61
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision DED_war_empire"
+			log = "[GetDateText]: [Root.GetName]: Decision DED_war_empire target: [From.GetName]"
 			add_manpower = 100000
 			event_target:griffonian_empire = {
 				add_manpower = -100000
 			}
-		}
-		modifier = {
-
 		}
 	}
 
@@ -589,16 +586,13 @@ DED_black_crusade_decisions = {
 		#days_remove = -1
 		#days_re_enable = 61
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision DED_war_skyfall"
+			log = "[GetDateText]: [Root.GetName]: Decision DED_war_skyfall target: [From.GetName]"
 			add_tech_bonus = {
 				ahead_reduction = 2
 				bonus = 100
 				uses = 6
 				category = naval_equipment
 			}
-
-		}
-		modifier = {
 
 		}
 	}
@@ -624,7 +618,7 @@ DED_black_crusade_decisions = {
 		#days_remove = -1
 		#days_re_enable = 61
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision DED_war_river_fed"
+			log = "[GetDateText]: [Root.GetName]: Decision DED_war_river_fed target: [From.GetName]"
 			add_tech_bonus = {
 				ahead_reduction = 2
 				bonus = 100
@@ -633,16 +627,10 @@ DED_black_crusade_decisions = {
 			}
 
 		}
-		modifier = {
-
-		}
 	}
 
 	DED_war_equestria = {
 		icon = border_war
-		visible = {
-			has_war_with = FROM
-		}
 		targets = { EQS NLR D01 D02 D03 D04 D05 D06 D07 D08 D09 D10 D11 D12 D13 D14 D15 }
 		target_trigger = {
 			FROM = {
@@ -653,6 +641,7 @@ DED_black_crusade_decisions = {
 			}
 		}
 		visible = {
+			has_war_with = FROM
 			FROM = {
 				OR = {
 					original_tag = EQS
@@ -669,7 +658,7 @@ DED_black_crusade_decisions = {
 		#days_remove = -1
 		#days_re_enable = 61
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision DED_war_equestria"
+			log = "[GetDateText]: [Root.GetName]: Decision DED_war_equestria target: [From.GetName]"
 			random_owned_state = {
 
 				add_extra_state_shared_building_slots = 10
@@ -680,9 +669,6 @@ DED_black_crusade_decisions = {
 					instant_build = yes
 				}
 			}
-
-		}
-		modifier = {
 
 		}
 	}
@@ -728,7 +714,7 @@ operations = {
 
 
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove world_conquest_remove_DED"
+			log = "[GetDateText]: [Root.GetName]: Decision remove world_conquest_remove_DED target: [From.GetName]"
 			log = "[GetDateText] [Root.GetName]: decision world_conquest_remove_DED"
 			declare_war_on = {
 				type = annex_everything

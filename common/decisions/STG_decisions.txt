@@ -21,7 +21,6 @@ STG_special_constructions = {
 			factor = 0
 		}
 		fire_only_once = yes
-		is_good = no
 		visible = {
 			NOT = {
 				has_war = yes
@@ -57,7 +56,6 @@ STG_special_constructions = {
 			factor = 0
 		}
 		fire_only_once = yes
-		is_good = no
 		visible = {
 			has_war = yes
 			NOT = {
@@ -94,9 +92,6 @@ STG_special_constructions = {
 				has_country_flag = palace_project_abandoned
 			}
 		}
-		activation = {
-			check_variable = { var = palace_construction value = 20 compare = greater_than_or_equals }
-		}
 		visible = {
 			NOT = {
 				has_country_flag = palace_project_abandoned
@@ -105,14 +100,10 @@ STG_special_constructions = {
 		cost = 40
 		days_remove = 50
 
-		selectable_mission = yes
 		ai_will_do = {
 			factor = 1.5
 		}
 		fire_only_once = yes
-		is_good = yes
-		visible = {
-		}
 		cancel_trigger = {
 			OR = {
 				has_idea = STG_palace_constructed
@@ -151,18 +142,13 @@ STG_special_constructions = {
 				has_country_flag = palace_project_abandoned
 			}
 		}
-		activation = {
-			check_variable = { var = palace_construction value = 20 compare = greater_than_or_equals }
-		}
 		cost = 40
 		days_remove = 140
 
-		selectable_mission = yes
 		ai_will_do = {
 			factor = 1.5
 		}
 		fire_only_once = yes
-		is_good = yes
 		cancel_trigger = {
 			OR = {
 				has_idea = STG_palace_constructed
@@ -204,7 +190,6 @@ STG_special_constructions = {
 		}
 		cost = 40
 		days_remove = 75
-		selectable_mission = yes
 
 		ai_will_do = {
 			factor = 0
@@ -234,8 +219,6 @@ STG_special_constructions = {
 				has_idea = STG_palace_constructed
 			}
 		}
-
-		is_good = yes
 
 		modifier = {
 			stability_weekly = 0.0025
@@ -384,10 +367,20 @@ STG_foreign_affairs = {
 				FROM = { has_war = yes }
 			}
 		}
-		is_good = yes
 		visible = {
 			is_faction_leader = yes
 			FROM = {
+				OR = {
+					original_tag = YAK
+					original_tag = JAK
+					original_tag = GRF
+					original_tag = PNG
+					original_tag = CRY
+					original_tag = OLE
+					original_tag = CHN
+					original_tag = CCN
+				}
+				exists = yes
 				has_government = communism
 				is_subject = no
 				NOT = {
@@ -420,7 +413,7 @@ STG_foreign_affairs = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision STG_invite_people_to_faction"
+			log = "[GetDateText]: [Root.GetName]: Decision STG_invite_people_to_faction target: [From.GetName]"
 			FROM = {
 				country_event = generic.5
 				set_country_flag = { flag = STG_invitation_cooldown value = 1 days = 360 }
@@ -434,7 +427,6 @@ STG_foreign_affairs = {
 			factor = 100
 		}
 		fire_only_once = yes
-		is_good = yes
 		target_root_trigger = {
 			has_global_flag = the_war
 			NOT = {
@@ -470,6 +462,7 @@ STG_foreign_affairs = {
 				has_completed_focus = fighting_for_victory
 			}
 			FROM = {
+				original_tag = EQS
 				exists = yes
 				has_capitulated = no
 			}
@@ -486,8 +479,8 @@ STG_foreign_affairs = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision STG_claim_EQS_cores"
-			country_event = stalliongrad.70
+			log = "[GetDateText]: [Root.GetName]: Decision STG_claim_EQS_cores target: [From.GetName]"
+			FROM = { country_event = equestria.40 }
 			add_war_support = -0.1
 			set_country_flag = claimed_EQS_territory_already
 		}
@@ -527,6 +520,9 @@ STG_foreign_affairs = {
 				transfer_state = 167
 				transfer_state = 229
 				transfer_state = 67
+				transfer_state = 653
+				transfer_state = 661
+				transfer_state = 662
 				news_event = { id = stalliongrad_news.110 days = 1 }
 			}
 			NLR = {
@@ -549,7 +545,6 @@ STG_protection = {
 			factor = 100
 		}
 		fire_only_once = yes
-		is_good = yes
 		target_root_trigger = {
 			has_completed_focus = vasya_leader
 			is_subject = no
@@ -564,7 +559,7 @@ STG_protection = {
 			FROM = { tag = CHN }
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision STG_vasily_speech_against_CHN"
+			log = "[GetDateText]: [Root.GetName]: Decision STG_vasily_speech_against_CHN target: [From.GetName]"
 			country_event = stalliongrad.125
 			add_war_support = 0.05
 		}
@@ -581,7 +576,6 @@ STG_protection = {
 			factor = 100
 		}
 		fire_only_once = yes
-		is_good = yes
 		target_root_trigger = {
 			has_completed_focus = vasya_leader
 			is_subject = no
@@ -590,13 +584,14 @@ STG_protection = {
 			has_completed_focus = vasya_leader
 			is_subject = no
 			has_defensive_war_with = FROM
+			FROM = { original_tag = EQS }
 		}
 		targets = { EQS D01 D02 D03 D04 D05 D06 D07 D08 D09 D10 D11 D12 D13 D14 D15 }
 		target_trigger = {
 			FROM = { original_tag = EQS }
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision STG_vasily_speech_against_EQS"
+			log = "[GetDateText]: [Root.GetName]: Decision STG_vasily_speech_against_EQS target: [From.GetName]"
 			country_event = stalliongrad.126
 			add_war_support = 0.05
 		}
@@ -613,7 +608,6 @@ STG_protection = {
 			factor = 100
 		}
 		fire_only_once = yes
-		is_good = yes
 		target_root_trigger = {
 			has_completed_focus = vasya_leader
 			is_subject = no
@@ -622,13 +616,14 @@ STG_protection = {
 			has_completed_focus = vasya_leader
 			is_subject = no
 			has_offensive_war_with = FROM
+			FROM = { original_tag = EQS }
 		}
 		targets = { EQS D01 D02 D03 D04 D05 D06 D07 D08 D09 D10 D11 D12 D13 D14 D15 }
 		target_trigger = {
 			FROM = { original_tag = EQS }
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision STG_vasily_speech_against_EQS_offensive"
+			log = "[GetDateText]: [Root.GetName]: Decision STG_vasily_speech_against_EQS_offensive target: [From.GetName]"
 			country_event = stalliongrad.127
 			add_war_support = 0.05
 		}
@@ -640,7 +635,6 @@ STG_protection = {
 			factor = 100
 		}
 		fire_only_once = yes
-		is_good = yes
 		target_root_trigger = {
 			has_completed_focus = vasya_leader
 			is_subject = no
@@ -669,7 +663,7 @@ STG_protection = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision STG_vasily_speech_defensive_generic"
+			log = "[GetDateText]: [Root.GetName]: Decision STG_vasily_speech_defensive_generic target: [From.GetName]"
 			hidden_effect = {
 				FROM = {
 					country_event = stalliongrad.130
@@ -685,7 +679,6 @@ STG_protection = {
 			factor = 100
 		}
 		fire_only_once = yes
-		is_good = yes
 		target_root_trigger = {
 			has_completed_focus = vasya_leader
 			is_subject = no
@@ -713,7 +706,7 @@ STG_protection = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision STG_vasily_speech_offensive_generic"
+			log = "[GetDateText]: [Root.GetName]: Decision STG_vasily_speech_offensive_generic target: [From.GetName]"
 			hidden_effect = {
 				FROM = {
 					country_event = stalliongrad.130
@@ -730,7 +723,6 @@ STG_protection = {
 			factor = 100
 		}
 		fire_only_once = yes
-		is_good = yes
 		visible = {
 			has_completed_focus = sinister_leader
 			is_subject = no
@@ -748,7 +740,7 @@ STG_protection = {
 			FROM = { tag = CHN }
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision STG_sinister_speech_against_CHN_offensive"
+			log = "[GetDateText]: [Root.GetName]: Decision STG_sinister_speech_against_CHN_offensive target: [From.GetName]"
 			country_event = stalliongrad.131
 			add_war_support = 0.025
 		}
@@ -760,7 +752,6 @@ STG_protection = {
 			factor = 100
 		}
 		fire_only_once = yes
-		is_good = yes
 		target_root_trigger = {
 			has_completed_focus = sinister_leader
 			is_subject = no
@@ -775,7 +766,7 @@ STG_protection = {
 			FROM = { tag = CHN }
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision STG_sinister_speech_against_CHN_defensive"
+			log = "[GetDateText]: [Root.GetName]: Decision STG_sinister_speech_against_CHN_defensive target: [From.GetName]"
 			country_event = stalliongrad.132
 			add_war_support = 0.05
 		}
@@ -787,11 +778,11 @@ STG_protection = {
 			factor = 100
 		}
 		fire_only_once = yes
-		is_good = yes
 		visible = {
 			has_completed_focus = sinister_leader
 			is_subject = no
 			has_defensive_war_with = FROM
+			FROM = { original_tag = EQS }
 		}
 		target_root_trigger = {
 			has_completed_focus = sinister_leader
@@ -802,7 +793,7 @@ STG_protection = {
 			FROM = { original_tag = EQS }
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision STG_sinister_speech_against_EQS_defensive"
+			log = "[GetDateText]: [Root.GetName]: Decision STG_sinister_speech_against_EQS_defensive target: [From.GetName]"
 			country_event = stalliongrad.133
 			add_war_support = 0.05
 		}
@@ -814,7 +805,6 @@ STG_protection = {
 			factor = 100
 		}
 		fire_only_once = yes
-		is_good = yes
 		visible = {
 			has_completed_focus = sinister_leader
 			is_subject = no
@@ -822,6 +812,7 @@ STG_protection = {
 				has_offensive_war_with = FROM
 				is_justifying_wargoal_against = FROM
 			}
+			FROM = { original_tag = EQS }
 		}
 		target_root_trigger = {
 			has_completed_focus = sinister_leader
@@ -832,7 +823,7 @@ STG_protection = {
 			FROM = { original_tag = EQS }
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision STG_sinister_speech_against_EQS_offensive"
+			log = "[GetDateText]: [Root.GetName]: Decision STG_sinister_speech_against_EQS_offensive target: [From.GetName]"
 			country_event = stalliongrad.134
 			add_war_support = 0.05
 			set_country_flag = chernushka_get
@@ -845,7 +836,6 @@ STG_protection = {
 			factor = 100
 		}
 		fire_only_once = yes
-		is_good = yes
 		target_root_trigger = {
 			has_completed_focus = sinister_leader
 			is_subject = no
@@ -873,7 +863,7 @@ STG_protection = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision STG_sinister_speech_offensive_generic"
+			log = "[GetDateText]: [Root.GetName]: Decision STG_sinister_speech_offensive_generic target: [From.GetName]"
 			hidden_effect = {
 				FROM = { country_event = stalliongrad.136 }
 			}
@@ -922,7 +912,6 @@ form_equestrian_socialist_union_category = {
 			factor = 100
 		}
 		fire_only_once = yes
-		is_good = yes
 		visible = {
 			OR = {
 				has_war_with = EQS
@@ -1079,6 +1068,7 @@ form_equestrian_socialist_union_category = {
 			controls_stableside = yes
 			controls_stalliongrad = yes
 			controls_canterlot = yes
+			controls_crystal_city = yes
 			controls_startlight_country = yes
 		}
 		cost = 25
@@ -1086,7 +1076,6 @@ form_equestrian_socialist_union_category = {
 			factor = 100
 		}
 		fire_only_once = yes
-		is_good = yes
 		visible = {
 			is_subject = no
 			controls_stalliongrad = yes
@@ -1118,7 +1107,7 @@ form_equestrian_socialist_union_category = {
 						original_tag = STL
 					}
 					has_government = communism
-					is_subject = no
+					OR = { is_subject = no is_subject_of = ROOT }
 					has_war = no
 				}
 				country_event = stalliongrad.148
@@ -1183,6 +1172,7 @@ political_actions = {
 			FROM = {
 				is_ai = yes
 				exists = yes
+				original_tag = EQS
 				has_government = democratic
 				has_war_with = CHN
 				surrender_progress > 0.15
@@ -1197,7 +1187,7 @@ political_actions = {
 		}
 		fire_only_once = yes
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision STG_help_EQS_in_war"
+			log = "[GetDateText]: [Root.GetName]: Decision STG_help_EQS_in_war target: [From.GetName]"
 			country_event = stalliongrad.75
 		}
 	}
@@ -1258,8 +1248,10 @@ political_actions = {
 			#	}
 		#}
 	STG_rename_STG_to_STG = {
-		visible = {
+		allowed = {
 			original_tag = STG
+		}
+		visible = {
 			owns_state = 153
 			has_country_flag = stg_renamed
 		}
@@ -1282,12 +1274,14 @@ political_actions = {
 		}
 	}
 	STG_rename_STG_to_Coltisyn = {
+		allowed = {
+			original_tag = STG
+		}
 		visible = {
 			NOT = {
 				has_government = communism
 				has_country_flag = stg_renamed
 			}
-			original_tag = STG
 			owns_state = 153
 		}
 		ai_will_do = {
@@ -1308,12 +1302,14 @@ political_actions = {
 		}
 	}
 	STG_rename_STG_to_Solargrad = {
+		allowed = {
+			original_tag = STG
+		}
 		visible = {
 			NOT = {
 				has_government = communism
 				has_country_flag = stg_renamed
 			}
-			original_tag = STG
 			owns_state = 153
 		}
 		ai_will_do = {
@@ -1334,12 +1330,14 @@ political_actions = {
 		}
 	}
 	STG_rename_STG_to_Princessyn = {
+		allowed = {
+			original_tag = STG
+		}
 		visible = {
 			NOT = {
 				has_government = communism
 				has_country_flag = stg_renamed
 			}
-			original_tag = STG
 			owns_state = 153
 		}
 		ai_will_do = {
@@ -1360,12 +1358,14 @@ political_actions = {
 		}
 	}
 	STG_rename_STG_to_Zvezdograd = {
+		allowed = {
+			original_tag = STG
+		}
 		visible = {
 			NOT = {
 				has_government = communism
 				has_country_flag = stg_renamed
 			}
-			original_tag = STG
 			owns_state = 153
 		}
 		ai_will_do = {
@@ -1386,12 +1386,14 @@ political_actions = {
 		}
 	}
 	STG_rename_STG_to_Severyansk = {
+		allowed = {
+			original_tag = STG
+		}
 		visible = {
 			NOT = {
 				has_government = communism
 				has_country_flag = stg_renamed
 			}
-			original_tag = STG
 			owns_state = 153
 		}
 		ai_will_do = {
@@ -1412,12 +1414,14 @@ political_actions = {
 		}
 	}
 	STG_rename_STG_to_Stargorod = {
+		allowed = {
+			original_tag = STG
+		}
 		visible = {
 			NOT = {
 				has_government = communism
 				has_country_flag = stg_renamed
 			}
-			original_tag = STG
 			owns_state = 153
 		}
 		ai_will_do = {
@@ -1448,8 +1452,10 @@ political_actions = {
 				}
 			}
 		}
-		visible = {
+		allowed = {
 			tag = STG
+		}
+		visible = {
 			owns_state = 225
 			has_completed_focus = sinister_leader
 			has_government = communism
@@ -1469,7 +1475,6 @@ political_actions = {
 			200
 		}
 		fire_only_once = yes
-		is_good = yes
 		cost = 25
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision STG_rename_Konzan_to_Sinistergrad"
@@ -1478,8 +1483,10 @@ political_actions = {
 	}
 	STG_rename_Severokholm_to_Altytown = {
 		icon = modern_city
-		visible = {
+		allowed = {
 			tag = STG
+		}
+		visible = {
 			has_country_flag = altidiya_died
 			has_government = communism
 			owns_state = 168
@@ -1488,7 +1495,6 @@ political_actions = {
 			factor = 100
 		}
 		fire_only_once = yes
-		is_good = yes
 		cost = 25
 		highlight_states = {
 			state = 168
@@ -1510,7 +1516,6 @@ form_the_socialist_world_republic = {
 			factor = 100
 		}
 		fire_only_once = yes
-		is_good = yes
 		visible = {
 			has_government = communism
 			has_war = no
