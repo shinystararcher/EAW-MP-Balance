@@ -662,7 +662,7 @@ country_event = { ## Some loot
 
 country_event = { ## Some more loot
 	id = bandit.21
-	immediate = {log = "[GetDateText]: [Root.GetName]: event bandit.21"}#Auto-logging
+
 	title = bandit.21.t
 	desc = bandit.21.d
 	picture = GFX_event_griffon_soldier
