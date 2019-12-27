@@ -1803,6 +1803,7 @@ shared_focus = {
 		add_ideas = HLR_new_kingdom_idea
 
 		hidden_effect = {
+			news_event = { days = 1 id = arcturiannews.2 }
 			set_country_flag = HLR_Reformed
 			HLR = {
 				set_rule = { can_only_justify_war_on_threat_country = no }
@@ -2273,6 +2274,13 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 10
+		modifier = {
+			factor = 0
+			has_game_rule = {
+				rule = war_in_the_north_status
+				option = REAL_THREAT
+			}
+		}
 	}
 
 	bypass = {
@@ -2608,7 +2616,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus HLR_war_Sunstriker"
 		create_wargoal = {
-			target = MCN
+			target = MNC
 			type = annex_everything
 		}
 	}
@@ -2671,29 +2679,22 @@ shared_focus = {
 	}
 
 	available = {
-		NOT = { AND = {
-				any_state = {
-					OR = {
-						state = 581
-						state = 475
-						state = 459
-						state = 476
-						state = 477
-						state = 480
-						state = 474
-						state = 583
-						state = 449
-						state = 450
-						state = 582
-						state = 548
-						state = 432
-						state = 485
-						state = 556
-						state = 557
-					}
-					NOT = { is_owned_and_controlled_by = ROOT }
-				}
-				} }
+		581 = { is_owned_and_controlled_by = ROOT }
+		475 = { is_owned_and_controlled_by = ROOT }
+		459 = { is_owned_and_controlled_by = ROOT }
+		476 = { is_owned_and_controlled_by = ROOT }
+		477 = { is_owned_and_controlled_by = ROOT }
+		480 = { is_owned_and_controlled_by = ROOT }
+		474 = { is_owned_and_controlled_by = ROOT }
+		583 = { is_owned_and_controlled_by = ROOT }
+		449 = { is_owned_and_controlled_by = ROOT }
+		450 = { is_owned_and_controlled_by = ROOT }
+		582 = { is_owned_and_controlled_by = ROOT }
+		548 = { is_owned_and_controlled_by = ROOT }
+		432 = { is_owned_and_controlled_by = ROOT }
+		485 = { is_owned_and_controlled_by = ROOT }
+		556 = { is_owned_and_controlled_by = ROOT }
+		557 = { is_owned_and_controlled_by = ROOT }
 	}
 
 	completion_reward = {
@@ -2964,6 +2965,8 @@ shared_focus = {
 		}
 	}
 
+	will_lead_to_war_with = WAT
+
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus HLR_watertowns_peace"
 		if = {
@@ -3007,6 +3010,8 @@ shared_focus = {
 		}
 	}
 
+	will_lead_to_war_with = MNC
+
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus HLR_sunstriker_peace"
 		if = {
@@ -3049,6 +3054,8 @@ shared_focus = {
 			}
 		}
 	}
+
+	will_lead_to_war_with = NTR
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus HLR_northerntribes_peace"
@@ -3156,7 +3163,6 @@ shared_focus = {
 shared_focus = {
 	id = HLR_carrier_focus
 	icon = GFX_goal_generic_navy_carrier
-	cost = 10.00
 
 	relative_position_id = HLR_dock_yards
 	x = 1
@@ -3186,7 +3192,6 @@ shared_focus = {
 shared_focus = {
 	id = HLR_battleship
 	icon = GFX_goal_generic_navy_battleship
-	cost = 10.00
 
 	relative_position_id = HLR_dock_yards
 	x = -1
@@ -3665,7 +3670,7 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus HLR_scientific_breakthrough"
-		hidden_effect = { set_country_flag = better_science_base_unclocked }
+		hidden_effect = { set_country_flag = better_science_base_unlocked }
 		add_ideas = better_science_base
 	}
 }
@@ -3693,7 +3698,7 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus HLR_scientific_advancements"
-		hidden_effect = { set_country_flag = big_science_base_unclocked }
+		hidden_effect = { set_country_flag = big_science_base_unlocked }
 		add_ideas = big_science_base
 	}
 }
@@ -4008,7 +4013,7 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus HLR_gains_outdated_industry"
-		hidden_effect = { set_country_flag = outdated_industry_unclocked }
+		hidden_effect = { set_country_flag = outdated_industry_unlocked }
 		add_ideas = outdated_industry
 
 	}
@@ -4038,7 +4043,7 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus HLR_scientific_greatness"
-		hidden_effect = { set_country_flag = proper_science_base_unclocked }
+		hidden_effect = { set_country_flag = proper_science_base_unlocked }
 		add_ideas = proper_science_base
 	}
 }
@@ -4066,7 +4071,7 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus HLR_gains_Modern_industry"
-		hidden_effect = { set_country_flag = modern_society_unclocked }
+		hidden_effect = { set_country_flag = modern_society_unlocked }
 		add_ideas = modern_society
 
 	}
