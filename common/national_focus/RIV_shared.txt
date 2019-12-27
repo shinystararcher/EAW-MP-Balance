@@ -83,6 +83,9 @@ shared_focus = {
 
 	allow_branch = {
 		is_river_fed_member = yes
+		NOT = {
+			is_subject_of = GRI
+		}
 	}
 
 	cost = 8
@@ -2887,7 +2890,13 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus RIV_atomic_energy_community"
-		add_research_slot = 1
+		if = {
+			limit = {
+				amount_research_slots < 5
+			}
+			add_research_slot = 1
+			custom_effect_tooltip = CZE_war_college_effect_2_tt
+		}
 		add_tech_bonus = {
 			name = RIV_atomic_energy_community
 			bonus = 1.0
@@ -3255,6 +3264,7 @@ shared_focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RIV_develop_friends"
 		hidden_effect = {	#ai processing
 			if = {
 				limit = {
@@ -3266,7 +3276,7 @@ shared_focus = {
 				country_event = wittenland.100
 			}
 		}
-		log = "[GetDateText]: [Root.GetName]: Focus RIV_develop_friends"
+
 		every_other_country = {
 			limit = {
 				OR = {
@@ -3290,7 +3300,8 @@ shared_focus = {
 					has_war = no
 					NOT = {
 						is_guaranteed_by = ROOT
-						any_country = {
+						any_of_scopes = {
+							array = global.river_coalition_members
 							is_river_fed_member = yes
 							OR = {
 								PREV = { is_justifying_wargoal_against = THIS }
@@ -3311,7 +3322,8 @@ shared_focus = {
 					has_war = no
 					NOT = {
 						is_guaranteed_by = ROOT
-						any_country = {
+						any_of_scopes = {
+							array = global.river_coalition_members
 							is_river_fed_member = yes
 							OR = {
 								PREV = { is_justifying_wargoal_against = THIS }
@@ -3332,7 +3344,8 @@ shared_focus = {
 					has_war = no
 					NOT = {
 						is_guaranteed_by = ROOT
-						any_country = {
+						any_of_scopes = {
+							array = global.river_coalition_members
 							is_river_fed_member = yes
 							OR = {
 								PREV = { is_justifying_wargoal_against = THIS }
