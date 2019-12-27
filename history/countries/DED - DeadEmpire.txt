@@ -8,6 +8,7 @@ set_technology = {
 	generic_race = 1
 	berserker_charge = 1
 }
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
 
 set_convoys = 70
 set_popularities = {
@@ -23,7 +24,6 @@ set_politics = {
 	election_frequency = 36
 	elections_allowed = no
 }
-
 set_country_flag = trade_laws_blocked
 set_country_flag = { flag = DED_killed_nations value = 0 }
 set_rule = { can_join_factions = no }
