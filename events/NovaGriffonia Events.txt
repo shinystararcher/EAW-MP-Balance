@@ -2,7 +2,7 @@ add_namespace = griffons
 
 country_event = { #Teafeather dead
 	id = griffons.1
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.1"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.1"}
 	title = griffons.1.t
 	desc = griffons.1.d
 	picture = GFX_event_griffon_back
@@ -29,7 +29,7 @@ country_event = { #Teafeather dead
 		add_ideas = GRF_political_chaos
 		add_political_power = -125
 		hidden_effect = {
-			country_event = { days = 130 id=griffons.3 }
+			set_country_flag = GRF_prepare_civil_war
 			set_country_flag = GRF_teafeather_dead
 			news_event = { id = newsg.2 hours = 6 }
 			STG = { country_event = { id = stalliongrad.96 days = 3 } }
@@ -39,15 +39,18 @@ country_event = { #Teafeather dead
 
 country_event = { # Solutions for our immense problems
 	id = griffons.3
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.3"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.3"}
 	title = griffons.3.t
 	desc = griffons.3.d
 	picture = GFX_event_griffon_mountain
-	is_triggered_only = yes
 	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 7
+	}
 	trigger = {
-		is_subject = no
-		has_country_leader = { ruling_only = yes name = "Provisional Council" }
+		tag = GRF
+		has_war = no
+		has_completed_focus = GRF_douse_the_flames
 	}
 
 	option = {
@@ -57,7 +60,7 @@ country_event = { # Solutions for our immense problems
 			factor = 50
 			modifier = {
 				OR = {
-					has_country_flag = GRF_AI_HIGHHILL 
+					has_country_flag = GRF_AI_HIGHHILL
 					has_game_rule = {
 						rule = GRF_ai_behavior
 						option = HIGHHILL
@@ -67,7 +70,7 @@ country_event = { # Solutions for our immense problems
 			}
 			modifier = {
 				OR = {
-					has_country_flag = GRF_AI_SKEIRON 
+					has_country_flag = GRF_AI_SKEIRON
 					has_game_rule = {
 						rule = GRF_ai_behavior
 						option = SKEIRON
@@ -87,7 +90,7 @@ country_event = { # Solutions for our immense problems
 			}
 			modifier = {
 				OR = {
-					has_country_flag = GRF_AI_HEINRICH 
+					has_country_flag = GRF_AI_HEINRICH
 					has_game_rule = {
 						rule = GRF_ai_behavior
 						option = HEINRICH
@@ -107,9 +110,9 @@ country_event = { # Solutions for our immense problems
 			}
 		}
 		set_country_flag = GRF_junta
-		clr_country_flag = teafeather_dead
-		add_political_power = -150
-		add_stability = -0.15
+		clr_country_flag = GRF_teafeather_dead
+		add_political_power = -200
+		add_stability = -0.20
 
 		add_ideas = { GRF_communist_militias }
 		add_ideas = { GRF_fight_for_freedom }
@@ -215,7 +218,7 @@ country_event = { # Solutions for our immense problems
 			factor = 50
 			modifier = {
 				OR = {
-					has_country_flag = GRF_AI_HEINRICH 
+					has_country_flag = GRF_AI_HEINRICH
 					has_game_rule = {
 						rule = GRF_ai_behavior
 						option = HEINRICH
@@ -235,7 +238,7 @@ country_event = { # Solutions for our immense problems
 			}
 			modifier = {
 				OR = {
-					has_country_flag = GRF_AI_HIGHHILL 
+					has_country_flag = GRF_AI_HIGHHILL
 					has_game_rule = {
 						rule = GRF_ai_behavior
 						option = HIGHHILL
@@ -245,7 +248,7 @@ country_event = { # Solutions for our immense problems
 			}
 			modifier = {
 				OR = {
-					has_country_flag = GRF_AI_SKEIRON 
+					has_country_flag = GRF_AI_SKEIRON
 					has_game_rule = {
 						rule = GRF_ai_behavior
 						option = SKEIRON
@@ -276,7 +279,7 @@ country_event = { # Solutions for our immense problems
 
 country_event = {
 	id = griffons.4
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.4"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.4"}
 	title = griffons.4.t
 	desc = griffons.4.d
 	picture = GFX_event_griffon_back
@@ -302,7 +305,7 @@ country_event = {
 			}
 			modifier = {
 				OR = {
-					has_country_flag = GRF_AI_HEINRICH 
+					has_country_flag = GRF_AI_HEINRICH
 					has_game_rule = {
 						rule = GRF_ai_behavior
 						option = HEINRICH
@@ -318,7 +321,7 @@ country_event = {
 		}
 		add_popularity = {
 			ideology = democratic
-			popularity = 0.15
+			popularity = 0.10
 		}
 		add_political_power = 50
 		hidden_effect = { set_country_flag = GRF_GSDP_win }
@@ -332,7 +335,7 @@ country_event = {
 			}
 			modifier = {
 				OR = {
-					has_country_flag = GRF_AI_HEINRICH 
+					has_country_flag = GRF_AI_HEINRICH
 					has_game_rule = {
 						rule = GRF_ai_behavior
 						option = HEINRICH
@@ -358,7 +361,7 @@ country_event = {
 		}
 		add_popularity = {
 			ideology = communism
-			popularity = 0.15
+			popularity = 0.10
 		}
 		add_political_power = 50
 		hidden_effect = { set_country_flag = GRF_communists_win }
@@ -367,7 +370,7 @@ country_event = {
 
 country_event = { #STG influence
 	id = griffons.5
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.5"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.5"}
 	title = griffons.5.t
 	desc = griffons.5.d
 	picture = GFX_event_griffon_mountain
@@ -385,7 +388,7 @@ country_event = { #STG influence
 }
 country_event = { #STG influence
 	id = griffons.6
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.6"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.6"}
 	title = griffons.6.t
 	desc = griffons.6.d
 	picture = GFX_event_griffon_back
@@ -415,14 +418,14 @@ country_event = { #STG influence
 	option = {
 		name = griffons.6.b # support the movement
 		ai_chance = { factor = 60 }
-		add_popularity = { ideology = communism popularity = 0.15 }
+		add_popularity = { ideology = communism popularity = 0.10 }
 		remove_opinion_modifier = { target = STG modifier = hostility }
 		add_opinion_modifier = { target = STG modifier = friendly_government }
 	}
 }
 country_event = { #STG wants to puppet
 	id = griffons.7
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.7"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.7"}
 	title = griffons.7.t
 	desc = griffons.7.d
 	picture = GFX_event_griffon_mountain
@@ -447,7 +450,7 @@ country_event = { #STG wants to puppet
 }
 country_event = { #GRF civil_war
 	id = griffons.8
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.8"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.8"}
 	title = griffons.8.t
 	desc = griffons.8.d
 	picture = GFX_event_griffon_back
@@ -489,7 +492,7 @@ country_event = { #GRF civil_war
 }
 country_event = { #STG active intervention ## add STG to war, dunno if that works
 	id = griffons.9
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.9"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.9"}
 	title = griffons.9.t
 	desc = griffons.9.d
 	picture = GFX_event_griffon_mountain
@@ -540,7 +543,7 @@ country_event = { #STG active intervention ## add STG to war, dunno if that work
 }
 country_event = { #STG active intervention ## GRF wants to join faction with STG
 	id = griffons.10
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.10"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.10"}
 	title = griffons.10.t
 	desc = griffons.10.d
 	picture = GFX_event_griffon_back
@@ -571,7 +574,7 @@ country_event = { #STG active intervention ## GRF wants to join faction with STG
 }
 country_event = { #Sinister's focus strike # Puppet demand
 	id = griffons.11
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.11"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.11"}
 	title = griffons.11.t
 	desc = griffons.11.d
 	picture = GFX_event_griffon_mountain
@@ -612,7 +615,7 @@ country_event = { #Sinister's focus strike # Puppet demand
 ### Empire ###
 country_event = { #A New Age
 	id = griffons.13
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.13"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.13"}
 	title = griffons.13.t
 	desc = griffons.13.d
 	picture = GFX_event_griffon_back
@@ -628,7 +631,7 @@ country_event = { #A New Age
 }
 country_event = { #Highhill Emperor
 	id = griffons.14
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.14"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.14"}
 	title = griffons.14.t
 	desc = griffons.14.d
 	picture = GFX_event_griffon_back
@@ -655,7 +658,7 @@ country_event = { #Highhill Emperor
 }
 country_event = { #Ironclaw Emperor
 	id = griffons.15
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.15"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.15"}
 	title = griffons.15.t
 	desc = griffons.15.d
 	picture = GFX_event_griffon_back
@@ -676,7 +679,7 @@ country_event = { #Ironclaw Emperor
 		set_party_name = {ideology = fascism name = GRF_imperial_leauge long_name = GRF_imperial_leauge_long }
 		add_popularity = {
 			ideology = fascism
-			popularity = 0.15
+			popularity = 0.10
 		}
 		hidden_effect = { news_event = { id = newsg.6 hours = 6 } }
 		add_ideas = GRF_phoenix
@@ -686,7 +689,7 @@ country_event = { #Ironclaw Emperor
 ###Frontier Relations###
 country_event = {
 	id = griffons.18
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.18"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.18"}
 	title = griffons.18.t
 	desc = griffons.18.d
 	picture = GFX_event_griffon_mountain
@@ -696,14 +699,14 @@ country_event = {
 	option = {
 		name = griffons.18.a
 		add_timed_idea = { idea = GRF_frontier_help days = 120 }
-		GFF = { 
+		GFF = {
 			country_event = { id = frontier.2 days = 1 }
 		}
 		ai_chance = { factor = 5 }
 	}
 	option = {
 		name = griffons.18.b
-		GFF = { 
+		GFF = {
 			country_event = { id = frontier.3 days = 1 }
 		}
 		ai_chance = { factor = 95 }
@@ -711,7 +714,7 @@ country_event = {
 }
 country_event = {
 	id = griffons.19
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.19"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.19"}
 	title = griffons.19.t
 	desc = griffons.19.d
 	picture = GFX_event_griffon_back
@@ -725,7 +728,7 @@ country_event = {
 }
 country_event = {
 	id = griffons.20
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.20"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.20"}
 	title = griffons.20.t
 	desc = griffons.20.d
 	picture = GFX_event_griffon_mountain
@@ -736,8 +739,8 @@ country_event = {
 		name = griffons.20.a
 		declare_war_on = { target = GFF type = annex_everything }
 		custom_effect_tooltip = griffons.20.a_tt
-		hidden_effect = { 
-			activate_targeted_decision = { target = GFF decision = GRF_GFF_war_crisis } 
+		hidden_effect = {
+			activate_targeted_decision = { target = GFF decision = GRF_GFF_war_crisis }
 		}
 		ai_chance = { factor = 70 }
 	}
@@ -749,7 +752,7 @@ country_event = {
 ### Flavour Events ###
 country_event = {
 	id = griffons.21
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.21"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.21"}
 	title = griffons.21.t
 	desc = griffons.21.d
 	picture = GFX_event_griffon_back
@@ -759,11 +762,12 @@ country_event = {
 
 	option = {
 		name = griffons.21.a
+		add_political_power = -20
 	}
 }
 country_event = {
 	id = griffons.22
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.22"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.22"}
 	title = griffons.22.t
 	desc = griffons.22.d
 	picture = GFX_event_griffon_mountain
@@ -773,15 +777,16 @@ country_event = {
 
 	option = {
 		name = griffons.22.a
-		add_popularity = { 
+		add_political_power = 10
+		add_popularity = {
 			ideology = fascism
-			popularity = 0.02 
+			popularity = 0.02
 		}
 	}
 }
 country_event = {
 	id = griffons.23
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.23"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.23"}
 	title = griffons.23.t
 	desc = griffons.23.d
 	picture = GFX_event_griffon_back
@@ -791,19 +796,20 @@ country_event = {
 
 	option = {
 		name = griffons.23.a
-		add_popularity = { 
+		add_manpower = -200
+		add_popularity = {
 			ideology = fascism
-			popularity = -0.01 
+			popularity = -0.01
 		}
-		add_popularity = { 
+		add_popularity = {
 			ideology = communism
-			popularity = -0.01 
+			popularity = -0.01
 		}
 	}
 }
 country_event = {
 	id = griffons.24
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.24"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.24"}
 	title = griffons.24.t
 	desc = griffons.24.d
 	picture = GFX_event_griffon_mountain
@@ -813,15 +819,16 @@ country_event = {
 
 	option = {
 		name = griffons.24.a
-		add_popularity = { 
+		add_political_power = -15
+		add_popularity = {
 			ideology = democratic
-			popularity = -0.02 
+			popularity = -0.02
 		}
 	}
 }
 country_event = {
 	id = griffons.25
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.25"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.25"}
 	title = griffons.25.t
 	desc = griffons.25.d
 	picture = GFX_event_griffon_back
@@ -831,16 +838,17 @@ country_event = {
 
 	option = {
 		name = griffons.25.a
-		add_popularity = { 
+		add_political_power = -20
+		add_popularity = {
 			ideology = communism
-			popularity = 0.01 
+			popularity = 0.01
 		}
 	}
 }
 
 country_event = {
 	id = griffons.28
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.28"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.28"}
 	title = griffons.28.t
 	desc = griffons.28.d
 	picture = GFX_event_griffon_back
@@ -865,7 +873,7 @@ country_event = {
 }
 country_event = {
 	id = griffons.281
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.281"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.281"}
 	title = griffons.281.t
 	desc = griffons.281.d
 	picture = GFX_event_griffon_back
@@ -881,7 +889,7 @@ country_event = {
 }
 country_event = {
 	id = griffons.282
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.282"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.282"}
 	title = griffons.282.t
 	desc = griffons.282.d
 	picture = GFX_event_griffon_back
@@ -896,7 +904,7 @@ country_event = {
 }
 country_event = {
 	id = griffons.29
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.29"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.29"}
 	title = griffons.29.t
 	desc = griffons.29.d
 	picture = GFX_event_griffon_mountain
@@ -910,7 +918,7 @@ country_event = {
 }
 country_event = {
 	id = griffons.30
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.30"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.30"}
 	title = griffons.30.t
 	desc = griffons.30.d
 	picture = GFX_event_griffon_mountain
@@ -946,7 +954,7 @@ country_event = {
 }
 country_event = {
 	id = griffons.31
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.31"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.31"}
 	title = griffons.31.t
 	desc = griffons.31.d
 	picture = GFX_event_griffon_mountain
@@ -994,7 +1002,7 @@ country_event = {
 }
 country_event = { #Equestrian Civil War Intervention
 	id = griffons.32
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.32"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.32"}
 	title = griffons.32.t
 	desc = griffons.32.d
 	picture = GFX_event_griffon_mountain
@@ -1050,7 +1058,7 @@ country_event = { #Equestrian Civil War Intervention
 
 country_event = {
 	id = griffons.33
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.33"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.33"}
 	title = griffons.33.t
 	desc = griffons.33.d
 	picture = GFX_event_griffon_back
@@ -1070,7 +1078,7 @@ country_event = {
 
 country_event = { #Changeling War Intervention
 	id = griffons.34
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.34"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.34"}
 	title = griffons.34.t
 	desc = griffons.34.d
 	picture = GFX_event_griffon_mountain
@@ -1126,7 +1134,7 @@ country_event = { #Changeling War Intervention
 
 country_event = {
 	id = griffons.35
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.35"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.35"}
 	title = griffons.35.t
 	desc = griffons.35.d
 	picture = GFX_event_griffon_back
@@ -1148,7 +1156,7 @@ country_event = {
 
 country_event = {
 	id = griffons.36
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.36"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.36"}
 	title = griffons.36.t
 	desc = griffons.36.d
 	picture = GFX_event_griffon_back
@@ -1176,7 +1184,7 @@ country_event = {
 
 country_event = {
 	id = griffons.37
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.37"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.37"}
 	title = griffons.37.t
 	desc = griffons.37.d
 	picture = GFX_event_griffon_back
@@ -1191,7 +1199,7 @@ country_event = {
 
 country_event = {
 	id = griffons.38
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.38"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.38"}
 	title = griffons.38.t
 	desc = griffons.38.d
 	picture = GFX_event_griffon_back
@@ -1205,7 +1213,7 @@ country_event = {
 
 country_event = {
 	id = griffons.39
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.39"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.39"}
 	title = griffons.39.t
 	desc = griffons.39.d
 	picture = GFX_event_griffon_back
@@ -1233,7 +1241,7 @@ country_event = {
 
 country_event = {
 	id = griffons.40
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.40"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.40"}
 	title = griffons.40.t
 	desc = griffons.40.d
 	picture = GFX_event_griffon_back
@@ -1248,7 +1256,7 @@ country_event = {
 
 country_event = {
 	id = griffons.41
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.41"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.41"}
 	title = griffons.41.t
 	desc = griffons.41.d
 	picture = GFX_event_griffon_back
@@ -1270,7 +1278,7 @@ country_event = {
 
 country_event = {
 	id = griffons.42
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.42"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.42"}
 	title = griffons.42.t
 	desc = griffons.42.d
 	picture = GFX_event_griffon_back
@@ -1299,7 +1307,7 @@ country_event = {
 
 country_event = {
 	id = griffons.43
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.43"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.43"}
 	title = griffons.43.t
 	desc = griffons.43.d
 	picture = GFX_event_griffon_mountain
@@ -1314,7 +1322,7 @@ country_event = {
 
 country_event = {
 	id = griffons.44
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.44"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.44"}
 	title = griffons.44.t
 	desc = griffons.44.d
 	picture = GFX_event_griffon_mountain
@@ -1330,7 +1338,7 @@ country_event = {
 # Win for GRF
 country_event = {
 	id = griffons.45
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.45"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.45"}
 	title = griffons.45.t
 	desc = griffons.45.d
 	picture = GFX_event_griffon_soldier
@@ -1353,7 +1361,7 @@ country_event = {
 # Lose for GRF
 country_event = {
 	id = griffons.46
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.46"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.46"}
 	title = griffons.46.t
 	desc = griffons.46.d
 	picture = GFX_event_griffon_soldier
@@ -1370,7 +1378,7 @@ country_event = {
 # Cancel
 country_event = {
 	id = griffons.47
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.47"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.47"}
 	title = griffons.47.t
 	desc = griffons.47.d
 	picture = GFX_event_griffon_soldier
@@ -1384,7 +1392,7 @@ country_event = {
 # Win for EQS
 country_event = {
 	id = griffons.48
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.48"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.48"}
 	title = griffons.48.t
 	desc = griffons.48.d
 	picture = GFX_event_griffon_soldier
@@ -1400,7 +1408,7 @@ country_event = {
 # Lose for EQS
 country_event = {
 	id = griffons.49
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.49"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.49"}
 	title = griffons.49.t
 	desc = griffons.49.d
 	picture = GFX_event_griffon_soldier
@@ -1434,7 +1442,7 @@ country_event = {
 
 country_event = { #The Long March
 	id = griffons.50
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.50"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.50"}
 	title = griffons.50.t
 	desc = griffons.50.d
 	picture = GFX_event_griffon_mountain
@@ -1461,7 +1469,7 @@ country_event = { #The Long March
 
 country_event = { #The Skirmish at Guidonuovo
 	id = griffons.51
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.51"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.51"}
 	title = griffons.51.t
 	desc = griffons.51.d
 	picture = GFX_event_griffon_mountain
@@ -1488,7 +1496,7 @@ country_event = { #The Skirmish at Guidonuovo
 
 country_event = { #The Battle at Hermanstadt
 	id = griffons.52
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.52"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.52"}
 	title = griffons.52.t
 	desc = griffons.52.d
 	picture = GFX_event_griffon_mountain
@@ -1515,7 +1523,7 @@ country_event = { #The Battle at Hermanstadt
 
 country_event = { #The Battle at the Kingsmere
 	id = griffons.53
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.53"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.53"}
 	title = griffons.53.t
 	desc = griffons.53.d
 	picture = GFX_event_griffon_mountain
@@ -1550,7 +1558,7 @@ country_event = { #The Battle at the Kingsmere
 
 country_event = { #The Battle in the Mountains
 	id = griffons.54
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.54"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.54"}
 	title = griffons.54.t
 	desc = griffons.54.d
 	picture = GFX_event_griffon_mountain
@@ -1577,7 +1585,7 @@ country_event = { #The Battle in the Mountains
 
 country_event = { #The Battle for the North
 	id = griffons.55
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.55"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.55"}
 	title = griffons.55.t
 	desc = griffons.55.d
 	picture = GFX_event_griffon_mountain
@@ -1604,7 +1612,7 @@ country_event = { #The Battle for the North
 
 country_event = { #The Battle for Ny Winghaven
 	id = griffons.56
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.56"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.56"}
 	title = griffons.56.t
 	desc = griffons.56.d
 	picture = GFX_event_griffon_mountain
@@ -1631,7 +1639,7 @@ country_event = { #The Battle for Ny Winghaven
 
 country_event = { #The Battle for Aquila
 	id = griffons.57
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.57"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.57"}
 	title = griffons.57.t
 	desc = griffons.57.d
 	picture = GFX_event_griffon_mountain
@@ -1667,7 +1675,7 @@ country_event = { #The Battle for Aquila
 
 country_event = { #Victory
 	id = griffons.58
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.58"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.58"}
 	title = griffons.58.t
 	desc = griffons.58.d
 	picture = GFX_event_griffon_mountain
@@ -1718,7 +1726,7 @@ country_event = { #Victory
 
 country_event = { #The Falcons Removed
 	id = griffons.59
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.59"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.59"}
 	title = griffons.59.t
 	desc = griffons.59.d
 	picture = GFX_event_griffon_mountain
@@ -1740,7 +1748,7 @@ country_event = { #The Falcons Removed
 
 country_event = { #Hi anon! We're Shadowun now!
 	id = griffons.60
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.60"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.60"}
 	title = griffons.60.t
 	desc = griffons.60.d
 	picture = GFX_event_griffon_back
@@ -1755,7 +1763,7 @@ country_event = { #Hi anon! We're Shadowun now!
 			desc = "ultimate_griffon_desc"
 			picture = "Skeiron_Goldfeather.tga"
 			expire = "1965.1.1"
-			ideology = nazism
+			ideology = plutocracy
 			traits = { ruthless_capitalist }
 		}
 		set_politics = {
@@ -1777,7 +1785,7 @@ country_event = { #Hi anon! We're Shadowun now!
 
 country_event = { #Sieg Heil
 	id = griffons.61
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.61"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.61"}
 	title = griffons.61.t
 	desc = griffons.61.d
 	picture = GFX_event_griffon_back
@@ -1813,7 +1821,7 @@ country_event = { #Sieg Heil
 #Mercs
 country_event = {
 	id = griffons.62
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.62"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.62"}
 	title = griffons.62.t
 	desc = griffons.62.d
 	picture = GFX_event_griffon_back
@@ -1824,7 +1832,7 @@ country_event = {
 		name = griffons.62.a
 		add_ai_strategy = {
 			type = befriend
-			id = GRF
+			id = FROM
 			value = 500
 		}
 		FROM = {
@@ -1844,7 +1852,7 @@ country_event = {
 			country_event = griffons.65
 		}
 		ai_chance = {
-			factor = 1.5
+			factor = 2.5
 			modifier = {
 				factor = 2
 				is_major = no
@@ -1886,7 +1894,7 @@ country_event = {
 				}
 			}
 			modifier = {
-				factor = 1.2
+				factor = 1.5
 				num_of_civilian_factories_available_for_projects > 18
 			}
 			modifier = {
@@ -1902,7 +1910,7 @@ country_event = {
 			country_event = { id = griffons.67 days = 1 }
 		}
 		ai_chance = {
-			factor = 1.5
+			factor = 1
 			modifier = {
 				factor = 2
 				is_major = no
@@ -1945,13 +1953,22 @@ country_event = {
 
 	option = {
 		name = griffons.62.c
-		set_country_flag = { flag = refused_mercs_from_GRF value = 1 days = 180 }
+		set_country_flag = { flag = refused_mercs_from_@FROM value = 1 days = 180 }
 		FROM = {
 			clr_country_flag = mercs_considered_@ROOT
 			country_event = griffons.66
 		}
 		ai_chance = {
 			factor = 5
+			modifier = {
+				factor = 10
+				OR = {
+					has_idea = TRD_got_mercs
+					has_idea = GRF_got_mercs
+					has_idea = TRD_got_mercs_delayed
+					has_idea = GRF_got_mercs_delayed
+				}
+			}
 			modifier = {
 				factor = 3
 				OR = {
@@ -1970,7 +1987,7 @@ country_event = {
 #Mercs failed
 country_event = {
 	id = griffons.63
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.63"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.63"}
 	title = griffons.63.t
 	desc = griffons.63.d
 	picture = GFX_event_griffon_back
@@ -1987,7 +2004,7 @@ country_event = {
 #Mercs success
 country_event = {
 	id = griffons.64
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.64"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.64"}
 	title = griffons.64.t
 	desc = griffons.64.d
 	picture = GFX_event_griffon_back
@@ -2001,7 +2018,7 @@ country_event = {
 #Mercs success for GRF
 country_event = {
 	id = griffons.65
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.65"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.65"}
 	title = griffons.65.t
 	desc = griffons.65.d
 	picture = GFX_event_griffon_back
@@ -2016,7 +2033,7 @@ country_event = {
 #Mercs fail for GRF
 country_event = {
 	id = griffons.66
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.66"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.66"}
 	title = griffons.66.t
 	desc = griffons.66.d
 	picture = GFX_event_griffon_back
@@ -2030,7 +2047,7 @@ country_event = {
 #FROM wants delayed payment
 country_event = {
 	id = griffons.67
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.67"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.67"}
 	title = griffons.67.t
 	desc = griffons.67.d
 	picture = GFX_event_griffon_back
@@ -2041,7 +2058,7 @@ country_event = {
 		FROM = {
 			add_ai_strategy = {
 				type = befriend
-				id = GRF
+				id = ROOT
 				value = 500
 			}
 			set_country_flag = mercs_delayed_payment
@@ -2067,7 +2084,7 @@ country_event = {
 				factor = 0
 				FROM = {
 					strength_ratio = {
-						tag = GRF
+						tag = ROOT
 						ratio > 0.8
 					}
 				}
@@ -2101,7 +2118,7 @@ country_event = {
 				factor = 2
 				FROM = {
 					ic_ratio = {
-						tag = GRF
+						tag = ROOT
 						ratio > 0.8
 					}
 				}
@@ -2161,7 +2178,7 @@ country_event = {
 	option = { #Nope
 		name = griffons.67.b
 		FROM = {
-			set_country_flag = { flag = refused_mercs_from_GRF value = 1 days = 180 }
+			set_country_flag = { flag = refused_mercs_from_@ROOT value = 1 days = 180 }
 			country_event = { id = griffons.69 days = 1 }
 		}
 		clr_country_flag = mercs_considered_@FROM
@@ -2174,7 +2191,7 @@ country_event = {
 #Delayed payment agreed
 country_event = {
 	id = griffons.68
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.68"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.68"}
 	title = griffons.68.t
 	desc = griffons.68.d
 	picture = GFX_event_griffon_back
@@ -2189,7 +2206,7 @@ country_event = {
 #Delayed payment refused
 country_event = {
 	id = griffons.69
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.69"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.69"}
 	title = griffons.69.t
 	desc = griffons.69.d
 	picture = GFX_event_griffon_back
@@ -2203,60 +2220,77 @@ country_event = {
 #GRF demands delayed payment
 country_event = {
 	id = griffons.70
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.70"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.70"}
 	title = griffons.70.t
 	desc = griffons.70.d
 	picture = GFX_event_griffon_back
 	is_triggered_only = yes
 
 	immediate = {
-		hidden_effect = { multiply_variable = { GRF_delayed_merc_payment = 1.15 } }
+		hidden_effect = { multiply_variable = { delayed_merc_payment_@FROM = 1.15 } }
 	}
 
 	option = { #Ok
 		name = griffons.70.a
-		add_timed_idea = { idea = GRF_got_mercs_delayed_payment days = var:GRF_delayed_merc_payment }
+		if = {
+			limit = { FROM = { tag = GRF } }
+			hidden_effect = { remove_ideas = GRF_got_mercs_delayed }
+			add_timed_idea = { idea = GRF_got_mercs_delayed_payment days = var:delayed_merc_payment_@FROM }
+		}
+		else = {
+			hidden_effect = { remove_ideas = TRD_got_mercs_delayed }
+			add_timed_idea = { idea = TRD_got_mercs_delayed_payment days = var:delayed_merc_payment_@FROM }
+		}
 		FROM = {
 			hidden_effect = {
-				set_variable = { GRF_send_mercs_reward_delayed_duration = ROOT.GRF_delayed_merc_payment }
-				add_offsite_building = { type = industrial_complex level = 4 }
-				activate_targeted_decision = { target = ROOT decision = GRF_send_mercs_reward_delayed }
+				if = {
+					limit = { tag = GRF }
+					set_variable = { GRF_send_mercs_reward_delayed_duration = ROOT.delayed_merc_payment_GRF }
+					add_offsite_building = { type = industrial_complex level = 4 }
+					activate_targeted_decision = { target = ROOT decision = GRF_send_mercs_reward_delayed }
+				}
+				else = {
+					set_variable = { TRD_send_mercs_reward_delayed_duration_@ROOT = ROOT.delayed_merc_payment_TRD }
+					log = "ROOT.delayed_merc_payment_TRD: [?ROOT.delayed_merc_payment_TRD]"
+					log = "TRD_send_mercs_reward_delayed_duration_@ROOT: [?TRD_send_mercs_reward_delayed_duration_@ROOT]"
+					activate_targeted_decision = { target = ROOT decision = TRD_send_mercs_reward_delayed }
+				}
 			}
 			country_event = { id = griffons.71 days = 1 }
 		}
-		clear_variable = GRF_delayed_merc_payment
-		clr_country_flag = considering_delaying_payment
+		clear_variable = delayed_merc_payment_@FROM
+		clr_country_flag = considering_delaying_payment_@FROM
 		ai_chance = {
 			factor = 2
 			modifier = {
 				factor = 3
-				is_neighbor_of = GRF
+				is_neighbor_of = FROM
 			}
 			modifier = {
 				factor = 0
 				strength_ratio = {
-					tag = GRF
+					tag = FROM
 					ratio > 1.3
 				}
 			}
 			modifier = {
 				factor = 2
 				strength_ratio = {
-					tag = GRF
+					tag = FROM
 					ratio < 1
 				}
 			}
 			modifier = {
 				factor = 2
 				strength_ratio = {
-					tag = GRF
+					tag = FROM
 					ratio < 0.8
 				}
 			}
 			modifier = {
 				factor = 3
 				strength_ratio = {
-					tag = GRF
+					tag = FROM
 					ratio < 0.6
 				}
 			}
@@ -2275,42 +2309,42 @@ country_event = {
 			modifier = {
 				factor = 0.8
 				has_opinion = {
-					target = GRF
+					target = FROM
 					value < -40
 				}
 			}
 			modifier = {
 				factor = 0.9
 				has_opinion = {
-					target = GRF
+					target = FROM
 					value < -20
 				}
 			}
 			modifier = {
 				factor = 0.95
 				has_opinion = {
-					target = GRF
+					target = FROM
 					value < -10
 				}
 			}
 			modifier = {
 				factor = 1.1
 				has_opinion = {
-					target = GRF
+					target = FROM
 					value > 10
 				}
 			}
 			modifier = {
 				factor = 1.1
 				has_opinion = {
-					target = GRF
+					target = FROM
 					value > 20
 				}
 			}
 			modifier = {
 				factor = 1.1
 				has_opinion = {
-					target = GRF
+					target = FROM
 					value > 40
 				}
 			}
@@ -2319,6 +2353,15 @@ country_event = {
 
 	option = { #No
 		name = griffons.70.b
+		hidden_effect = {
+			if = {
+				limit = { FROM = { tag = GRF } }
+				remove_ideas = GRF_got_mercs_delayed
+			}
+			else = {
+				remove_ideas = TRD_got_mercs_delayed
+			}
+		}
 		FROM = {
 			effect_tooltip = {
 				create_wargoal = {
@@ -2329,14 +2372,14 @@ country_event = {
 			}
 			country_event = { id = griffons.72 days = 1 }
 		}
-		clear_variable = GRF_delayed_merc_payment
-		clr_country_flag = considering_delaying_payment
+		clear_variable = delayed_merc_payment_@FROM
+		clr_country_flag = considering_delaying_payment_@FROM
 		ai_chance = {
 			factor = 1
 			modifier = {
 				factor = 4
 				strength_ratio = {
-					tag = GRF
+					tag = FROM
 					ratio > 1
 				}
 			}
@@ -2359,7 +2402,7 @@ country_event = {
 #Delayed payment agreed
 country_event = {
 	id = griffons.71
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.71"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.71"}
 	title = griffons.71.t
 	desc = griffons.71.d
 	picture = GFX_event_griffon_back
@@ -2367,10 +2410,19 @@ country_event = {
 
 	option = {
 		name = griffons.71.a
+		trigger = { tag = GRF }
 		effect_tooltip = {
-			FROM = { add_timed_idea = { idea = GRF_got_mercs_delayed_payment days = var:GRF_delayed_merc_payment } }
+			FROM = { add_timed_idea = { idea = GRF_got_mercs_delayed_payment days = var:delayed_merc_payment_@ROOT } }
 			add_offsite_building = { type = industrial_complex level = 4 }
 			activate_targeted_decision = { target = FROM decision = GRF_send_mercs_reward_delayed }
+		}
+	}
+	option = {
+		name = griffons.71.a
+		trigger = { tag = TRD }
+		effect_tooltip = {
+			FROM = { add_timed_idea = { idea = TRD_got_mercs_delayed_payment days = var:delayed_merc_payment_@ROOT } }
+			activate_targeted_decision = { target = FROM decision = TRD_send_mercs_reward_delayed }
 		}
 	}
 }
@@ -2378,7 +2430,7 @@ country_event = {
 #Delayed payment refused
 country_event = {
 	id = griffons.72
-	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.72"}#Auto-logging
+	immediate = {log = "[GetDateText]: [Root.GetName]: event griffons.72"}
 	title = griffons.72.t
 	desc = griffons.72.d
 	picture = GFX_event_griffon_back
