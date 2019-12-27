@@ -17,7 +17,7 @@ Please read CONTRIBUTING.md for details on our code of conduct, and the process 
 
 * Authors  
 Lukas - some of the code  
-Tom - some code and writeups.
+Tom - some code and writeups. Also updating the mod.
 Feveros - a bunch of code
 Ser Pounce - Blackrock Changes
 
