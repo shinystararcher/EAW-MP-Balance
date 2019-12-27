@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = SIC_urgent_parish_meeting
 		icon = GFX_goal_government_icon
-		cost = 6
+		cost = 5
 		x = 0
 		y = 0
 		ai_will_do = { factor = 80 }
@@ -83,8 +83,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SIC_aggressive_foreign_policy"
-			add_popularity =
-			{
+			add_popularity = { 
 				ideology = communism
 				popularity = 0.05
 			}
@@ -115,7 +114,7 @@ focus_tree = {
 	focus = {
 		id = SIC_checks_balances
 		icon = GFX_goal_constitutional_guarantees
-		cost = 6
+		cost = 5
 		relative_position_id = SIC_epios_plan
 		x = -1
 		y = 1
@@ -132,7 +131,7 @@ focus_tree = {
 	focus = {
 		id = SIC_defensive_foreign_policy
 		icon = GFX_goal_generic_military_sphere
-		cost = 6
+		cost = 5
 		relative_position_id = SIC_epios_plan
 		x = 1
 		y = 1
@@ -229,7 +228,7 @@ focus_tree = {
 	focus = {
 		id = SIC_separation_of_militias
 		icon = GFX_goal_conscription
-		cost = 6
+		cost = 5
 		relative_position_id = SIC_checks_balances
 		x = 0
 		y = 1
@@ -249,7 +248,7 @@ focus_tree = {
 	focus = {
 		id = SIC_standing_national_guard
 		icon = GFX_goal_NOR_quisling_guard
-		cost = 6
+		cost = 5
 		relative_position_id = SIC_defensive_foreign_policy
 		x = 0
 		y = 1
@@ -276,8 +275,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SIC_integrate_militias"
-			add_popularity =
-			{
+			add_popularity = { 
 				ideology = communism
 				popularity = 0.05
 			}
@@ -312,7 +310,7 @@ focus_tree = {
 	focus = {
 		id = SIC_rights_people_parishes
 		icon = GFX_goal_generic_national_unity_claws
-		cost = 6
+		cost = 5
 		relative_position_id = SIC_separation_of_militias
 		x = 1
 		y = 1
@@ -383,8 +381,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SIC_tradition_triumphs"
 			add_political_power = 200
-			add_popularity =
-			{
+			add_popularity = { 
 				ideology = democratic
 				popularity = 0.05
 			}
@@ -452,8 +449,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SIC_incorporating_the_radicals"
 			add_stability = -0.1
-			add_popularity =
-			{
+			add_popularity = { 
 				ideology = communism
 				popularity = 0.1
 			}
@@ -480,8 +476,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SIC_unwavering_reason"
 			add_political_power = 50
-			add_popularity =
-			{
+			add_popularity = { 
 				ideology = communism
 				popularity = -0.1
 			}
@@ -505,8 +500,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SIC_separation_of_church_state"
 			add_political_power = 50
-			add_popularity =
-			{
+			add_popularity = { 
 				ideology = neutrality
 				popularity = -0.1
 			}
@@ -533,8 +527,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SIC_discrediting_privateers"
 			add_stability = 0.05
-			add_popularity =
-			{
+			add_popularity = { 
 				ideology = fascism
 				popularity = -0.1
 			}
@@ -561,8 +554,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SIC_embracing_blue_grey"
 			add_political_power = -100
-			add_popularity =
-			{
+			add_popularity = { 
 				ideology = fascism
 				popularity = 0.1
 			}
@@ -816,8 +808,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SIC_invade_blackhallow"
-			create_wargoal =
-			{
+			create_wargoal = { 
 				type = annex_everything
 				target = BAN
 			}
@@ -889,8 +880,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SIC_invade_cyanolisia"
-			create_wargoal =
-			{
+			create_wargoal = { 
 				type = annex_everything
 				target = CYA
 			}
@@ -1314,8 +1304,7 @@ focus_tree = {
 				leave_faction = yes
 			}
 			add_political_power = 100
-			add_popularity =
-			{
+			add_popularity = { 
 				ideology = communism
 				popularity = 0.1
 			}
@@ -1633,8 +1622,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SIC_codify_sicameonism"
 			add_ideas = SIC_codified_syndicalism
-			add_popularity =
-			{
+			add_popularity = { 
 				ideology = communism
 				popularity = 0.1
 			}
@@ -1902,7 +1890,6 @@ focus_tree = {
 				}
 			}
 		}
-		ai_will_do = { factor = 0 }
 		will_lead_to_war_with = ZES
 		prerequisite = {
 			focus = SIC_bandit_queen
@@ -2478,7 +2465,7 @@ focus_tree = {
 	focus = {
 		id = SIC_winning_rigged_lottery
 		icon = GFX_goal_generic_elections
-		cost = 6
+		cost = 4
 		x = 29
 		y = 8
 		ai_will_do = {
@@ -4004,8 +3991,7 @@ focus_tree = {
 			518 = {
 				add_extra_state_shared_building_slots = 2
 			}
-			add_resource =
-			{
+			add_resource = { 
 				type = steel
 				amount = 12
 				state = 518
@@ -4013,8 +3999,7 @@ focus_tree = {
 			570 = {
 				add_extra_state_shared_building_slots = 2
 			}
-			add_resource =
-			{
+			add_resource = { 
 				type = chromium
 				amount = 12
 				state = 570
@@ -4586,6 +4571,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SIC_looking_outward
 		}
+		will_lead_to_war_with = MIT
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SIC_minotaurian_friendship"
 			add_political_power = 50
@@ -4777,8 +4763,7 @@ focus_tree = {
 			MIT = {
 				country_event = sicameon.44
 			}
-			add_popularity =
-			{
+			add_popularity = { 
 				ideology = democratic
 				popularity = 0.05
 			}
