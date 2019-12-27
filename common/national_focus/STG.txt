@@ -28,7 +28,7 @@ focus_tree = {
 	focus = {
 		id = vasya_1
 		icon = GFX_goal_industry_stg
-		cost = 7
+		cost = 4
 		prerequisite = {
 			focus = the_palace
 		}
@@ -116,7 +116,7 @@ focus_tree = {
 	focus = {
 		id = polya_1
 		icon = GFX_goal_stg_propaganda
-		cost = 7
+		cost = 4
 		prerequisite = {
 			focus = the_palace
 		}
@@ -246,7 +246,7 @@ focus_tree = {
 	focus = {
 		id = purge
 		icon = GFX_goal_purge
-		cost = 7
+		cost = 5
 		prerequisite = {
 			focus = vasya_2
 			focus = polya_2
@@ -273,7 +273,7 @@ focus_tree = {
 	focus = {
 		id = elections
 		icon = GFX_goal_elections
-		cost = 7
+		cost = 6
 		prerequisite = {
 			focus = purge
 		}
@@ -297,7 +297,7 @@ focus_tree = {
 	focus = {
 		id = keep_polya
 		icon = GFX_goal_vote_alty
-		cost = 7
+		cost = 5
 		prerequisite = {
 			focus = polya_2
 			focus = vasya_2
@@ -328,7 +328,7 @@ focus_tree = {
 	focus = {
 		id = new_leaders
 		icon = GFX_goal_new_leaders
-		cost = 7
+		cost = 10
 		prerequisite = {
 			focus = keep_polya
 		}
@@ -1067,7 +1067,7 @@ focus_tree = {
 	focus = {
 		id = communist_fanatism
 		icon = GFX_goal_stg_eqs
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = STG_advisors
 		}
@@ -1097,7 +1097,7 @@ focus_tree = {
 	focus = {
 		id = support_revolution_in_eqs
 		icon = GFX_focus_generic_join_comintern
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = communist_fanatism
 		}
@@ -1289,14 +1289,18 @@ focus_tree = {
 				has_war_with = CHN
 				NOT = { has_government = fascism }
 			}
-			has_global_flag = the_war
 		}
 		ai_will_do = {
 			factor = 20
 		}
 		bypass = {
 			OR = {
-				has_global_flag = the_war_ended
+				event_target:equestria = {
+					OR = {
+						exists = no
+						NOT = { has_war_with = CHN }
+					}
+				}
 				has_country_flag = war_help
 			}
 		}
@@ -1317,7 +1321,14 @@ focus_tree = {
 			focus = EQS_lend_lease
 		}
 		bypass = {
-			has_global_flag = the_war_ended
+			OR = {
+				event_target:equestria = {
+					OR = {
+						exists = no
+						NOT = { has_war_with = CHN }
+					}
+				}
+			}
 		}
 		x = 9
 		y = 8
@@ -1343,11 +1354,11 @@ focus_tree = {
 			has_country_flag = claimed_EQS_territory_already
 		}
 		available = {
-			has_global_flag = the_war_ended
 			EQS = {
 				exists = yes
 				has_capitulated = no
 				is_subject = no
+				has_war = no
 			}
 		}
 		x = 9
@@ -1653,6 +1664,9 @@ focus_tree = {
 		prerequisite = {
 			focus = sinister_leader
 		}
+		ai_will_do = {
+			factor = 10
+		}
 		x = 24
 		y = 1
 		completion_reward = {
@@ -1666,6 +1680,9 @@ focus_tree = {
 		cost = 7
 		prerequisite = {
 			focus = STG_food_market
+		}
+		ai_will_do = {
+			factor = 10
 		}
 		x = 24
 		y = 2
@@ -1684,6 +1701,9 @@ focus_tree = {
 		cost = 6
 		prerequisite = {
 			focus = end_food_problem2
+		}
+		ai_will_do = {
+			factor = 6
 		}
 		x = 23
 		y = 3
@@ -2013,6 +2033,20 @@ focus_tree = {
 		prerequisite = {
 			focus = take_down_STL
 		}
+        ai_will_do = {
+			factor = 7
+			modifier = {
+				factor = 0.1
+				has_war = yes
+			}
+			modifier = {
+				factor = 100
+				GRF = { has_war = yes }
+			}
+		}
+		bypass = {
+			GRF = { exists = no }
+		}
 		x = 30
 		y = 5
 		completion_reward = {
@@ -2222,6 +2256,21 @@ focus_tree = {
 		prerequisite = {
 			focus = sinister_line
 		}
+		ai_will_do = {
+			factor = 7
+			modifier = {
+				factor = 0.1
+				has_war = yes
+			}
+			modifier = {
+				factor = 100
+				OR = { 
+				    YAK = { has_war = yes }
+				    JAK = { has_war = yes } 
+				}
+			}
+		}
+
 		x = 31
 		y = 7
 		will_lead_to_war_with = YAK
@@ -2274,6 +2323,17 @@ focus_tree = {
 		prerequisite = {
 			focus = STG_attack_yaks
 		}
+		ai_will_do = {
+			factor = 7
+			modifier = {
+				factor = 0.1
+				has_war = yes
+			}
+			modifier = {
+				factor = 100
+				PNG = { has_war = yes }
+			}
+		}
 		bypass = {
 			PNG = {
 				OR = {
@@ -2298,6 +2358,22 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = STG_attack_yaks
+		}
+		ai_will_do = {
+			factor = 6
+			modifier = {
+				factor = 0.1
+				has_war = yes
+			}
+			modifier = {
+				factor = 100
+				OR = { 
+				    CHN = { has_war = yes }
+				    CCN = { has_war = yes } 
+				    EQS = { has_war = yes }
+				    NLR = { has_war = yes }
+				}
+			}
 		}
 		x = 32
 		y = 8
@@ -2352,6 +2428,20 @@ focus_tree = {
 		prerequisite = {
 			focus = prepare_for_the_crusade
 			focus = STG_attack_PNG
+		}
+		ai_will_do = {
+			factor = 6
+			modifier = {
+				factor = 0.1
+				has_war = yes
+			}
+			modifier = {
+				factor = 100
+				OR = { 
+				    EQS = { has_war = yes }
+				    NLR = { has_war = yes } 
+				}
+			}
 		}
 		bypass = {
 			EQS = {
